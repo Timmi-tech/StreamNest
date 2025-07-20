@@ -1,0 +1,17 @@
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.infrastructure\bin\Debug\net8.0\StreamNest.Infrastructure.deps.json
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.infrastructure\bin\Debug\net8.0\StreamNest.Infrastructure.runtimeconfig.json
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.infrastructure\bin\Debug\net8.0\StreamNest.Infrastructure.dll
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.infrastructure\bin\Debug\net8.0\StreamNest.Infrastructure.pdb
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.infrastructure\bin\Debug\net8.0\StreamNest.Domain.dll
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.infrastructure\bin\Debug\net8.0\StreamNest.Domain.pdb
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.infrastructure\obj\Debug\net8.0\StreamNest.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.infrastructure\obj\Debug\net8.0\StreamNest.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.infrastructure\obj\Debug\net8.0\StreamNest.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.infrastructure\obj\Debug\net8.0\StreamNest.Infrastructure.AssemblyInfo.cs
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.infrastructure\obj\Debug\net8.0\StreamNest.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.infrastructure\obj\Debug\net8.0\StreamNe.C8AD771F.Up2Date
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.infrastructure\obj\Debug\net8.0\StreamNest.Infrastructure.dll
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.infrastructure\obj\Debug\net8.0\refint\StreamNest.Infrastructure.dll
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.infrastructure\obj\Debug\net8.0\StreamNest.Infrastructure.pdb
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.infrastructure\obj\Debug\net8.0\StreamNest.Infrastructure.genruntimeconfig.cache
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.infrastructure\obj\Debug\net8.0\ref\StreamNest.Infrastructure.dll

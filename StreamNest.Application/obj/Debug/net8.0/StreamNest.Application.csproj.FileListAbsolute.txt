@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\bin\Debug\net8.0\StreamNest.Application.deps.json
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\bin\Debug\net8.0\StreamNest.Application.dll
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\bin\Debug\net8.0\StreamNest.Application.pdb
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\bin\Debug\net8.0\StreamNest.Domain.dll
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\bin\Debug\net8.0\StreamNest.Domain.pdb
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\obj\Debug\net8.0\StreamNest.Application.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\obj\Debug\net8.0\StreamNest.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\obj\Debug\net8.0\StreamNest.Application.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\obj\Debug\net8.0\StreamNest.Application.AssemblyInfo.cs
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\obj\Debug\net8.0\StreamNest.Application.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\obj\Debug\net8.0\StreamNe.9A3D9B0B.Up2Date
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\obj\Debug\net8.0\StreamNest.Application.dll
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\obj\Debug\net8.0\refint\StreamNest.Application.dll
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\obj\Debug\net8.0\StreamNest.Application.pdb
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\obj\Debug\net8.0\ref\StreamNest.Application.dll

@@ -1,0 +1,653 @@
+2025-07-20 14:22:57.436 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-20 14:22:57.841 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-20 14:22:57.869 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-20 14:22:57.928 +01:00 [INF] Hosting environment: Development
+2025-07-20 14:22:57.942 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-20 14:24:28.700 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 14:24:28.907 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 216.2421ms
+2025-07-20 14:24:30.335 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 14:24:30.690 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 355.5308ms
+2025-07-20 14:24:45.070 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 14:24:45.093 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 23.328ms
+2025-07-20 14:24:46.391 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 14:24:46.405 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.6377ms
+2025-07-20 14:25:03.182 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 14:25:03.262 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 79.8093ms
+2025-07-20 14:25:03.395 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - null null
+2025-07-20 14:25:03.395 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - null null
+2025-07-20 14:25:03.401 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - null null
+2025-07-20 14:25:03.517 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-07-20 14:25:03.570 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-07-20 14:25:03.593 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 191.3894ms
+2025-07-20 14:25:03.580 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-07-20 14:25:03.614 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 218.8538ms
+2025-07-20 14:25:03.640 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - 200 152034 text/css 245.5055ms
+2025-07-20 14:25:04.832 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - null null
+2025-07-20 14:25:04.846 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-07-20 14:25:04.852 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - 200 628 image/png 20.1636ms
+2025-07-20 14:25:05.942 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 14:25:05.960 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.3244ms
+2025-07-20 14:25:31.799 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/ - null null
+2025-07-20 14:25:31.811 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-20 14:25:31.988 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/ - 404 0 null 188.3954ms
+2025-07-20 14:25:32.001 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/, Response status code: 404
+2025-07-20 14:25:37.855 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 14:25:37.867 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 11.896ms
+2025-07-20 14:25:40.324 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 14:25:40.340 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.8695ms
+2025-07-20 14:27:02.492 +01:00 [INF] Application is shutting down...
+2025-07-20 14:27:34.635 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-20 14:27:34.832 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-20 14:27:34.836 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-20 14:27:34.837 +01:00 [INF] Hosting environment: Development
+2025-07-20 14:27:34.837 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-20 14:27:35.336 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger - null null
+2025-07-20 14:27:35.472 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger - 301 0 null 137.8426ms
+2025-07-20 14:27:35.489 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 14:27:35.710 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 222.637ms
+2025-07-20 14:27:36.744 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-20 14:27:36.747 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 13730 application/javascript; charset=utf-8 3.3042ms
+2025-07-20 14:27:37.845 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 14:27:38.326 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 480.8771ms
+2025-07-20 14:28:11.069 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/ - null null
+2025-07-20 14:28:11.077 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-20 14:28:11.186 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/ - 404 0 null 116.7103ms
+2025-07-20 14:28:11.193 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/, Response status code: 404
+2025-07-20 14:28:14.242 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 14:28:14.244 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 1.4373ms
+2025-07-20 14:28:14.337 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - null null
+2025-07-20 14:28:14.342 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - null null
+2025-07-20 14:28:14.344 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - null null
+2025-07-20 14:28:14.349 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-20 14:28:14.349 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 13730 application/javascript; charset=utf-8 0.6334ms
+2025-07-20 14:28:14.384 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-07-20 14:28:14.388 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 44.2234ms
+2025-07-20 14:28:14.389 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-07-20 14:28:14.389 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - 200 152034 text/css 52.2551ms
+2025-07-20 14:28:14.424 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-07-20 14:28:14.425 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 82.783ms
+2025-07-20 14:28:15.073 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - null null
+2025-07-20 14:28:15.074 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-07-20 14:28:15.074 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - 200 628 image/png 1.052ms
+2025-07-20 14:28:15.628 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 14:28:15.634 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.2744ms
+2025-07-20 14:29:11.726 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 14:29:11.727 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 0.7858ms
+2025-07-20 14:29:11.830 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-20 14:29:11.831 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 13730 application/javascript; charset=utf-8 0.4885ms
+2025-07-20 14:29:12.758 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 14:29:12.771 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.9251ms
+2025-07-20 14:29:26.590 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 14:29:26.591 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 0.8579ms
+2025-07-20 14:29:26.996 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-20 14:29:26.997 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 13730 application/javascript; charset=utf-8 1.1065ms
+2025-07-20 14:29:27.778 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 14:29:27.793 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.7711ms
+2025-07-20 14:29:32.053 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 14:29:32.054 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 1.1149ms
+2025-07-20 14:29:32.122 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-20 14:29:32.123 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 13730 application/javascript; charset=utf-8 0.809ms
+2025-07-20 14:29:32.836 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 14:29:32.843 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.4621ms
+2025-07-20 14:32:18.524 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 14:32:18.526 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 1.6648ms
+2025-07-20 14:32:18.631 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-20 14:32:18.631 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 13730 application/javascript; charset=utf-8 0.3545ms
+2025-07-20 14:32:19.795 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 14:32:19.810 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.4661ms
+2025-07-20 14:32:45.652 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 14:32:45.653 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 0.8235ms
+2025-07-20 14:32:45.758 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-20 14:32:45.758 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 13730 application/javascript; charset=utf-8 0.3581ms
+2025-07-20 14:32:46.246 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 14:32:46.254 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.9652ms
+2025-07-20 14:32:53.210 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 14:32:53.210 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 0.5963ms
+2025-07-20 14:32:53.280 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-20 14:32:53.280 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 13730 application/javascript; charset=utf-8 0.1834ms
+2025-07-20 14:32:53.859 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 14:32:53.867 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.8166ms
+2025-07-20 14:33:08.927 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 14:33:08.927 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 0.6338ms
+2025-07-20 14:33:08.976 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-20 14:33:08.976 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 13730 application/javascript; charset=utf-8 0.2628ms
+2025-07-20 14:33:09.421 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 14:33:09.425 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.6708ms
+2025-07-20 14:33:43.902 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 14:33:43.904 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 1.3549ms
+2025-07-20 14:33:44.076 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-20 14:33:44.076 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/_framework/aspnetcore-browser-refresh.js - 200 13730 application/javascript; charset=utf-8 0.2704ms
+2025-07-20 14:33:44.472 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 14:33:44.475 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 2.5027ms
+2025-07-20 14:33:55.252 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 14:33:55.256 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.4574ms
+2025-07-20 14:33:55.935 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/favicon.ico - null null
+2025-07-20 14:33:55.938 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/favicon.ico - 404 0 null 2.6361ms
+2025-07-20 14:33:55.938 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/favicon.ico, Response status code: 404
+2025-07-20 14:49:28.844 +01:00 [INF] Application is shutting down...
+2025-07-20 14:49:56.044 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-20 14:49:56.403 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-20 14:49:56.419 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-20 14:49:56.429 +01:00 [INF] Hosting environment: Development
+2025-07-20 14:49:56.436 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-20 14:50:00.171 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/ - null null
+2025-07-20 14:50:00.287 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-20 14:50:00.506 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/ - 404 0 null 342.198ms
+2025-07-20 14:50:00.544 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/, Response status code: 404
+2025-07-20 14:50:06.182 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 14:50:06.458 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 276.7245ms
+2025-07-20 14:50:08.027 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 14:50:10.799 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 2772.3523ms
+2025-07-20 14:50:18.378 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 14:50:18.396 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.2197ms
+2025-07-20 14:51:23.379 +01:00 [INF] Application is shutting down...
+2025-07-20 14:52:03.245 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-20 14:52:03.458 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-20 14:52:03.466 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-20 14:52:03.470 +01:00 [INF] Hosting environment: Development
+2025-07-20 14:52:03.474 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-20 14:52:14.188 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger - null null
+2025-07-20 14:52:14.775 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger - 301 0 null 587.6377ms
+2025-07-20 14:52:14.788 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 14:52:14.885 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 96.7857ms
+2025-07-20 14:52:15.901 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 14:52:16.072 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 171.1229ms
+2025-07-20 14:52:26.216 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 14:52:26.227 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 10.2579ms
+2025-07-20 14:52:26.274 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - null null
+2025-07-20 14:52:26.276 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - null null
+2025-07-20 14:52:26.278 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - null null
+2025-07-20 14:52:26.331 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-07-20 14:52:26.331 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-07-20 14:52:26.341 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - 200 152034 text/css 67.0232ms
+2025-07-20 14:52:26.341 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 62.654ms
+2025-07-20 14:52:26.346 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-07-20 14:52:26.366 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 89.7504ms
+2025-07-20 14:52:26.709 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - null null
+2025-07-20 14:52:26.719 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-07-20 14:52:26.727 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - 200 628 image/png 17.8586ms
+2025-07-20 14:52:26.831 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 14:52:26.853 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 21.9163ms
+2025-07-20 14:53:12.844 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/ - null null
+2025-07-20 14:53:12.858 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-20 14:53:13.055 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/ - 404 0 null 211.0125ms
+2025-07-20 14:53:13.074 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/, Response status code: 404
+2025-07-20 14:53:15.614 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 14:53:15.621 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 6.7027ms
+2025-07-20 14:53:15.655 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - null null
+2025-07-20 14:53:15.656 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - null null
+2025-07-20 14:53:15.656 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - null null
+2025-07-20 14:53:15.676 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-07-20 14:53:15.683 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-07-20 14:53:15.690 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-07-20 14:53:15.691 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - 200 152034 text/css 35.236ms
+2025-07-20 14:53:15.693 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 36.6393ms
+2025-07-20 14:53:15.706 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 50.1818ms
+2025-07-20 14:53:16.607 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - null null
+2025-07-20 14:53:16.615 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-07-20 14:53:16.619 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - 200 628 image/png 12.1987ms
+2025-07-20 14:53:16.867 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 14:53:16.884 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.6778ms
+2025-07-20 14:53:28.093 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 14:53:28.116 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 22.4969ms
+2025-07-20 14:53:28.167 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - null null
+2025-07-20 14:53:28.177 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - null null
+2025-07-20 14:53:28.177 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - null null
+2025-07-20 14:53:28.193 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-07-20 14:53:28.214 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-07-20 14:53:28.216 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - 200 152034 text/css 48.9458ms
+2025-07-20 14:53:28.231 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 53.5307ms
+2025-07-20 14:53:28.245 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-07-20 14:53:28.263 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 85.6631ms
+2025-07-20 14:53:28.630 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 14:53:28.650 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.5233ms
+2025-07-20 14:53:28.680 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - null null
+2025-07-20 14:53:28.700 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-07-20 14:53:28.713 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - 200 628 image/png 32.8248ms
+2025-07-20 14:53:56.741 +01:00 [INF] Application is shutting down...
+2025-07-20 14:54:07.134 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-20 14:54:07.783 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-20 14:54:07.866 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-20 14:54:07.942 +01:00 [INF] Hosting environment: Development
+2025-07-20 14:54:08.479 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-20 14:54:25.013 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication - multipart/form-data; boundary=--------------------------794609249782590746498282 89087
+2025-07-20 14:54:25.042 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-20 14:54:25.086 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication - 404 0 null 75.6801ms
+2025-07-20 14:54:25.103 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5213/api/authentication, Response status code: 404
+2025-07-20 14:54:43.414 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - multipart/form-data; boundary=--------------------------901892519242795520599637 89087
+2025-07-20 14:54:43.426 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-20 14:54:43.465 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-20 14:54:44.249 +01:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-20 14:54:44.347 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 860.4001ms
+2025-07-20 14:54:44.352 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-20 14:54:44.361 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 415 null application/problem+json; charset=utf-8 947.5591ms
+2025-07-20 14:55:25.419 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - null 0
+2025-07-20 14:55:25.433 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-20 14:55:25.437 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-20 14:55:25.461 +01:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-20 14:55:25.467 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 23.0003ms
+2025-07-20 14:55:25.472 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-20 14:55:25.475 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 415 null application/problem+json; charset=utf-8 55.5069ms
+2025-07-20 14:55:40.944 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - null 0
+2025-07-20 14:55:40.952 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-20 14:55:40.955 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-20 14:55:40.971 +01:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-07-20 14:55:40.976 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 13.9789ms
+2025-07-20 14:55:40.979 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-20 14:55:40.983 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 415 null application/problem+json; charset=utf-8 38.7137ms
+2025-07-20 14:55:50.224 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 14:55:50.323 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 98.8041ms
+2025-07-20 14:55:51.157 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 14:55:51.345 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 187.1038ms
+2025-07-20 14:56:11.182 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 14:56:11.191 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 9.4338ms
+2025-07-20 14:56:11.230 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - null null
+2025-07-20 14:56:11.232 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - null null
+2025-07-20 14:56:11.234 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - null null
+2025-07-20 14:56:11.264 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-07-20 14:56:11.264 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-07-20 14:56:11.267 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 33.0544ms
+2025-07-20 14:56:11.277 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - 200 152034 text/css 46.8607ms
+2025-07-20 14:56:11.286 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-07-20 14:56:11.302 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 69.9793ms
+2025-07-20 14:56:11.573 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - null null
+2025-07-20 14:56:11.584 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-07-20 14:56:11.588 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - 200 628 image/png 14.302ms
+2025-07-20 14:56:11.638 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 14:56:11.645 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - null null
+2025-07-20 14:56:11.656 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.6844ms
+2025-07-20 14:56:11.656 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-07-20 14:56:11.667 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - 200 628 image/png 21.8053ms
+2025-07-20 14:57:19.207 +01:00 [INF] Application is shutting down...
+2025-07-20 14:57:26.266 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-20 14:57:26.470 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-20 14:57:26.476 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-20 14:57:26.481 +01:00 [INF] Hosting environment: Development
+2025-07-20 14:57:26.484 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-20 14:57:38.077 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 14:57:38.120 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-20 14:57:38.180 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 404 0 null 105.551ms
+2025-07-20 14:57:38.205 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/swagger/index.html, Response status code: 404
+2025-07-20 14:57:41.294 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 14:57:41.311 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 404 0 null 17.6522ms
+2025-07-20 14:57:41.326 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/swagger/index.html, Response status code: 404
+2025-07-20 14:57:45.946 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/sdocs - null null
+2025-07-20 14:57:45.962 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/sdocs - 404 0 null 16.6269ms
+2025-07-20 14:57:45.976 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/sdocs, Response status code: 404
+2025-07-20 14:57:57.063 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/ - null null
+2025-07-20 14:57:57.071 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/ - 404 0 null 7.9744ms
+2025-07-20 14:57:57.081 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/, Response status code: 404
+2025-07-20 14:58:01.095 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 14:58:01.102 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 404 0 null 6.5435ms
+2025-07-20 14:58:01.111 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/swagger/index.html, Response status code: 404
+2025-07-20 14:58:01.544 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 14:58:01.550 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 404 0 null 6.1796ms
+2025-07-20 14:58:01.566 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/swagger/index.html, Response status code: 404
+2025-07-20 14:58:20.492 +01:00 [INF] Application is shutting down...
+2025-07-20 14:58:27.353 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-20 14:58:27.555 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-20 14:58:27.565 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-20 14:58:27.570 +01:00 [INF] Hosting environment: Development
+2025-07-20 14:58:27.576 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-20 14:59:35.337 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 14:59:35.497 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 160.0616ms
+2025-07-20 14:59:37.331 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 14:59:37.654 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 323.4843ms
+2025-07-20 14:59:42.564 +01:00 [INF] Application is shutting down...
+2025-07-20 14:59:48.052 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-20 14:59:48.312 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-20 14:59:48.322 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-20 14:59:48.326 +01:00 [INF] Hosting environment: Development
+2025-07-20 14:59:48.332 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-20 14:59:50.119 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 14:59:50.335 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 217.6435ms
+2025-07-20 14:59:50.698 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 14:59:50.907 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 209.8696ms
+2025-07-20 15:01:34.588 +01:00 [INF] Application is shutting down...
+2025-07-20 15:01:41.915 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-20 15:01:42.091 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-20 15:01:42.099 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-20 15:01:42.104 +01:00 [INF] Hosting environment: Development
+2025-07-20 15:01:42.107 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-20 15:01:46.534 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 15:01:46.645 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 111.6199ms
+2025-07-20 15:01:47.052 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 15:01:47.445 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 392.9699ms
+2025-07-20 15:02:14.873 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 15:02:14.887 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 14.078ms
+2025-07-20 15:02:14.934 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - null null
+2025-07-20 15:02:14.935 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - null null
+2025-07-20 15:02:14.941 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - null null
+2025-07-20 15:02:14.983 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-07-20 15:02:14.984 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-07-20 15:02:14.990 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - 200 152034 text/css 56.0541ms
+2025-07-20 15:02:14.990 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 48.8488ms
+2025-07-20 15:02:15.004 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-07-20 15:02:15.011 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 75.4501ms
+2025-07-20 15:02:15.262 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - null null
+2025-07-20 15:02:15.273 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-07-20 15:02:15.278 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - 200 628 image/png 16.4428ms
+2025-07-20 15:02:15.334 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 15:02:15.357 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.9713ms
+2025-07-20 15:04:15.198 +01:00 [INF] Application is shutting down...
+2025-07-20 15:04:21.546 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-20 15:04:21.770 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-20 15:04:21.778 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-20 15:04:21.781 +01:00 [INF] Hosting environment: Development
+2025-07-20 15:04:21.784 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-20 15:04:23.874 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 15:04:24.027 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 155.3944ms
+2025-07-20 15:04:25.286 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 15:04:25.603 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 317.5326ms
+2025-07-20 15:04:36.997 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 15:04:37.010 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 13.4022ms
+2025-07-20 15:04:37.090 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - null null
+2025-07-20 15:04:37.096 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - null null
+2025-07-20 15:04:37.097 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - null null
+2025-07-20 15:04:37.172 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-07-20 15:04:37.185 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - 200 152034 text/css 96.1075ms
+2025-07-20 15:04:37.187 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-07-20 15:04:37.197 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-07-20 15:04:37.263 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 167.667ms
+2025-07-20 15:04:37.268 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 170.8305ms
+2025-07-20 15:04:37.981 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - null null
+2025-07-20 15:04:37.994 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-07-20 15:04:38.000 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - 200 628 image/png 18.5142ms
+2025-07-20 15:04:38.107 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 15:04:38.134 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 27.1948ms
+2025-07-20 15:04:55.270 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 15:04:55.285 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.0725ms
+2025-07-20 15:04:55.957 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/favicon.ico - null null
+2025-07-20 15:04:55.972 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-20 15:04:56.037 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/favicon.ico - 404 0 null 80.517ms
+2025-07-20 15:04:56.049 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/favicon.ico, Response status code: 404
+2025-07-20 15:06:29.318 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 15:06:29.329 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 10.3722ms
+2025-07-20 15:06:29.370 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - null null
+2025-07-20 15:06:29.379 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - null null
+2025-07-20 15:06:29.379 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - null null
+2025-07-20 15:06:29.382 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-07-20 15:06:29.403 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-07-20 15:06:29.405 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - 200 152034 text/css 34.249ms
+2025-07-20 15:06:29.408 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 28.3811ms
+2025-07-20 15:06:29.403 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-07-20 15:06:29.433 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 53.9676ms
+2025-07-20 15:06:29.729 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 15:06:29.738 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.7526ms
+2025-07-20 15:06:29.756 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - null null
+2025-07-20 15:06:29.764 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-07-20 15:06:29.770 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - 200 628 image/png 13.9556ms
+2025-07-20 15:07:11.847 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 59
+2025-07-20 15:07:11.858 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-20 15:07:11.895 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-20 15:07:13.382 +01:00 [INF] Executed DbCommand (61ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-20 15:07:13.654 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-20 15:07:13.670 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-20 15:07:13.830 +01:00 [INF] Executed DbCommand (16ms) [Parameters=[@p19='?', @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "RefreshToken" = @p13, "RefreshTokenExpiryTime" = @p14, "Role" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-07-20 15:07:14.011 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.TokenDto'.
+2025-07-20 15:07:14.030 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 2123.3053ms
+2025-07-20 15:07:14.036 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-20 15:07:14.048 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 200 null application/json; charset=utf-8 2200.882ms
+2025-07-20 15:07:55.045 +01:00 [INF] Application is shutting down...
+2025-07-20 15:08:31.871 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-20 15:08:32.027 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-20 15:08:32.036 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-20 15:08:32.041 +01:00 [INF] Hosting environment: Development
+2025-07-20 15:08:32.045 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-20 15:08:53.726 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/ - null null
+2025-07-20 15:08:54.016 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-20 15:08:55.973 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 15:08:56.090 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/ - 404 0 null 2368.3661ms
+2025-07-20 15:08:56.122 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/, Response status code: 404
+2025-07-20 15:08:56.228 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 256.1091ms
+2025-07-20 15:08:56.542 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 15:08:56.564 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 22.3321ms
+2025-07-20 15:08:56.653 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - null null
+2025-07-20 15:08:56.656 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - null null
+2025-07-20 15:08:56.655 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - null null
+2025-07-20 15:08:56.715 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-07-20 15:08:56.716 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-07-20 15:08:56.744 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - 200 152034 text/css 91.2813ms
+2025-07-20 15:08:56.756 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 100.3109ms
+2025-07-20 15:08:56.789 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-07-20 15:08:56.819 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 163.4063ms
+2025-07-20 15:08:57.566 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - null null
+2025-07-20 15:08:57.598 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-07-20 15:08:57.614 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - 200 628 image/png 48.5693ms
+2025-07-20 15:08:58.685 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 15:08:59.086 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 401.2857ms
+2025-07-20 15:11:13.470 +01:00 [INF] Application is shutting down...
+2025-07-20 15:11:19.249 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-20 15:11:19.414 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-20 15:11:19.422 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-20 15:11:19.426 +01:00 [INF] Hosting environment: Development
+2025-07-20 15:11:19.430 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-20 15:11:33.260 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 15:11:33.401 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 141.5784ms
+2025-07-20 15:11:37.501 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 15:11:37.788 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 288.3475ms
+2025-07-20 15:11:48.806 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 15:11:48.824 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 18.0945ms
+2025-07-20 15:11:48.921 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - null null
+2025-07-20 15:11:48.927 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - null null
+2025-07-20 15:11:48.929 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - null null
+2025-07-20 15:11:49.037 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-07-20 15:11:49.037 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-07-20 15:11:49.037 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-07-20 15:11:49.051 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 124.4441ms
+2025-07-20 15:11:49.055 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 126.7135ms
+2025-07-20 15:11:49.066 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - 200 152034 text/css 144.6125ms
+2025-07-20 15:11:50.098 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - null null
+2025-07-20 15:11:50.109 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-07-20 15:11:50.117 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - 200 628 image/png 18.2246ms
+2025-07-20 15:11:50.661 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 15:11:50.684 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.4162ms
+2025-07-20 15:12:00.578 +01:00 [INF] Application is shutting down...
+2025-07-20 15:12:06.895 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-20 15:12:07.211 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-20 15:12:07.221 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-20 15:12:07.225 +01:00 [INF] Hosting environment: Development
+2025-07-20 15:12:07.229 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-20 15:12:09.275 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 15:12:09.568 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 295.0566ms
+2025-07-20 15:12:10.617 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 15:12:10.956 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 339.2812ms
+2025-07-20 15:13:19.071 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 15:13:19.092 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 21.1699ms
+2025-07-20 15:13:23.964 +01:00 [INF] Application is shutting down...
+2025-07-20 15:13:28.842 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-20 15:13:29.034 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-20 15:13:29.044 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-20 15:13:29.049 +01:00 [INF] Hosting environment: Development
+2025-07-20 15:13:29.053 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-20 15:13:41.263 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 15:13:41.373 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 111.0099ms
+2025-07-20 15:13:41.706 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 15:13:41.918 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 213.0428ms
+2025-07-20 15:15:55.132 +01:00 [INF] Application is shutting down...
+2025-07-20 15:16:48.109 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-20 15:16:48.259 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-20 15:16:48.267 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-20 15:16:48.271 +01:00 [INF] Hosting environment: Development
+2025-07-20 15:16:48.275 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-20 15:16:52.766 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 15:16:53.008 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 243.4072ms
+2025-07-20 15:16:53.125 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.css - null null
+2025-07-20 15:16:53.156 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-20 15:16:53.171 +01:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-07-20 15:16:53.192 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.css - 200 202 text/css 68.6917ms
+2025-07-20 15:16:53.192 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 35.4227ms
+2025-07-20 15:16:53.680 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 15:16:54.059 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 378.9899ms
+2025-07-20 15:16:57.392 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 15:16:57.410 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.63ms
+2025-07-20 15:17:07.257 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 15:17:07.275 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 17.3146ms
+2025-07-20 15:17:07.351 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - null null
+2025-07-20 15:17:07.363 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.css - null null
+2025-07-20 15:17:07.364 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - null null
+2025-07-20 15:17:07.364 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - null null
+2025-07-20 15:17:07.365 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-20 15:17:07.454 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-07-20 15:17:07.489 +01:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-07-20 15:17:07.561 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 196.3962ms
+2025-07-20 15:17:07.580 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-07-20 15:17:07.614 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-07-20 15:17:07.720 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 355.6055ms
+2025-07-20 15:17:07.742 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.css - 200 202 text/css 378.7128ms
+2025-07-20 15:17:07.739 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - 200 154948 text/css 387.6681ms
+2025-07-20 15:17:07.911 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - 200 1466324 text/javascript 546.7705ms
+2025-07-20 15:17:08.017 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - null null
+2025-07-20 15:17:08.071 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-07-20 15:17:08.085 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - 200 628 image/png 68.2787ms
+2025-07-20 15:17:08.237 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 15:17:08.268 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 30.9797ms
+2025-07-20 15:17:49.267 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 56
+2025-07-20 15:17:49.283 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-20 15:17:49.310 +01:00 [INF] CORS policy execution successful.
+2025-07-20 15:17:49.403 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-20 15:17:49.442 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-20 15:17:52.248 +01:00 [INF] Executed DbCommand (78ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-20 15:17:52.756 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-20 15:17:52.780 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-20 15:17:53.001 +01:00 [INF] Executed DbCommand (15ms) [Parameters=[@p19='?', @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "RefreshToken" = @p13, "RefreshTokenExpiryTime" = @p14, "Role" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-07-20 15:17:53.097 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.TokenDto'.
+2025-07-20 15:17:53.138 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 3684.0794ms
+2025-07-20 15:17:53.145 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-20 15:17:53.162 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 200 null application/json; charset=utf-8 3895.146ms
+2025-07-20 15:23:28.292 +01:00 [INF] Application is shutting down...
+2025-07-20 15:41:13.897 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-20 15:41:14.121 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-20 15:41:14.129 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-20 15:41:14.135 +01:00 [INF] Hosting environment: Development
+2025-07-20 15:41:14.140 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-20 15:41:38.717 +01:00 [INF] Application is shutting down...
+2025-07-20 15:41:51.220 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-20 15:41:51.644 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-20 15:41:51.668 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-20 15:41:51.677 +01:00 [INF] Hosting environment: Development
+2025-07-20 15:41:51.684 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-20 15:41:57.868 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 15:41:58.019 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 153.1741ms
+2025-07-20 15:41:58.193 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-20 15:41:58.219 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 26.1569ms
+2025-07-20 15:41:59.130 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 15:41:59.381 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - VideosController.Upload (StreamNest.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Error reading parameter(s) for action VideosController.Upload (StreamNest.API) as [FromForm] attribute used with IFormFile. Please refer to https://github.com/domaindrivendev/Swashbuckle.AspNetCore#handle-forms-and-file-uploads for more information
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRespository, Func`3 parameterGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateParametersAsync(ApiDescription apiDescription, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`3 parametersGenerator, Func`3 bodyGenerator, Func`3 applyFilters)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository, Func`3 parametersGenerator, Func`3 bodyGenerator, Func`3 applyFilters)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationAsync(OpenApiDocument document, ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-20 15:41:59.507 +01:00 [ERR] Exception: SwaggerGeneratorException - Failed to generate Operation for action - VideosController.Upload (StreamNest.API). See inner exception
+2025-07-20 15:41:59.621 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 500 null application/json; charset=utf-8 490.3671ms
+2025-07-20 15:43:59.773 +01:00 [INF] Application is shutting down...
+2025-07-20 15:46:37.289 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-20 15:46:37.608 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-20 15:46:37.621 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-20 15:46:37.671 +01:00 [INF] Hosting environment: Development
+2025-07-20 15:46:37.676 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-20 15:46:41.779 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 15:46:41.953 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 173.594ms
+2025-07-20 15:46:42.022 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-20 15:46:42.039 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 16.8173ms
+2025-07-20 15:46:42.596 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 15:46:42.829 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 232.8837ms
+2025-07-20 15:47:06.055 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/video/upload - multipart/form-data; boundary=----WebKitFormBoundaryyohWCSCHy4B5mPnF 1353641
+2025-07-20 15:47:06.077 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-20 15:47:06.113 +01:00 [INF] CORS policy execution successful.
+2025-07-20 15:47:06.287 +01:00 [INF] Executing endpoint 'VideosController.Upload (StreamNest.API)'
+2025-07-20 15:47:06.330 +01:00 [INF] Route matched with {action = "Upload", controller = "Videos"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(StreamNest.Application.DTOs.FileUploadDto) on controller VideosController (StreamNest.API).
+2025-07-20 15:47:11.183 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-20 15:47:11.222 +01:00 [INF] Executed action VideosController.Upload (StreamNest.API) in 4882.0186ms
+2025-07-20 15:47:11.227 +01:00 [INF] Executed endpoint 'VideosController.Upload (StreamNest.API)'
+2025-07-20 15:47:11.233 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/video/upload - 200 null application/json; charset=utf-8 5177.8937ms
+2025-07-20 18:47:11.791 +01:00 [INF] Application is shutting down...
+2025-07-20 18:47:30.643 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-20 18:47:30.993 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-20 18:47:31.003 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-20 18:47:31.018 +01:00 [INF] Hosting environment: Development
+2025-07-20 18:47:31.021 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-20 18:47:35.636 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 18:47:35.871 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 236.5912ms
+2025-07-20 18:47:36.103 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-20 18:47:36.223 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 122.3616ms
+2025-07-20 18:47:39.359 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 18:47:39.796 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 436.871ms
+2025-07-20 18:47:54.052 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 18:47:54.061 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 9.1328ms
+2025-07-20 18:47:54.117 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-20 18:47:54.148 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 31.1829ms
+2025-07-20 18:47:54.431 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 18:47:54.454 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.796ms
+2025-07-20 21:23:28.849 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-20 21:23:29.132 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-20 21:23:29.137 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-20 21:23:29.138 +01:00 [INF] Hosting environment: Development
+2025-07-20 21:23:29.138 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\StreamNest.Api
+2025-07-20 21:23:29.830 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 21:23:30.181 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 356.2541ms
+2025-07-20 21:23:30.308 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-20 21:23:30.311 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.css - null null
+2025-07-20 21:23:30.322 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 14.6438ms
+2025-07-20 21:23:30.358 +01:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-07-20 21:23:30.359 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.css - 200 202 text/css 47.6819ms
+2025-07-20 21:23:31.654 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 21:23:31.869 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 215.7239ms
+2025-07-20 21:23:51.234 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-20 21:23:51.235 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 0.924ms
+2025-07-20 21:23:51.323 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - null null
+2025-07-20 21:23:51.330 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - null null
+2025-07-20 21:23:51.432 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - null null
+2025-07-20 21:23:51.437 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-20 21:23:51.438 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 0.6462ms
+2025-07-20 21:23:51.429 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.css - null null
+2025-07-20 21:23:51.461 +01:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-07-20 21:23:51.461 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.css - 200 202 text/css 32.4767ms
+2025-07-20 21:23:51.576 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-07-20 21:23:51.579 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - 200 154948 text/css 248.5511ms
+2025-07-20 21:23:51.722 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-07-20 21:23:51.723 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 290.5245ms
+2025-07-20 21:23:51.741 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-07-20 21:23:51.741 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - 200 1466324 text/javascript 418.1377ms
+2025-07-20 21:23:52.481 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - null null
+2025-07-20 21:23:52.482 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-07-20 21:23:52.482 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - 200 628 image/png 0.9814ms
+2025-07-20 21:23:52.647 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-20 21:23:52.664 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.5991ms

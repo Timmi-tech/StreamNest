@@ -1,0 +1,303 @@
+2025-07-17 00:41:16.461 +01:00 [INF] Application is shutting down...
+2025-07-17 09:30:35.235 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-17 09:30:35.491 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-17 09:30:35.498 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-17 09:30:35.502 +01:00 [INF] Hosting environment: Development
+2025-07-17 09:30:35.507 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\StreamNest.Api
+2025-07-17 09:30:46.997 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-17 09:30:47.140 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 145.8618ms
+2025-07-17 09:30:48.302 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-17 09:30:48.334 +01:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-07-17 09:30:48.378 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 75.4034ms
+2025-07-17 09:31:05.297 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/ - null null
+2025-07-17 09:31:05.313 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-17 09:31:05.335 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/ - 404 0 null 37.5368ms
+2025-07-17 09:31:05.356 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5213/, Response status code: 404
+2025-07-17 09:31:09.579 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-17 09:31:09.590 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 10.2598ms
+2025-07-17 09:31:10.674 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-17 09:31:10.686 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.6564ms
+2025-07-17 09:31:31.055 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-17 09:31:31.063 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 7.6902ms
+2025-07-17 09:31:31.144 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - null null
+2025-07-17 09:31:31.146 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - null null
+2025-07-17 09:31:31.156 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - null null
+2025-07-17 09:31:31.197 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-07-17 09:31:31.197 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-07-17 09:31:31.215 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - 200 152034 text/css 70.8508ms
+2025-07-17 09:31:31.215 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 59.8542ms
+2025-07-17 09:31:31.235 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-07-17 09:31:31.242 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 96.2857ms
+2025-07-17 09:31:31.739 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - null null
+2025-07-17 09:31:31.746 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-07-17 09:31:31.754 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - 200 628 image/png 14.4102ms
+2025-07-17 09:31:31.942 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-17 09:31:31.949 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.4632ms
+2025-07-17 09:31:50.450 +01:00 [INF] Application is shutting down...
+2025-07-17 09:31:58.309 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-17 09:31:58.648 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-17 09:31:58.657 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-17 09:31:58.661 +01:00 [INF] Hosting environment: Development
+2025-07-17 09:31:58.668 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\StreamNest.Api
+2025-07-17 09:32:08.487 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-17 09:32:08.669 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 183.7186ms
+2025-07-17 09:32:09.900 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-17 09:32:09.929 +01:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-07-17 09:32:09.959 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 58.9054ms
+2025-07-17 09:32:59.378 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-17 09:32:59.389 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 11.5846ms
+2025-07-17 09:32:59.439 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - null null
+2025-07-17 09:32:59.442 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - null null
+2025-07-17 09:32:59.447 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - null null
+2025-07-17 09:32:59.507 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-07-17 09:32:59.508 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-07-17 09:32:59.517 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 70.5393ms
+2025-07-17 09:32:59.518 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - 200 152034 text/css 78.8887ms
+2025-07-17 09:32:59.529 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-07-17 09:32:59.544 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 101.4485ms
+2025-07-17 09:32:59.772 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-17 09:32:59.782 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.3387ms
+2025-07-17 09:32:59.812 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - null null
+2025-07-17 09:32:59.826 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-07-17 09:32:59.833 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - 200 628 image/png 20.9375ms
+2025-07-17 09:34:04.858 +01:00 [INF] Application is shutting down...
+2025-07-17 09:34:15.212 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-17 09:34:15.407 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-17 09:34:15.415 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-17 09:34:15.419 +01:00 [INF] Hosting environment: Development
+2025-07-17 09:34:15.422 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\StreamNest.Api
+2025-07-17 09:34:16.567 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-17 09:34:16.734 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 167.7899ms
+2025-07-17 09:34:17.186 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-17 09:34:17.499 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 314.4074ms
+2025-07-17 09:40:39.581 +01:00 [INF] Application is shutting down...
+2025-07-17 09:40:44.308 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-17 09:40:44.465 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-17 09:40:44.471 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-17 09:40:44.473 +01:00 [INF] Hosting environment: Development
+2025-07-17 09:40:44.477 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\StreamNest.Api
+2025-07-17 09:40:47.304 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-17 09:40:47.434 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 129.9624ms
+2025-07-17 09:40:48.215 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-17 09:40:48.429 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 214.756ms
+2025-07-17 09:43:03.442 +01:00 [INF] Application is shutting down...
+2025-07-17 09:43:10.122 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-17 09:43:10.439 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-17 09:43:10.593 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-17 09:43:10.631 +01:00 [INF] Hosting environment: Development
+2025-07-17 09:43:10.635 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\StreamNest.Api
+2025-07-17 09:43:12.199 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-17 09:43:12.330 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 132.6583ms
+2025-07-17 09:43:13.078 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-17 09:43:13.305 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 226.9655ms
+2025-07-17 09:43:39.866 +01:00 [INF] Application is shutting down...
+2025-07-17 09:43:48.058 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-17 09:43:48.264 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-17 09:43:48.529 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-17 09:43:48.534 +01:00 [INF] Hosting environment: Development
+2025-07-17 09:43:48.778 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\StreamNest.Api
+2025-07-17 09:43:50.356 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-17 09:43:50.482 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 126.8744ms
+2025-07-17 09:43:50.926 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-17 09:43:51.237 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 314.1036ms
+2025-07-17 09:46:06.585 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/Register - application/json 151
+2025-07-17 09:46:06.597 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-17 09:46:06.622 +01:00 [INF] CORS policy execution successful.
+2025-07-17 09:46:06.628 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/Register - 404 0 null 43.5759ms
+2025-07-17 09:46:06.640 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5213/api/authentication/Register, Response status code: 404
+2025-07-17 09:47:00.085 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/Register - application/json 150
+2025-07-17 09:47:00.094 +01:00 [INF] CORS policy execution successful.
+2025-07-17 09:47:00.098 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/Register - 404 0 null 12.736ms
+2025-07-17 09:47:00.128 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5213/api/authentication/Register, Response status code: 404
+2025-07-17 09:47:20.174 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/Register - application/json 151
+2025-07-17 09:47:20.186 +01:00 [INF] CORS policy execution successful.
+2025-07-17 09:47:20.191 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/Register - 404 0 null 17.5782ms
+2025-07-17 09:47:20.202 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5213/api/authentication/Register, Response status code: 404
+2025-07-17 09:47:28.340 +01:00 [INF] Application is shutting down...
+2025-07-17 09:47:38.000 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-17 09:47:38.140 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-17 09:47:38.145 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-17 09:47:38.148 +01:00 [INF] Hosting environment: Development
+2025-07-17 09:47:38.150 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\StreamNest.Api
+2025-07-17 09:47:41.686 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/Register - application/json 151
+2025-07-17 09:47:41.742 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-17 09:47:41.754 +01:00 [INF] CORS policy execution successful.
+2025-07-17 09:47:41.763 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/Register - 404 0 null 78.2289ms
+2025-07-17 09:47:41.778 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5213/api/authentication/Register, Response status code: 404
+2025-07-17 10:00:23.377 +01:00 [INF] Application is shutting down...
+2025-07-17 10:00:34.177 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-17 10:00:34.399 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-17 10:00:34.408 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-17 10:00:34.412 +01:00 [INF] Hosting environment: Development
+2025-07-17 10:00:34.416 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\StreamNest.Api
+2025-07-17 10:00:45.563 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/Register - application/json 151
+2025-07-17 10:00:45.616 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-17 10:00:45.619 +01:00 [INF] CORS policy execution successful.
+2025-07-17 10:00:45.635 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/Register - 404 0 null 72.7248ms
+2025-07-17 10:00:45.654 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5213/api/authentication/Register, Response status code: 404
+2025-07-17 10:00:47.074 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/Register - application/json 151
+2025-07-17 10:00:47.085 +01:00 [INF] CORS policy execution successful.
+2025-07-17 10:00:47.093 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/Register - 404 0 null 18.2455ms
+2025-07-17 10:00:47.109 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5213/api/authentication/Register, Response status code: 404
+2025-07-17 10:00:48.402 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-17 10:00:48.515 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 112.6631ms
+2025-07-17 10:00:49.173 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-17 10:00:49.425 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 253.7707ms
+2025-07-17 10:00:54.926 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/Register - application/json 142
+2025-07-17 10:00:54.937 +01:00 [INF] CORS policy execution successful.
+2025-07-17 10:00:54.942 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/Register - 404 0 null 15.991ms
+2025-07-17 10:00:54.956 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5213/api/authentication/Register, Response status code: 404
+2025-07-17 10:03:10.423 +01:00 [INF] Application is shutting down...
+2025-07-17 10:03:15.697 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-17 10:03:15.900 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-17 10:03:15.909 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-17 10:03:15.913 +01:00 [INF] Hosting environment: Development
+2025-07-17 10:03:15.916 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\StreamNest.Api
+2025-07-17 10:03:21.244 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/Register - application/json 142
+2025-07-17 10:03:21.284 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-17 10:03:21.313 +01:00 [INF] CORS policy execution successful.
+2025-07-17 10:03:21.329 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.RegisterUser (StreamNest.API)'
+2025-07-17 10:03:21.391 +01:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(StreamNest.Application.DTOs.UserForRegistrationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-17 10:03:24.359 +01:00 [INF] Executed DbCommand (48ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-17 10:03:24.396 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-07-17 10:03:24.453 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.RegisterUser (StreamNest.API) in 3050.9308ms
+2025-07-17 10:03:24.458 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.RegisterUser (StreamNest.API)'
+2025-07-17 10:03:24.473 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/Register - 400 null application/problem+json; charset=utf-8 3231.6161ms
+2025-07-17 10:04:12.244 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/Register - application/json 161
+2025-07-17 10:04:12.255 +01:00 [INF] CORS policy execution successful.
+2025-07-17 10:04:12.262 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.RegisterUser (StreamNest.API)'
+2025-07-17 10:04:12.267 +01:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(StreamNest.Application.DTOs.UserForRegistrationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-17 10:04:12.434 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-17 10:04:12.452 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-17 10:04:12.646 +01:00 [INF] Executed DbCommand (22ms) [Parameters=[@p0='?', @p1='?' (DbType = Int32), @p2='?', @p3='?', @p4='?' (DbType = Boolean), @p5='?', @p6='?', @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?' (DbType = Boolean), @p14='?' (DbType = Int32), @p15='?', @p16='?' (DbType = Boolean), @p17='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "Role", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);
+2025-07-17 10:04:12.666 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 201
+2025-07-17 10:04:12.672 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.RegisterUser (StreamNest.API) in 399.1488ms
+2025-07-17 10:04:12.677 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.RegisterUser (StreamNest.API)'
+2025-07-17 10:04:12.739 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/Register - 201 0 null 495.6316ms
+2025-07-17 10:04:55.251 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/Register - application/json 162
+2025-07-17 10:04:55.263 +01:00 [INF] CORS policy execution successful.
+2025-07-17 10:04:55.269 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.RegisterUser (StreamNest.API)'
+2025-07-17 10:04:55.276 +01:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(StreamNest.Application.DTOs.UserForRegistrationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-17 10:04:55.397 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-17 10:04:55.405 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-17 10:04:55.417 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?', @p1='?' (DbType = Int32), @p2='?', @p3='?', @p4='?' (DbType = Boolean), @p5='?', @p6='?', @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?' (DbType = Boolean), @p14='?' (DbType = Int32), @p15='?', @p16='?' (DbType = Boolean), @p17='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "Role", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);
+2025-07-17 10:04:55.428 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 201
+2025-07-17 10:04:55.431 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.RegisterUser (StreamNest.API) in 145.8795ms
+2025-07-17 10:04:55.434 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.RegisterUser (StreamNest.API)'
+2025-07-17 10:04:55.439 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/Register - 201 0 null 187.0586ms
+2025-07-17 10:05:42.555 +01:00 [INF] Application is shutting down...
+2025-07-17 10:05:47.440 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-17 10:05:47.559 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-17 10:05:47.565 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-17 10:05:47.568 +01:00 [INF] Hosting environment: Development
+2025-07-17 10:05:47.572 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\StreamNest.Api
+2025-07-17 10:05:58.011 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/Register - application/json 162
+2025-07-17 10:05:58.044 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-17 10:05:58.062 +01:00 [INF] CORS policy execution successful.
+2025-07-17 10:05:58.072 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.RegisterUser (StreamNest.Api)'
+2025-07-17 10:05:58.104 +01:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(StreamNest.Application.DTOs.UserForRegistrationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.Api).
+2025-07-17 10:05:59.651 +01:00 [INF] Executed DbCommand (59ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-17 10:05:59.690 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-17 10:05:59.884 +01:00 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?', @p1='?' (DbType = Int32), @p2='?', @p3='?', @p4='?' (DbType = Boolean), @p5='?', @p6='?', @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?' (DbType = Boolean), @p14='?' (DbType = Int32), @p15='?', @p16='?' (DbType = Boolean), @p17='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "Role", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);
+2025-07-17 10:05:59.903 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 201
+2025-07-17 10:05:59.914 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.RegisterUser (StreamNest.Api) in 1799.9625ms
+2025-07-17 10:05:59.919 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.RegisterUser (StreamNest.Api)'
+2025-07-17 10:05:59.935 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/Register - 201 0 null 1926.5302ms
+2025-07-17 10:10:12.328 +01:00 [INF] Application is shutting down...
+2025-07-17 10:14:15.124 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-17 10:14:15.275 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-17 10:14:15.280 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-17 10:14:15.283 +01:00 [INF] Hosting environment: Development
+2025-07-17 10:14:15.286 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\StreamNest.Api
+2025-07-17 10:14:18.509 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/Register - application/json 164
+2025-07-17 10:14:18.535 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-17 10:14:18.552 +01:00 [INF] CORS policy execution successful.
+2025-07-17 10:14:18.565 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.RegisterUser (StreamNest.API)'
+2025-07-17 10:14:18.594 +01:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(StreamNest.Application.DTOs.UserForRegistrationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-17 10:14:19.909 +01:00 [INF] Executed DbCommand (47ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-17 10:14:19.948 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-17 10:14:20.129 +01:00 [INF] Executed DbCommand (11ms) [Parameters=[@p0='?', @p1='?' (DbType = Int32), @p2='?', @p3='?', @p4='?' (DbType = Boolean), @p5='?', @p6='?', @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?' (DbType = Boolean), @p14='?', @p15='?', @p16='?' (DbType = Boolean), @p17='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "Role", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);
+2025-07-17 10:14:20.156 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 201
+2025-07-17 10:14:20.162 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.RegisterUser (StreamNest.API) in 1559.8032ms
+2025-07-17 10:14:20.170 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.RegisterUser (StreamNest.API)'
+2025-07-17 10:14:20.185 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/Register - 201 0 null 1676.9989ms
+2025-07-17 11:02:50.867 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-17 11:02:51.231 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 368.967ms
+2025-07-17 11:02:52.517 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-17 11:02:52.787 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 269.4649ms
+2025-07-17 11:03:41.811 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/Register - application/json 142
+2025-07-17 11:03:41.835 +01:00 [INF] CORS policy execution successful.
+2025-07-17 11:03:41.849 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.RegisterUser (StreamNest.API)'
+2025-07-17 11:03:41.861 +01:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(StreamNest.Application.DTOs.UserForRegistrationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-17 11:03:42.626 +01:00 [INF] Executed DbCommand (77ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-17 11:03:42.702 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-07-17 11:03:42.896 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.RegisterUser (StreamNest.API) in 1017.6257ms
+2025-07-17 11:03:42.919 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.RegisterUser (StreamNest.API)'
+2025-07-17 11:03:42.937 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/Register - 400 null application/problem+json; charset=utf-8 1126.4826ms
+2025-07-17 11:05:14.987 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/Register - application/json 148
+2025-07-17 11:05:15.011 +01:00 [INF] CORS policy execution successful.
+2025-07-17 11:05:15.025 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.RegisterUser (StreamNest.API)'
+2025-07-17 11:05:15.040 +01:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(StreamNest.Application.DTOs.UserForRegistrationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-17 11:05:15.421 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-17 11:05:15.502 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-17 11:05:15.524 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-07-17 11:05:15.534 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.RegisterUser (StreamNest.API) in 470.2203ms
+2025-07-17 11:05:15.544 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.RegisterUser (StreamNest.API)'
+2025-07-17 11:05:15.553 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/Register - 400 null application/problem+json; charset=utf-8 566.1235ms
+2025-07-17 11:39:14.469 +01:00 [INF] Application is shutting down...
