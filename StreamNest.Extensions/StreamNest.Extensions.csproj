@@ -16,7 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="..\StreamNest.Application\StreamNest.Application.csproj" />
     <ProjectReference Include="..\StreamNest.Domain\StreamNest.Domain.csproj" />
-    <ProjectReference Include="..\StreamNest.infrastructure\StreamNest.Infrastructure.csproj" />
+    <ProjectReference Include="..\StreamNest.Infrastructure\StreamNest.Infrastructure.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

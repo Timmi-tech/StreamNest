@@ -4,14 +4,14 @@
     "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Extensions\\StreamNest.Extensions.csproj": {}
   },
   "projects": {
-    "c:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Application\\StreamNest.Application.csproj": {
+    "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Application\\StreamNest.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Application\\StreamNest.Application.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Application\\StreamNest.Application.csproj",
         "projectName": "StreamNest.Application",
-        "projectPath": "c:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Application\\StreamNest.Application.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Application\\StreamNest.Application.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Application\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -170,14 +170,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "c:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Application\\StreamNest.Application.csproj": {
-                "projectPath": "c:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Application\\StreamNest.Application.csproj"
+              "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Application\\StreamNest.Application.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Application\\StreamNest.Application.csproj"
               },
               "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Domain\\StreamNest.Domain.csproj": {
                 "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Domain\\StreamNest.Domain.csproj"
               },
-              "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.infrastructure\\StreamNest.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.infrastructure\\StreamNest.Infrastructure.csproj"
+              "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Infrastructure\\StreamNest.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Infrastructure\\StreamNest.Infrastructure.csproj"
               }
             }
           }
@@ -258,14 +258,14 @@
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.infrastructure\\StreamNest.Infrastructure.csproj": {
+    "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Infrastructure\\StreamNest.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.infrastructure\\StreamNest.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Infrastructure\\StreamNest.Infrastructure.csproj",
         "projectName": "StreamNest.Infrastructure",
-        "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.infrastructure\\StreamNest.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Infrastructure\\StreamNest.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"

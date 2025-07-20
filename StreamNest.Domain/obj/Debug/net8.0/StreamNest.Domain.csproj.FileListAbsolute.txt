@@ -6,6 +6,7 @@ C:\Users\user\Desktop\c##\StreamNest\StreamNest.Domain\obj\Debug\net8.0\StreamNe
 C:\Users\user\Desktop\c##\StreamNest\StreamNest.Domain\obj\Debug\net8.0\StreamNest.Domain.AssemblyInfoInputs.cache
 C:\Users\user\Desktop\c##\StreamNest\StreamNest.Domain\obj\Debug\net8.0\StreamNest.Domain.AssemblyInfo.cs
 C:\Users\user\Desktop\c##\StreamNest\StreamNest.Domain\obj\Debug\net8.0\StreamNest.Domain.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.Domain\obj\Debug\net8.0\StreamNest.Domain.sourcelink.json
 C:\Users\user\Desktop\c##\StreamNest\StreamNest.Domain\obj\Debug\net8.0\StreamNest.Domain.dll
 C:\Users\user\Desktop\c##\StreamNest\StreamNest.Domain\obj\Debug\net8.0\refint\StreamNest.Domain.dll
 C:\Users\user\Desktop\c##\StreamNest\StreamNest.Domain\obj\Debug\net8.0\StreamNest.Domain.pdb

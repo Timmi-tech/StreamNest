@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LZMlgxQLTiY=",
+  "dgSpecHash": "DZPmtS9UrR0=",
   "success": true,
-  "projectFilePath": "c:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Application\\StreamNest.Application.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Application\\StreamNest.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\cloudinarydotnet\\1.27.5\\cloudinarydotnet.1.27.5.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.3.0\\microsoft.aspnetcore.authentication.2.3.0.nupkg.sha512",

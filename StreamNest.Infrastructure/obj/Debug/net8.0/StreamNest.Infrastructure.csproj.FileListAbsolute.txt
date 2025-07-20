@@ -9,6 +9,7 @@ C:\Users\user\Desktop\c##\StreamNest\StreamNest.infrastructure\obj\Debug\net8.0\
 C:\Users\user\Desktop\c##\StreamNest\StreamNest.infrastructure\obj\Debug\net8.0\StreamNest.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\user\Desktop\c##\StreamNest\StreamNest.infrastructure\obj\Debug\net8.0\StreamNest.Infrastructure.AssemblyInfo.cs
 C:\Users\user\Desktop\c##\StreamNest\StreamNest.infrastructure\obj\Debug\net8.0\StreamNest.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.infrastructure\obj\Debug\net8.0\StreamNest.Infrastructure.sourcelink.json
 C:\Users\user\Desktop\c##\StreamNest\StreamNest.infrastructure\obj\Debug\net8.0\StreamNe.C8AD771F.Up2Date
 C:\Users\user\Desktop\c##\StreamNest\StreamNest.infrastructure\obj\Debug\net8.0\StreamNest.Infrastructure.dll
 C:\Users\user\Desktop\c##\StreamNest\StreamNest.infrastructure\obj\Debug\net8.0\refint\StreamNest.Infrastructure.dll

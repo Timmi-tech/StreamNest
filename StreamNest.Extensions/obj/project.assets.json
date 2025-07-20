@@ -8622,8 +8622,8 @@
     },
     "StreamNest.Infrastructure/1.0.0": {
       "type": "project",
-      "path": "../StreamNest.infrastructure/StreamNest.Infrastructure.csproj",
-      "msbuildProject": "../StreamNest.infrastructure/StreamNest.Infrastructure.csproj"
+      "path": "../StreamNest.Infrastructure/StreamNest.Infrastructure.csproj",
+      "msbuildProject": "../StreamNest.Infrastructure/StreamNest.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8668,14 +8668,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "c:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Application\\StreamNest.Application.csproj": {
-              "projectPath": "c:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Application\\StreamNest.Application.csproj"
+            "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Application\\StreamNest.Application.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Application\\StreamNest.Application.csproj"
             },
             "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Domain\\StreamNest.Domain.csproj": {
               "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Domain\\StreamNest.Domain.csproj"
             },
-            "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.infrastructure\\StreamNest.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.infrastructure\\StreamNest.Infrastructure.csproj"
+            "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Infrastructure\\StreamNest.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Infrastructure\\StreamNest.Infrastructure.csproj"
             }
           }
         }

@@ -12,6 +12,7 @@ C:\Users\user\Desktop\c##\StreamNest\StreamNest.Extensions\obj\Debug\net8.0\Stre
 C:\Users\user\Desktop\c##\StreamNest\StreamNest.Extensions\obj\Debug\net8.0\StreamNest.Extensions.AssemblyInfoInputs.cache
 C:\Users\user\Desktop\c##\StreamNest\StreamNest.Extensions\obj\Debug\net8.0\StreamNest.Extensions.AssemblyInfo.cs
 C:\Users\user\Desktop\c##\StreamNest\StreamNest.Extensions\obj\Debug\net8.0\StreamNest.Extensions.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.Extensions\obj\Debug\net8.0\StreamNest.Extensions.sourcelink.json
 C:\Users\user\Desktop\c##\StreamNest\StreamNest.Extensions\obj\Debug\net8.0\StreamNe.C602F903.Up2Date
 C:\Users\user\Desktop\c##\StreamNest\StreamNest.Extensions\obj\Debug\net8.0\StreamNest.Extensions.dll
 C:\Users\user\Desktop\c##\StreamNest\StreamNest.Extensions\obj\Debug\net8.0\refint\StreamNest.Extensions.dll

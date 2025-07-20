@@ -5,6 +5,7 @@ C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\StreamNest.
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\StreamNest.API.runtimeconfig.json
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\StreamNest.API.dll
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\StreamNest.API.pdb
+C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\CloudinaryDotNet.dll
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\DotNetEnv.dll
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\Humanizer.dll
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
@@ -61,6 +62,7 @@ C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\Microsoft.I
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\Npgsql.dll
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\Serilog.dll
@@ -162,6 +164,7 @@ C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\StreamNest.
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\StreamNest.API.csproj.CoreCompileInputs.cache
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\StreamNest.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\StreamNest.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\StreamNest.API.sourcelink.json
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\staticwebassets\msbuild.StreamNest.API.Microsoft.AspNetCore.StaticWebAssets.props
@@ -170,11 +173,9 @@ C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\staticwebas
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.StreamNest.API.props
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\scopedcss\bundle\StreamNest.API.styles.css
+C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\StreamNe.72B6A6DB.Up2Date
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\StreamNest.API.dll
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\refint\StreamNest.API.dll
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\StreamNest.API.pdb
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\StreamNest.API.genruntimeconfig.cache
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\ref\StreamNest.API.dll
-C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\CloudinaryDotNet.dll
-C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\Newtonsoft.Json.dll
-C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\StreamNe.72B6A6DB.Up2Date
