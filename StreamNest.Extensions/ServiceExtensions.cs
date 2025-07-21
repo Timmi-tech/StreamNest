@@ -48,9 +48,9 @@ namespace StreamNest.Extensions
             {
                 options.AddPolicy("CorsPolicy", builder =>
                 {
-                    builder.AllowAnyOrigin()
-                        .AllowAnyMethod()
-                        .AllowAnyHeader();
+                    builder.WithOrigins("http://localhost:3001", "http://localhost:3000")
+                           .AllowAnyMethod()
+                           .AllowAnyHeader();
                 });
             });
         }
