@@ -39,7 +39,7 @@ namespace StreamNest.Application.Services
                 LastName = userForRegistration.Lastname,
                 UserName = userForRegistration.Username,
                 Email = userForRegistration.Email,
-                Role = UserRole.Consumer
+                Role  = userForRegistration.Role
             };
             var result = await _userManager.CreateAsync(user, userForRegistration.Password);
             return result;

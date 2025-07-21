@@ -10326,9 +10326,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Api\\StreamNest.Api.csproj",
-      "projectName": "StreamNest.Api",
-      "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Api\\StreamNest.Api.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Api\\StreamNest.API.csproj",
+      "projectName": "StreamNest.API",
+      "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Api\\StreamNest.API.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Api\\obj\\",
       "projectStyle": "PackageReference",
