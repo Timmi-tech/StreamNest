@@ -173,9 +173,9 @@ C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\staticwebas
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.StreamNest.API.props
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\scopedcss\bundle\StreamNest.API.styles.css
-C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\StreamNe.72B6A6DB.Up2Date
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\StreamNest.API.dll
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\refint\StreamNest.API.dll
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\StreamNest.API.pdb
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\StreamNest.API.genruntimeconfig.cache
 C:\Users\user\Desktop\c##\StreamNest\streamnest.api\obj\Debug\net8.0\ref\StreamNest.API.dll
+C:\Users\user\Desktop\c##\StreamNest\StreamNest.Api\obj\Debug\net8.0\StreamNe.72B6A6DB.Up2Date

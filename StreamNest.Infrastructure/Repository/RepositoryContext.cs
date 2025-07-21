@@ -17,6 +17,7 @@ public class RepositoryContext : IdentityDbContext<User>
         .Property(u => u.Role)
         .HasConversion<string>();
 
+
         // Convert Genre and AgeRating enums to string
         modelBuilder.Entity<Video>()
         .Property(v => v.Genre)

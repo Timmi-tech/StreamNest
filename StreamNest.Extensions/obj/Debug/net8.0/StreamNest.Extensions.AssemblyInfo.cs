@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StreamNest.Extensions")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f55165111fb6143821764ebffad45fe368e238d2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ca15c70eeeaf888edd8ffc441a56392b81f761f")]
 [assembly: System.Reflection.AssemblyProductAttribute("StreamNest.Extensions")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StreamNest.Extensions")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
