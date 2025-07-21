@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StreamNest.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4cd5e8766b36667532727ceec2cd9748e6248355")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ee083c30d395ee0753b1948f6562503a7ec241b")]
 [assembly: System.Reflection.AssemblyProductAttribute("StreamNest.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StreamNest.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
