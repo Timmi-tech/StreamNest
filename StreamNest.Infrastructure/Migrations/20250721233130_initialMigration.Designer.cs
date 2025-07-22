@@ -11,8 +11,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace StreamNest.Infrastructure.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    [Migration("20250721231913_changeRoleField")]
-    partial class changeRoleField
+    [Migration("20250721233130_initialMigration")]
+    partial class initialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

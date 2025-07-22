@@ -1,0 +1,278 @@
+2025-07-22 15:57:46.421 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-22 15:57:46.884 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-22 15:57:46.898 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-22 15:57:46.904 +01:00 [INF] Hosting environment: Development
+2025-07-22 15:57:46.908 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-22 15:57:50.955 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-22 15:57:51.233 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 282.7908ms
+2025-07-22 15:57:51.659 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-22 15:57:51.780 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 121.1444ms
+2025-07-22 15:57:53.598 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-22 15:57:54.061 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 463.5102ms
+2025-07-22 15:58:37.632 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/UserProfile - null null
+2025-07-22 15:58:37.659 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-22 15:58:37.840 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 15:58:37.850 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 15:58:37.855 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/UserProfile - 401 0 null 222.8118ms
+2025-07-22 15:58:56.802 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 59
+2025-07-22 15:58:56.846 +01:00 [INF] CORS policy execution failed.
+2025-07-22 15:58:56.858 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-22 15:58:56.905 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-22 15:58:57.018 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-22 15:59:22.867 +01:00 [ERR] An error occurred using the connection to database 'streamnest' on server 'tcp://dpg-d1ujsi3uibrs738issbg-a.oregon-postgres.render.com:5432'.
+2025-07-22 15:59:22.922 +01:00 [ERR] An exception occurred while iterating over the results of a query for context type 'RepositoryContext'.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure.
+ ---> Npgsql.NpgsqlException (0x80004005): The operation has timed out
+ ---> System.TimeoutException: The operation has timed out.
+   at Npgsql.ThrowHelper.ThrowNpgsqlExceptionWithInnerTimeoutException(String message)
+   at Npgsql.Util.NpgsqlTimeout.Check()
+   at Npgsql.Util.NpgsqlTimeout.CheckAndGetTimeLeft()
+   at Npgsql.Util.NpgsqlTimeout.CheckAndApply(NpgsqlConnector connector)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|213_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|34_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure.
+ ---> Npgsql.NpgsqlException (0x80004005): The operation has timed out
+ ---> System.TimeoutException: The operation has timed out.
+   at Npgsql.ThrowHelper.ThrowNpgsqlExceptionWithInnerTimeoutException(String message)
+   at Npgsql.Util.NpgsqlTimeout.Check()
+   at Npgsql.Util.NpgsqlTimeout.CheckAndGetTimeLeft()
+   at Npgsql.Util.NpgsqlTimeout.CheckAndApply(NpgsqlConnector connector)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|213_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|34_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-07-22 15:59:23.030 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 25991.1535ms
+2025-07-22 15:59:23.040 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-22 15:59:23.055 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure.
+ ---> Npgsql.NpgsqlException (0x80004005): The operation has timed out
+ ---> System.TimeoutException: The operation has timed out.
+   at Npgsql.ThrowHelper.ThrowNpgsqlExceptionWithInnerTimeoutException(String message)
+   at Npgsql.Util.NpgsqlTimeout.Check()
+   at Npgsql.Util.NpgsqlTimeout.CheckAndGetTimeLeft()
+   at Npgsql.Util.NpgsqlTimeout.CheckAndApply(NpgsqlConnector connector)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|213_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|34_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByEmailAsync(String email)
+   at StreamNest.Application.Services.AuthenticationService.ValidateUser(UserForAuthenticationDto userForAuth) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\Services\AuthenticationService.cs:line 49
+   at StreamNest.API.Controllers.AuthenticationController.Authenticate(UserForAuthenticationDto user) in C:\Users\user\Desktop\c##\StreamNest\streamnest.api\Controllers\AuthenticationControllers.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-22 15:59:23.185 +01:00 [ERR] Exception: InvalidOperationException - An exception has been raised that is likely due to a transient failure.
+2025-07-22 15:59:23.266 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 500 null application/json; charset=utf-8 26463.6558ms
+2025-07-22 15:59:57.189 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 59
+2025-07-22 15:59:57.216 +01:00 [INF] CORS policy execution failed.
+2025-07-22 15:59:57.223 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-22 15:59:57.237 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-22 15:59:57.252 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-22 16:00:03.974 +01:00 [INF] Executed DbCommand (2,179ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-22 16:00:05.434 +01:00 [INF] Executed DbCommand (629ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-22 16:00:08.297 +01:00 [INF] Executed DbCommand (2,793ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-22 16:00:09.195 +01:00 [INF] Executed DbCommand (644ms) [Parameters=[@p19='?', @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "RefreshToken" = @p13, "RefreshTokenExpiryTime" = @p14, "Role" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-07-22 16:00:09.379 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.TokenDto'.
+2025-07-22 16:00:09.420 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 12148.3822ms
+2025-07-22 16:00:09.432 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-22 16:00:09.441 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 200 null application/json; charset=utf-8 12251.5583ms
+2025-07-22 16:00:15.320 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/UserProfile - null null
+2025-07-22 16:00:15.344 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 16:00:15.354 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 16:00:15.363 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/UserProfile - 401 0 null 43.0513ms
+2025-07-22 16:00:16.436 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/UserProfile - null null
+2025-07-22 16:00:16.509 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 16:00:16.517 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 16:00:16.527 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/UserProfile - 401 0 null 90.4806ms
+2025-07-22 16:00:19.864 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/UserProfile - null null
+2025-07-22 16:00:19.906 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 16:00:19.925 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 16:00:19.964 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/UserProfile - 401 0 null 99.5285ms
+2025-07-22 16:00:20.669 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/UserProfile - null null
+2025-07-22 16:00:20.688 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 16:00:20.697 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 16:00:20.705 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/UserProfile - 401 0 null 36.5185ms
+2025-07-22 16:00:22.760 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/UserProfile - null null
+2025-07-22 16:00:22.771 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 16:00:22.777 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 16:00:22.785 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/UserProfile - 401 0 null 25.5452ms
+2025-07-22 16:00:32.127 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/UserProfile - null null
+2025-07-22 16:00:32.188 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 16:00:32.196 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 16:00:32.205 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/UserProfile - 401 0 null 77.6569ms
+2025-07-22 16:16:28.210 +01:00 [INF] Application is shutting down...
+2025-07-22 16:16:53.907 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-22 16:16:54.206 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-22 16:16:54.218 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-22 16:16:54.225 +01:00 [INF] Hosting environment: Development
+2025-07-22 16:16:54.230 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-22 16:17:37.305 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-22 16:17:37.587 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 284.8635ms
+2025-07-22 16:17:38.011 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-22 16:17:38.076 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 68.1047ms
+2025-07-22 16:17:40.293 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-22 16:17:40.816 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 523.1862ms
+2025-07-22 16:18:05.884 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 59
+2025-07-22 16:18:05.916 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-22 16:18:06.007 +01:00 [INF] CORS policy execution failed.
+2025-07-22 16:18:06.012 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-22 16:18:06.104 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-22 16:18:06.164 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-22 16:18:22.273 +01:00 [INF] Executed DbCommand (3,461ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-22 16:18:25.973 +01:00 [INF] Executed DbCommand (1,884ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-22 16:18:28.088 +01:00 [INF] Executed DbCommand (2,032ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-22 16:18:31.136 +01:00 [INF] Executed DbCommand (2,419ms) [Parameters=[@p19='?', @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "RefreshToken" = @p13, "RefreshTokenExpiryTime" = @p14, "Role" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-07-22 16:18:31.260 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.TokenDto'.
+2025-07-22 16:18:31.309 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 25129.7439ms
+2025-07-22 16:18:31.322 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-22 16:18:31.358 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 200 null application/json; charset=utf-8 25473.2692ms
+2025-07-22 16:19:14.022 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/UserProfile - null null
+2025-07-22 16:19:14.825 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.UserProfileController.GetUser (StreamNest.API)'
+2025-07-22 16:19:14.846 +01:00 [INF] Route matched with {action = "GetUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUser() on controller StreamNest.API.Controllers.UserProfileController (StreamNest.API).
+2025-07-22 16:19:16.539 +01:00 [INF] Executed DbCommand (397ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-07-22 16:19:16.589 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.UserProfileDto'.
+2025-07-22 16:19:16.620 +01:00 [INF] Executed action StreamNest.API.Controllers.UserProfileController.GetUser (StreamNest.API) in 1758.4323ms
+2025-07-22 16:19:16.642 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.UserProfileController.GetUser (StreamNest.API)'
+2025-07-22 16:19:16.665 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/UserProfile - 200 null application/json; charset=utf-8 2642.8359ms
+2025-07-22 16:20:11.049 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5213/api/UserProfile - multipart/form-data; boundary=----WebKitFormBoundaryh4yNqIgL4VRBBx0c 343
+2025-07-22 16:20:11.072 +01:00 [INF] CORS policy execution failed.
+2025-07-22 16:20:11.079 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-22 16:20:11.101 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.UserProfileController.UpdateUserProfile (StreamNest.API)'
+2025-07-22 16:20:11.125 +01:00 [INF] Route matched with {action = "UpdateUserProfile", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateUserProfile(StreamNest.Application.DTOs.UserUpdateProfileDto) on controller StreamNest.API.Controllers.UserProfileController (StreamNest.API).
+2025-07-22 16:20:11.213 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-07-22 16:20:11.286 +01:00 [INF] Executed action StreamNest.API.Controllers.UserProfileController.UpdateUserProfile (StreamNest.API) in 149.2944ms
+2025-07-22 16:20:11.295 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.UserProfileController.UpdateUserProfile (StreamNest.API)'
+2025-07-22 16:20:11.304 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5213/api/UserProfile - 400 null application/problem+json; charset=utf-8 255.7307ms
+2025-07-22 16:20:25.178 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5213/api/UserProfile - multipart/form-data; boundary=----WebKitFormBoundaryStndAJJVOILTBsTH 352
+2025-07-22 16:20:25.255 +01:00 [INF] CORS policy execution failed.
+2025-07-22 16:20:25.266 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-22 16:20:25.297 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.UserProfileController.UpdateUserProfile (StreamNest.API)'
+2025-07-22 16:20:25.305 +01:00 [INF] Route matched with {action = "UpdateUserProfile", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateUserProfile(StreamNest.Application.DTOs.UserUpdateProfileDto) on controller StreamNest.API.Controllers.UserProfileController (StreamNest.API).
+2025-07-22 16:20:25.715 +01:00 [INF] Executed DbCommand (357ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-07-22 16:20:26.944 +01:00 [INF] Executed DbCommand (1,119ms) [Parameters=[@p2='?', @p3='?', @p0='?', @p1='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "FirstName" = @p0, "LastName" = @p1
+WHERE "Id" = @p2 AND "ConcurrencyStamp" = @p3;
+2025-07-22 16:20:26.997 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-07-22 16:20:27.012 +01:00 [INF] Executed action StreamNest.API.Controllers.UserProfileController.UpdateUserProfile (StreamNest.API) in 1692.2237ms
+2025-07-22 16:20:27.045 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.UserProfileController.UpdateUserProfile (StreamNest.API)'
+2025-07-22 16:20:27.068 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5213/api/UserProfile - 204 null null 1889.6632ms
+2025-07-22 16:20:32.822 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/UserProfile - null null
+2025-07-22 16:20:32.833 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.UserProfileController.GetUser (StreamNest.API)'
+2025-07-22 16:20:32.837 +01:00 [INF] Route matched with {action = "GetUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUser() on controller StreamNest.API.Controllers.UserProfileController (StreamNest.API).
+2025-07-22 16:20:33.113 +01:00 [INF] Executed DbCommand (266ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-07-22 16:20:33.125 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.UserProfileDto'.
+2025-07-22 16:20:33.132 +01:00 [INF] Executed action StreamNest.API.Controllers.UserProfileController.GetUser (StreamNest.API) in 288.0411ms
+2025-07-22 16:20:33.138 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.UserProfileController.GetUser (StreamNest.API)'
+2025-07-22 16:20:33.143 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/UserProfile - 200 null application/json; charset=utf-8 320.8081ms
+2025-07-22 16:24:04.943 +01:00 [INF] Application is shutting down...
+2025-07-22 16:24:18.307 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-22 16:24:18.537 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-22 16:24:18.549 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-22 16:24:18.555 +01:00 [INF] Hosting environment: Development
+2025-07-22 16:24:18.559 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-22 16:24:34.718 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-22 16:24:35.024 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 307.7947ms
+2025-07-22 16:24:35.189 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-22 16:24:35.288 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 99.4759ms
+2025-07-22 16:24:37.360 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-22 16:24:37.725 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 365.1879ms
+2025-07-22 16:24:44.931 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/UserProfile/8b5c8a49-ea10-47f2-9495-230035fe3bb2 - null null
+2025-07-22 16:24:44.998 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-22 16:24:45.307 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 16:24:45.340 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 16:24:45.359 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/UserProfile/8b5c8a49-ea10-47f2-9495-230035fe3bb2 - 401 0 null 428.1865ms
+2025-07-22 16:25:34.126 +01:00 [INF] Application is shutting down...

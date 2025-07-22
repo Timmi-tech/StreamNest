@@ -18,6 +18,7 @@ using StreamNest.Domain.Entities.ConfigurationsModels;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using CloudinaryDotNet;
+using Microsoft.OpenApi.Models;
 
 namespace StreamNest.Extensions
 
@@ -81,7 +82,7 @@ namespace StreamNest.Extensions
         }
         public static void ConfigureServiceManager(this IServiceCollection services) =>
         services.AddScoped<IServiceManager, ServiceManager>();
-        public static void ConfigureRepositoryManager(this IServiceCollection services) => services.AddScoped<IRepositoryManager, RepositoryManager>(); 
+        public static void ConfigureRepositoryManager(this IServiceCollection services) => services.AddScoped<IRepositoryManager, RepositoryManager>();
 
         public static void ConfigureJwt(this IServiceCollection services, IConfiguration configuration)
         {
@@ -130,5 +131,42 @@ namespace StreamNest.Extensions
         }
         public static void AddJwtConfiguration(this IServiceCollection services, IConfiguration configuration) =>
         services.Configure<JwtConfiguration>(configuration.GetSection("JwtSettings"));
+        
+        public static void ConfigureSwagger(this IServiceCollection services)
+        {
+            services.AddSwaggerGen(s =>
+            {
+                s.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "Campus Connect", Version = "v1" });
+                s.OperationFilter<FileUploadOperationFilter>();
+                s.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.Http,
+                    Scheme = "Bearer",
+                    BearerFormat = "JWT",
+                    In = ParameterLocation.Header,
+                    Description = "Enter 'Bearer' [space] and then your valid token in the text input below.\n\nExample: \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9\""
+                });
+
+                s.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "Bearer"
+                            },
+                            Scheme = "Bearer",
+                            Name = "Authorization",
+                            In = ParameterLocation.Header
+                        },
+                        new string[] {}
+                    }
+                });
+            }); 
+            
+        }
     }
 }

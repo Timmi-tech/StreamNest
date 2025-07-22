@@ -15,6 +15,7 @@ namespace StreamNest.Application.Services
     {
         private readonly Lazy<IAuthenticationService> _authenticationService;
         private readonly Lazy<IVideoService> _videoService;
+        private readonly Lazy<IUserProfileService> _userProfileService;
 
         public ServiceManager
         (
@@ -28,8 +29,10 @@ namespace StreamNest.Application.Services
             _authenticationService = new Lazy<IAuthenticationService>(() =>
                 new AuthenticationService(logger, userManager, configuration));
             _videoService = new Lazy<IVideoService>(() => new VideoService(cloudinary));
+            _userProfileService = new Lazy<IUserProfileService>(() => new UserProfileService(repositoryManager, logger));
         }
         public IAuthenticationService AuthenticationService => _authenticationService.Value;
         public IVideoService VideoService => _videoService.Value;
+        public IUserProfileService UserProfileService => _userProfileService.Value;
     }
 }

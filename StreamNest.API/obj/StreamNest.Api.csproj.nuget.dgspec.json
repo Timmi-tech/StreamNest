@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Api\\StreamNest.API.csproj": {}
+    "C:\\Users\\user\\Desktop\\c##\\StreamNest\\streamnest.api\\StreamNest.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Api\\StreamNest.API.csproj": {
+    "C:\\Users\\user\\Desktop\\c##\\StreamNest\\streamnest.api\\StreamNest.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Api\\StreamNest.API.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\streamnest.api\\StreamNest.API.csproj",
         "projectName": "StreamNest.API",
-        "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Api\\StreamNest.API.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\streamnest.api\\StreamNest.API.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Api\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\streamnest.api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
