@@ -50,7 +50,7 @@ namespace StreamNest.Extensions
             {
                 options.AddPolicy("CorsPolicy", builder =>
                 {
-                    builder.WithOrigins("http://localhost:3001", "http://localhost:3000")
+                    builder.WithOrigins("http://localhost:3001", "http://localhost:3000", "https://stream-nest-alpha.vercel.app")
                            .AllowAnyMethod()
                            .AllowAnyHeader()
                           .AllowCredentials();
