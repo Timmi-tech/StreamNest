@@ -276,3 +276,748 @@ DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
 2025-07-22 16:24:45.340 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
 2025-07-22 16:24:45.359 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/UserProfile/8b5c8a49-ea10-47f2-9495-230035fe3bb2 - 401 0 null 428.1865ms
 2025-07-22 16:25:34.126 +01:00 [INF] Application is shutting down...
+2025-07-22 21:13:51.089 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-22 21:13:51.301 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-22 21:13:51.311 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-22 21:13:51.315 +01:00 [INF] Hosting environment: Development
+2025-07-22 21:13:51.318 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-22 21:14:30.377 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-22 21:14:30.523 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 147.7915ms
+2025-07-22 21:14:31.003 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-22 21:14:31.042 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 39.544ms
+2025-07-22 21:14:32.149 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-22 21:14:32.440 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 290.6979ms
+2025-07-22 21:16:12.938 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 59
+2025-07-22 21:16:12.955 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-22 21:16:12.992 +01:00 [INF] CORS policy execution failed.
+2025-07-22 21:16:12.996 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-22 21:16:13.115 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.Api)'
+2025-07-22 21:16:13.156 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.Api).
+2025-07-22 21:16:21.437 +01:00 [INF] Executed DbCommand (360ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-22 21:16:25.329 +01:00 [INF] Executed DbCommand (267ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-22 21:16:25.604 +01:00 [INF] Executed DbCommand (261ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-22 21:16:25.991 +01:00 [INF] Executed DbCommand (271ms) [Parameters=[@p19='?', @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "RefreshToken" = @p13, "RefreshTokenExpiryTime" = @p14, "Role" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-07-22 21:16:26.059 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.TokenDto'.
+2025-07-22 21:16:26.082 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.Api) in 12913.2862ms
+2025-07-22 21:16:26.086 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.Api)'
+2025-07-22 21:16:26.099 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 200 null application/json; charset=utf-8 13160.9491ms
+2025-07-22 21:17:31.667 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/VideoPosts - multipart/form-data; boundary=----WebKitFormBoundaryBAtzRbQPpcBQBVff 1354258
+2025-07-22 21:17:31.688 +01:00 [INF] CORS policy execution failed.
+2025-07-22 21:17:31.692 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-22 21:17:31.764 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.CreateVideoPost (StreamNest.Api)'
+2025-07-22 21:17:31.775 +01:00 [INF] Route matched with {action = "CreateVideoPost", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateVideoPost(StreamNest.Application.DTOs.CreateVideoDto) on controller StreamNest.API.Controllers.VideoPostController (StreamNest.Api).
+2025-07-22 21:17:35.709 +01:00 [INF] Executed DbCommand (304ms) [Parameters=[@p0='?', @p1='?', @p2='?' (DbType = Guid), @p3='?', @p4='?', @p5='?', @p6='?', @p7='?', @p8='?' (DbType = DateTime), @p9='?', @p10='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Tags" ("Name")
+VALUES (@p0)
+RETURNING "Id";
+INSERT INTO "Tags" ("Name")
+VALUES (@p1)
+RETURNING "Id";
+INSERT INTO "Videos" ("Id", "AgeRating", "CreatorId", "Description", "Genre", "Title", "UploadDate", "VideoUrl", "VideoYear")
+VALUES (@p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2025-07-22 21:17:35.988 +01:00 [INF] Executed DbCommand (262ms) [Parameters=[@p11='?' (DbType = Int32), @p12='?' (DbType = Guid), @p13='?' (DbType = Int32), @p14='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "VideoTags" ("TagId", "VideoId")
+VALUES (@p11, @p12);
+INSERT INTO "VideoTags" ("TagId", "VideoId")
+VALUES (@p13, @p14);
+2025-07-22 21:17:36.293 +01:00 [INF] Executing CreatedAtActionResult, writing value of type 'StreamNest.Application.DTOs.VideoDto'.
+2025-07-22 21:17:36.331 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.CreateVideoPost (StreamNest.Api) in 4545.9868ms
+2025-07-22 21:17:36.336 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.CreateVideoPost (StreamNest.Api)'
+2025-07-22 21:17:36.342 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/VideoPosts - 201 null application/json; charset=utf-8 4675.1439ms
+2025-07-22 21:39:49.792 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/Register - application/json 149
+2025-07-22 21:39:49.853 +01:00 [INF] CORS policy execution failed.
+2025-07-22 21:39:49.858 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-22 21:39:49.966 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/22/2025 8:31:25 PM', Current time (UTC): '7/22/2025 8:39:49 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-22 21:39:50.058 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/22/2025 8:31:25 PM', Current time (UTC): '7/22/2025 8:39:49 PM'.
+2025-07-22 21:39:50.062 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.RegisterUser (StreamNest.Api)'
+2025-07-22 21:39:50.111 +01:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(StreamNest.Application.DTOs.UserForRegistrationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.Api).
+2025-07-22 21:39:52.174 +01:00 [INF] Executed DbCommand (266ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-22 21:39:52.206 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-07-22 21:39:52.297 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.RegisterUser (StreamNest.Api) in 2179.2627ms
+2025-07-22 21:39:52.301 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.RegisterUser (StreamNest.Api)'
+2025-07-22 21:39:52.308 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/Register - 400 null application/problem+json; charset=utf-8 2523.3955ms
+2025-07-22 21:40:04.794 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/Register - application/json 148
+2025-07-22 21:40:04.806 +01:00 [INF] CORS policy execution failed.
+2025-07-22 21:40:04.808 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-22 21:40:04.815 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/22/2025 8:31:25 PM', Current time (UTC): '7/22/2025 8:40:04 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-22 21:40:04.833 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/22/2025 8:31:25 PM', Current time (UTC): '7/22/2025 8:40:04 PM'.
+2025-07-22 21:40:04.836 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.RegisterUser (StreamNest.Api)'
+2025-07-22 21:40:04.851 +01:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(StreamNest.Application.DTOs.UserForRegistrationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.Api).
+2025-07-22 21:40:05.303 +01:00 [INF] Executed DbCommand (264ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-22 21:40:05.576 +01:00 [INF] Executed DbCommand (266ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-22 21:40:05.879 +01:00 [INF] Executed DbCommand (268ms) [Parameters=[@p0='?', @p1='?' (DbType = Int32), @p2='?', @p3='?', @p4='?' (DbType = Boolean), @p5='?', @p6='?', @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?' (DbType = Boolean), @p14='?', @p15='?' (DbType = DateTime), @p16='?', @p17='?', @p18='?' (DbType = Boolean), @p19='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "RefreshToken", "RefreshTokenExpiryTime", "Role", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19);
+2025-07-22 21:40:05.896 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 201
+2025-07-22 21:40:05.901 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.RegisterUser (StreamNest.Api) in 1044.5495ms
+2025-07-22 21:40:05.905 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.RegisterUser (StreamNest.Api)'
+2025-07-22 21:40:05.911 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/Register - 201 0 null 1117.3327ms
+2025-07-22 21:40:24.066 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 57
+2025-07-22 21:40:24.074 +01:00 [INF] CORS policy execution failed.
+2025-07-22 21:40:24.077 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-22 21:40:24.082 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/22/2025 8:31:25 PM', Current time (UTC): '7/22/2025 8:40:24 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-22 21:40:24.091 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/22/2025 8:31:25 PM', Current time (UTC): '7/22/2025 8:40:24 PM'.
+2025-07-22 21:40:24.097 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.Api)'
+2025-07-22 21:40:24.103 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.Api).
+2025-07-22 21:40:24.379 +01:00 [INF] Executed DbCommand (269ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-22 21:40:24.389 +01:00 [WRN] Authentication failed. No user found with email: mark@gmail.com
+2025-07-22 21:40:24.398 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-07-22 21:40:24.402 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.Api) in 293.8898ms
+2025-07-22 21:40:24.409 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.Api)'
+2025-07-22 21:40:24.412 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 400 null application/problem+json; charset=utf-8 345.7441ms
+2025-07-22 21:40:46.559 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 57
+2025-07-22 21:40:46.579 +01:00 [INF] CORS policy execution failed.
+2025-07-22 21:40:46.581 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-22 21:40:46.586 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/22/2025 8:31:25 PM', Current time (UTC): '7/22/2025 8:40:46 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-22 21:40:46.600 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/22/2025 8:31:25 PM', Current time (UTC): '7/22/2025 8:40:46 PM'.
+2025-07-22 21:40:46.603 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.Api)'
+2025-07-22 21:40:46.607 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.Api).
+2025-07-22 21:40:46.909 +01:00 [INF] Executed DbCommand (293ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-22 21:40:47.280 +01:00 [INF] Executed DbCommand (269ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-22 21:40:47.554 +01:00 [INF] Executed DbCommand (265ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-22 21:40:47.832 +01:00 [INF] Executed DbCommand (268ms) [Parameters=[@p19='?', @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "RefreshToken" = @p13, "RefreshTokenExpiryTime" = @p14, "Role" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-07-22 21:40:47.841 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.TokenDto'.
+2025-07-22 21:40:47.846 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.Api) in 1230.8938ms
+2025-07-22 21:40:47.851 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.Api)'
+2025-07-22 21:40:47.854 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 200 null application/json; charset=utf-8 1294.8269ms
+2025-07-22 21:43:54.226 +01:00 [INF] Application is shutting down...
+2025-07-22 21:44:16.952 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-22 21:44:17.158 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-22 21:44:17.165 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-22 21:44:17.169 +01:00 [INF] Hosting environment: Development
+2025-07-22 21:44:17.173 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-22 21:44:20.029 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-22 21:44:20.213 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 184.4729ms
+2025-07-22 21:44:20.441 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-22 21:44:20.456 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 15.5123ms
+2025-07-22 21:44:22.249 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-22 21:44:22.828 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 578.5664ms
+2025-07-22 21:44:56.255 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 59
+2025-07-22 21:44:56.292 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-22 21:44:56.320 +01:00 [INF] CORS policy execution failed.
+2025-07-22 21:44:56.326 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-22 21:44:56.374 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-22 21:44:56.407 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-22 21:44:59.980 +01:00 [INF] Executed DbCommand (321ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-22 21:45:00.696 +01:00 [INF] Executed DbCommand (281ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-22 21:45:00.977 +01:00 [INF] Executed DbCommand (269ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-22 21:45:01.843 +01:00 [INF] Executed DbCommand (300ms) [Parameters=[@p19='?', @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "RefreshToken" = @p13, "RefreshTokenExpiryTime" = @p14, "Role" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-07-22 21:45:01.933 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.TokenDto'.
+2025-07-22 21:45:01.967 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 5543.2622ms
+2025-07-22 21:45:01.973 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-22 21:45:01.987 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 200 null application/json; charset=utf-8 5732.5841ms
+2025-07-22 21:45:29.769 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/VideoPosts - multipart/form-data; boundary=----WebKitFormBoundaryrAuhONI6ighQ3T4I 641
+2025-07-22 21:45:29.795 +01:00 [INF] CORS policy execution failed.
+2025-07-22 21:45:29.799 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-22 21:45:29.862 +01:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Creator)
+2025-07-22 21:45:29.870 +01:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-07-22 21:45:29.874 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/VideoPosts - 403 0 null 105.2518ms
+2025-07-22 21:46:07.131 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 57
+2025-07-22 21:46:07.139 +01:00 [INF] CORS policy execution failed.
+2025-07-22 21:46:07.142 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-22 21:46:07.148 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-22 21:46:07.155 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-22 21:46:07.593 +01:00 [INF] Executed DbCommand (362ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-22 21:46:08.058 +01:00 [INF] Executed DbCommand (368ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-22 21:46:08.342 +01:00 [INF] Executed DbCommand (276ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-22 21:46:08.660 +01:00 [INF] Executed DbCommand (286ms) [Parameters=[@p19='?', @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "RefreshToken" = @p13, "RefreshTokenExpiryTime" = @p14, "Role" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-07-22 21:46:08.671 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.TokenDto'.
+2025-07-22 21:46:08.676 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 1515.7993ms
+2025-07-22 21:46:08.680 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-22 21:46:08.683 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 200 null application/json; charset=utf-8 1552.1714ms
+2025-07-22 21:46:32.564 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/VideoPosts - multipart/form-data; boundary=----WebKitFormBoundarygyPdYtjJtH3eAgZ0 641
+2025-07-22 21:46:32.571 +01:00 [INF] CORS policy execution failed.
+2025-07-22 21:46:32.574 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-22 21:46:32.589 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.CreateVideoPost (StreamNest.API)'
+2025-07-22 21:46:32.618 +01:00 [INF] Route matched with {action = "CreateVideoPost", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateVideoPost(StreamNest.Application.DTOs.CreateVideoDto) on controller StreamNest.API.Controllers.VideoPostController (StreamNest.API).
+2025-07-22 21:46:32.683 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.CreateVideoPost (StreamNest.API) in 58.5861ms
+2025-07-22 21:46:32.688 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.CreateVideoPost (StreamNest.API)'
+2025-07-22 21:46:32.694 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: No video file provided.
+   at StreamNest.Application.Services.VideoPostService.CreateVideoAsync(CreateVideoDto createVideoDto, String userId) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\Services\VideoPostService.cs:line 28
+   at StreamNest.API.Controllers.VideoPostController.CreateVideoPost(CreateVideoDto videoPostDto) in C:\Users\user\Desktop\c##\StreamNest\streamnest.api\Controllers\VideoPostcController.cs:line 42
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-22 21:46:32.786 +01:00 [ERR] Exception: ArgumentException - No video file provided.
+2025-07-22 21:46:32.813 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/VideoPosts - 500 null application/json; charset=utf-8 249.0755ms
+2025-07-22 21:47:23.123 +01:00 [INF] Application is shutting down...
+2025-07-22 22:04:25.809 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-22 22:04:26.071 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-22 22:04:26.079 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-22 22:04:26.083 +01:00 [INF] Hosting environment: Development
+2025-07-22 22:04:26.086 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-22 22:04:31.656 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-22 22:04:31.797 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 143.7676ms
+2025-07-22 22:04:32.125 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-22 22:04:32.168 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 42.7995ms
+2025-07-22 22:04:34.025 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-22 22:04:34.498 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 473.5251ms
+2025-07-22 22:11:08.729 +01:00 [INF] Application is shutting down...
+2025-07-22 22:11:27.309 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-22 22:11:27.522 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-22 22:11:27.531 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-22 22:11:27.535 +01:00 [INF] Hosting environment: Development
+2025-07-22 22:11:27.539 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-22 22:11:31.681 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-22 22:11:31.719 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: Could not find file 'C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\StreamNest.Extensions.xml'.
+File name: 'C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\StreamNest.Extensions.xml'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri, XmlSpace space)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.<>c__DisplayClass46_0.<IncludeXmlComments>b__0()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, Func`1 xmlDocFactory, Boolean includeControllerXmlComments)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, String filePath, Boolean includeControllerXmlComments)
+   at StreamNest.Extensions.ServiceExtensions.<>c.<ConfigureSwagger>b__12_0(SwaggerGenOptions s) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Extensions\ServiceExtensions.cs:line 173
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions..ctor(IOptions`1 swaggerGenOptionsAccessor, IServiceProvider serviceProvider, IWebHostEnvironment hostingEnv)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitNoCache(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_3(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method2(Closure, Object, HttpContext, IServiceProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.Invoke(HttpContext context)
+2025-07-22 22:11:31.835 +01:00 [ERR] Exception: FileNotFoundException - Could not find file 'C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\StreamNest.Extensions.xml'.
+2025-07-22 22:11:31.967 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 500 null application/json; charset=utf-8 288.5995ms
+2025-07-22 22:13:50.498 +01:00 [INF] Application is shutting down...
+2025-07-22 22:14:02.577 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-22 22:14:06.659 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-22 22:14:07.071 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-22 22:14:07.144 +01:00 [INF] Hosting environment: Development
+2025-07-22 22:14:07.170 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-22 22:14:11.910 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-22 22:14:11.944 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: Could not find file 'C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\StreamNest.Extensions.xml'.
+File name: 'C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\StreamNest.Extensions.xml'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri, XmlSpace space)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.<>c__DisplayClass46_0.<IncludeXmlComments>b__0()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, Func`1 xmlDocFactory, Boolean includeControllerXmlComments)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, String filePath, Boolean includeControllerXmlComments)
+   at StreamNest.Extensions.ServiceExtensions.<>c.<ConfigureSwagger>b__12_0(SwaggerGenOptions s) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Extensions\ServiceExtensions.cs:line 173
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions..ctor(IOptions`1 swaggerGenOptionsAccessor, IServiceProvider serviceProvider, IWebHostEnvironment hostingEnv)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitNoCache(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_3(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method2(Closure, Object, HttpContext, IServiceProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.Invoke(HttpContext context)
+2025-07-22 22:14:12.023 +01:00 [ERR] Exception: FileNotFoundException - Could not find file 'C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\StreamNest.Extensions.xml'.
+2025-07-22 22:14:12.124 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 500 null application/json; charset=utf-8 214.836ms
+2025-07-22 22:16:37.608 +01:00 [INF] Application is shutting down...
+2025-07-22 22:17:34.851 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-22 22:17:35.102 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-22 22:17:35.112 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-22 22:17:35.116 +01:00 [INF] Hosting environment: Development
+2025-07-22 22:17:35.120 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-22 22:17:42.570 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-22 22:17:43.381 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: Could not find file 'C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\StreamNest.Extensions.xml'.
+File name: 'C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\StreamNest.Extensions.xml'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri, XmlSpace space)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.<>c__DisplayClass46_0.<IncludeXmlComments>b__0()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, Func`1 xmlDocFactory, Boolean includeControllerXmlComments)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, String filePath, Boolean includeControllerXmlComments)
+   at StreamNest.Extensions.ServiceExtensions.<>c.<ConfigureSwagger>b__12_0(SwaggerGenOptions s) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Extensions\ServiceExtensions.cs:line 173
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions..ctor(IOptions`1 swaggerGenOptionsAccessor, IServiceProvider serviceProvider, IWebHostEnvironment hostingEnv)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitNoCache(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_3(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method2(Closure, Object, HttpContext, IServiceProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.Invoke(HttpContext context)
+2025-07-22 22:17:43.554 +01:00 [ERR] Exception: FileNotFoundException - Could not find file 'C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\StreamNest.Extensions.xml'.
+2025-07-22 22:17:43.681 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 500 null application/json; charset=utf-8 1243.0176ms
+2025-07-22 22:17:47.349 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-22 22:17:47.365 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: Could not find file 'C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\StreamNest.Extensions.xml'.
+File name: 'C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\StreamNest.Extensions.xml'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri, XmlSpace space)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.<>c__DisplayClass46_0.<IncludeXmlComments>b__0()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, Func`1 xmlDocFactory, Boolean includeControllerXmlComments)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, String filePath, Boolean includeControllerXmlComments)
+   at StreamNest.Extensions.ServiceExtensions.<>c.<ConfigureSwagger>b__12_0(SwaggerGenOptions s) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Extensions\ServiceExtensions.cs:line 173
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions..ctor(IOptions`1 swaggerGenOptionsAccessor, IServiceProvider serviceProvider, IWebHostEnvironment hostingEnv)
+   at InvokeStub_ConfigureSwaggerGeneratorOptions..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitNoCache(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_3(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method2(Closure, Object, HttpContext, IServiceProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.Invoke(HttpContext context)
+2025-07-22 22:17:47.444 +01:00 [ERR] Exception: FileNotFoundException - Could not find file 'C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\StreamNest.Extensions.xml'.
+2025-07-22 22:17:47.449 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 500 null application/json; charset=utf-8 100.1947ms
+2025-07-22 22:17:49.303 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-22 22:17:49.316 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: Could not find file 'C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\StreamNest.Extensions.xml'.
+File name: 'C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\StreamNest.Extensions.xml'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri, XmlSpace space)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.<>c__DisplayClass46_0.<IncludeXmlComments>b__0()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, Func`1 xmlDocFactory, Boolean includeControllerXmlComments)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, String filePath, Boolean includeControllerXmlComments)
+   at StreamNest.Extensions.ServiceExtensions.<>c.<ConfigureSwagger>b__12_0(SwaggerGenOptions s) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Extensions\ServiceExtensions.cs:line 173
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions..ctor(IOptions`1 swaggerGenOptionsAccessor, IServiceProvider serviceProvider, IWebHostEnvironment hostingEnv)
+   at InvokeStub_ConfigureSwaggerGeneratorOptions..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitNoCache(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_3(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method2(Closure, Object, HttpContext, IServiceProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.Invoke(HttpContext context)
+2025-07-22 22:17:49.433 +01:00 [ERR] Exception: FileNotFoundException - Could not find file 'C:\Users\user\Desktop\c##\StreamNest\streamnest.api\bin\Debug\net8.0\StreamNest.Extensions.xml'.
+2025-07-22 22:17:49.437 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 500 null application/json; charset=utf-8 133.5216ms
+2025-07-22 22:19:18.685 +01:00 [INF] Application is shutting down...
+2025-07-22 22:19:28.965 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-22 22:19:29.188 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-22 22:19:29.198 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-22 22:19:29.203 +01:00 [INF] Hosting environment: Development
+2025-07-22 22:19:29.206 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-22 22:19:32.453 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-22 22:19:32.749 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 298.1986ms
+2025-07-22 22:19:32.900 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-22 22:19:32.919 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 19.7923ms
+2025-07-22 22:19:33.474 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-22 22:19:34.086 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 615.3536ms
+2025-07-22 22:25:15.771 +01:00 [INF] Application is shutting down...
+2025-07-22 22:25:29.953 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-22 22:25:30.214 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-22 22:25:30.228 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-22 22:25:30.233 +01:00 [INF] Hosting environment: Development
+2025-07-22 22:25:30.237 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-22 22:25:37.599 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-22 22:25:38.125 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 529.7632ms
+2025-07-22 22:25:38.722 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-22 22:25:38.885 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 166.1882ms
+2025-07-22 22:25:40.790 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-22 22:25:41.259 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 468.6489ms
+2025-07-22 22:30:07.368 +01:00 [INF] Application is shutting down...
+2025-07-22 22:30:14.914 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-22 22:30:15.094 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-22 22:30:15.102 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-22 22:30:15.107 +01:00 [INF] Hosting environment: Development
+2025-07-22 22:30:15.111 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-22 22:32:32.674 +01:00 [INF] Application is shutting down...
+2025-07-22 22:32:45.253 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-22 22:32:45.561 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-22 22:32:45.569 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-22 22:32:45.572 +01:00 [INF] Hosting environment: Development
+2025-07-22 22:32:45.575 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-22 22:32:55.517 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-22 22:32:55.790 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 275.1036ms
+2025-07-22 22:32:55.937 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-22 22:32:55.949 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 13.2944ms
+2025-07-22 22:32:57.218 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-22 22:32:57.569 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 351.0557ms
+2025-07-22 22:33:53.581 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/VideoPosts - multipart/form-data; boundary=----WebKitFormBoundaryAirg65lmuujAhxro 641
+2025-07-22 22:33:53.595 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-22 22:33:53.631 +01:00 [INF] CORS policy execution failed.
+2025-07-22 22:33:53.635 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-22 22:33:53.755 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Creator)
+2025-07-22 22:33:53.761 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 22:33:53.768 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/VideoPosts - 401 0 null 187.4951ms
+2025-07-22 23:29:23.729 +01:00 [INF] Application is shutting down...

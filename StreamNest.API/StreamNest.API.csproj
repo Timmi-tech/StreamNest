@@ -17,6 +17,12 @@
       </PackageReference>
   </ItemGroup>
 
+  <PropertyGroup>
+  <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  <NoWarn>$(NoWarn);1591</NoWarn>
+  <DocumentationFile>bin\Debug\net8.0\StreamNest.API.xml</DocumentationFile> 
+  </PropertyGroup>  
+
   <ItemGroup>
     <ProjectReference Include="..\StreamNest.Application\StreamNest.Application.csproj" />
     <ProjectReference Include="..\StreamNest.Domain\StreamNest.Domain.csproj" />

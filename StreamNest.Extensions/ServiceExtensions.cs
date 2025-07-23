@@ -19,6 +19,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using CloudinaryDotNet;
 using Microsoft.OpenApi.Models;
+using System.Reflection;
 
 namespace StreamNest.Extensions
 
@@ -136,7 +137,7 @@ namespace StreamNest.Extensions
         {
             services.AddSwaggerGen(s =>
             {
-                s.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "Campus Connect", Version = "v1" });
+                s.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "StreamNest", Version = "v1" });
                 s.OperationFilter<FileUploadOperationFilter>();
                 s.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
@@ -147,6 +148,7 @@ namespace StreamNest.Extensions
                     In = ParameterLocation.Header,
                     Description = "Enter 'Bearer' [space] and then your valid token in the text input below.\n\nExample: \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9\""
                 });
+
 
                 s.AddSecurityRequirement(new OpenApiSecurityRequirement
                 {
@@ -165,6 +167,10 @@ namespace StreamNest.Extensions
                         new string[] {}
                     }
                 });
+                var xmlFile = "StreamNest.API.xml"; // ✅ Not based on executing assembly
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                s.IncludeXmlComments(xmlPath, includeControllerXmlComments: true);
+
             }); 
             
         }

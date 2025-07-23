@@ -1,0 +1,966 @@
+2025-07-23 00:21:00.338 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-23 00:21:00.700 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-23 00:21:00.715 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-23 00:21:00.720 +01:00 [INF] Hosting environment: Development
+2025-07-23 00:21:00.725 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-23 00:21:14.289 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-23 00:21:14.580 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 293.5775ms
+2025-07-23 00:21:15.085 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-23 00:21:15.109 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 23.6635ms
+2025-07-23 00:21:16.777 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-23 00:21:17.131 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 353.6117ms
+2025-07-23 00:53:47.115 +01:00 [INF] Application is shutting down...
+2025-07-23 01:18:42.170 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-23 01:18:42.387 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-23 01:18:42.396 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-23 01:18:42.400 +01:00 [INF] Hosting environment: Development
+2025-07-23 01:18:42.406 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-23 01:19:20.118 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-23 01:19:21.240 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 1125.9691ms
+2025-07-23 01:19:21.830 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-23 01:19:21.866 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 36.145ms
+2025-07-23 01:19:24.116 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-23 01:19:24.924 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 807.6107ms
+2025-07-23 01:19:57.237 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 59
+2025-07-23 01:19:57.253 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-23 01:19:57.287 +01:00 [INF] CORS policy execution failed.
+2025-07-23 01:19:57.292 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-23 01:19:57.345 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-23 01:19:57.381 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-23 01:20:01.910 +01:00 [INF] Executed DbCommand (352ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-23 01:20:02.570 +01:00 [INF] Executed DbCommand (301ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-23 01:20:02.862 +01:00 [INF] Executed DbCommand (269ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-23 01:20:03.315 +01:00 [INF] Executed DbCommand (278ms) [Parameters=[@p19='?', @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "RefreshToken" = @p13, "RefreshTokenExpiryTime" = @p14, "Role" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-07-23 01:20:03.378 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.TokenDto'.
+2025-07-23 01:20:03.399 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 6006.4385ms
+2025-07-23 01:20:03.404 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-23 01:20:03.416 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 200 null application/json; charset=utf-8 6178.9303ms
+2025-07-23 01:20:27.934 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/VideoPosts - null null
+2025-07-23 01:20:28.007 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.GetAllVideos (StreamNest.API)'
+2025-07-23 01:20:28.015 +01:00 [INF] Route matched with {action = "GetAllVideos", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllVideos() on controller StreamNest.API.Controllers.VideoPostController (StreamNest.API).
+2025-07-23 01:20:28.466 +01:00 [INF] Executed DbCommand (285ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AgeRating", t."CreatorId", t."Description", t."Genre", t."Title", t."UploadDate", t."VideoUrl", t."VideoYear", a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM (
+    SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear"
+    FROM "Videos" AS v
+    ORDER BY v."UploadDate" DESC
+    LIMIT @__p_1 OFFSET @__p_0
+) AS t
+INNER JOIN "AspNetUsers" AS a ON t."CreatorId" = a."Id"
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t1."Id", t1."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t1 ON v0."TagId" = t1."Id"
+) AS t0 ON t."Id" = t0."VideoId"
+ORDER BY t."UploadDate" DESC, t."Id", a."Id", t0."VideoId", t0."TagId"
+2025-07-23 01:20:28.487 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[StreamNest.Domain.Entities.Models.Video, StreamNest.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[StreamNest.Application.DTOs.VideoDto, StreamNest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-23 01:20:28.514 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.GetAllVideos (StreamNest.API) in 490.4804ms
+2025-07-23 01:20:28.523 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.GetAllVideos (StreamNest.API)'
+2025-07-23 01:20:28.528 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/VideoPosts - 200 null application/json; charset=utf-8 593.987ms
+2025-07-23 01:20:56.766 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/VideoPosts/e24300c8-940e-47a0-af0a-785c31ae9dd7 - null null
+2025-07-23 01:20:56.781 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.GetVideoById (StreamNest.API)'
+2025-07-23 01:20:56.795 +01:00 [INF] Route matched with {action = "GetVideoById", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetVideoById(System.Guid) on controller StreamNest.API.Controllers.VideoPostController (StreamNest.API).
+2025-07-23 01:20:57.122 +01:00 [INF] Executed DbCommand (271ms) [Parameters=[@__videoPostId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AgeRating", t."CreatorId", t."Description", t."Genre", t."Title", t."UploadDate", t."VideoUrl", t."VideoYear", t."Id0", t."AccessFailedCount", t."ConcurrencyStamp", t."Email", t."EmailConfirmed", t."FirstName", t."LastName", t."LockoutEnabled", t."LockoutEnd", t."NormalizedEmail", t."NormalizedUserName", t."PasswordHash", t."PhoneNumber", t."PhoneNumberConfirmed", t."RefreshToken", t."RefreshTokenExpiryTime", t."Role", t."SecurityStamp", t."TwoFactorEnabled", t."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM (
+    SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear", a."Id" AS "Id0", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+    FROM "Videos" AS v
+    INNER JOIN "AspNetUsers" AS a ON v."CreatorId" = a."Id"
+    WHERE v."Id" = @__videoPostId_0
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t1."Id", t1."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t1 ON v0."TagId" = t1."Id"
+) AS t0 ON t."Id" = t0."VideoId"
+ORDER BY t."Id", t."Id0", t0."VideoId", t0."TagId"
+2025-07-23 01:20:57.135 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.VideoDto'.
+2025-07-23 01:20:57.142 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.GetVideoById (StreamNest.API) in 340.2483ms
+2025-07-23 01:20:57.146 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.GetVideoById (StreamNest.API)'
+2025-07-23 01:20:57.152 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/VideoPosts/e24300c8-940e-47a0-af0a-785c31ae9dd7 - 200 null application/json; charset=utf-8 386.3286ms
+2025-07-23 01:44:06.894 +01:00 [INF] Application is shutting down...
+2025-07-23 01:44:39.631 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-23 01:44:40.490 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-23 01:44:40.503 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-23 01:44:40.507 +01:00 [INF] Hosting environment: Development
+2025-07-23 01:44:40.512 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-23 01:44:50.699 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-23 01:44:51.054 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 357.6493ms
+2025-07-23 01:44:51.525 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-23 01:44:51.539 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 15.1291ms
+2025-07-23 01:44:54.818 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-23 01:44:55.270 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 452.5304ms
+2025-07-23 01:45:35.674 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 59
+2025-07-23 01:45:35.719 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-23 01:45:35.777 +01:00 [INF] CORS policy execution failed.
+2025-07-23 01:45:35.780 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-23 01:45:35.858 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-23 01:45:35.922 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-23 01:45:41.699 +01:00 [INF] Executed DbCommand (512ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-23 01:45:42.279 +01:00 [INF] Executed DbCommand (313ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-23 01:45:42.564 +01:00 [INF] Executed DbCommand (271ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-23 01:45:42.942 +01:00 [INF] Executed DbCommand (276ms) [Parameters=[@p19='?', @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "RefreshToken" = @p13, "RefreshTokenExpiryTime" = @p14, "Role" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-07-23 01:45:42.988 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.TokenDto'.
+2025-07-23 01:45:43.008 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 7076.2686ms
+2025-07-23 01:45:43.016 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-23 01:45:43.032 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 200 null application/json; charset=utf-8 7358.1978ms
+2025-07-23 01:46:08.872 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/VideoPosts/me - null null
+2025-07-23 01:46:08.945 +01:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Creator)
+2025-07-23 01:46:08.952 +01:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-07-23 01:46:08.957 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/VideoPosts/me - 403 0 null 84.4675ms
+2025-07-23 01:46:40.813 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 57
+2025-07-23 01:46:40.823 +01:00 [INF] CORS policy execution failed.
+2025-07-23 01:46:40.826 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-23 01:46:40.833 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-23 01:46:40.838 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-23 01:46:41.202 +01:00 [INF] Executed DbCommand (267ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-23 01:46:41.568 +01:00 [INF] Executed DbCommand (274ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-23 01:46:41.853 +01:00 [INF] Executed DbCommand (276ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-23 01:46:42.157 +01:00 [INF] Executed DbCommand (269ms) [Parameters=[@p19='?', @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "RefreshToken" = @p13, "RefreshTokenExpiryTime" = @p14, "Role" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-07-23 01:46:42.164 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.TokenDto'.
+2025-07-23 01:46:42.169 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 1318.1137ms
+2025-07-23 01:46:42.174 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-23 01:46:42.179 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 200 null application/json; charset=utf-8 1365.8913ms
+2025-07-23 01:46:46.833 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 57
+2025-07-23 01:46:46.846 +01:00 [INF] CORS policy execution failed.
+2025-07-23 01:46:46.850 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-23 01:46:46.856 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-23 01:46:46.863 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-23 01:46:47.283 +01:00 [INF] Executed DbCommand (386ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-23 01:46:47.687 +01:00 [INF] Executed DbCommand (306ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-23 01:46:47.968 +01:00 [INF] Executed DbCommand (269ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-23 01:46:48.267 +01:00 [INF] Executed DbCommand (267ms) [Parameters=[@p19='?', @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "RefreshToken" = @p13, "RefreshTokenExpiryTime" = @p14, "Role" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-07-23 01:46:48.303 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.TokenDto'.
+2025-07-23 01:46:48.312 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 1440.8618ms
+2025-07-23 01:46:48.318 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-23 01:46:48.324 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 200 null application/json; charset=utf-8 1490.3199ms
+2025-07-23 01:47:04.966 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/VideoPosts/me - null null
+2025-07-23 01:47:04.978 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.GetmyVideos (StreamNest.API)'
+2025-07-23 01:47:05.022 +01:00 [INF] Route matched with {action = "GetmyVideos", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetmyVideos() on controller StreamNest.API.Controllers.VideoPostController (StreamNest.API).
+2025-07-23 01:47:05.445 +01:00 [INF] Executed DbCommand (288ms) [Parameters=[@__creatorId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear", a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM "Videos" AS v
+INNER JOIN "AspNetUsers" AS a ON v."CreatorId" = a."Id"
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t."Id", t."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t ON v0."TagId" = t."Id"
+) AS t0 ON v."Id" = t0."VideoId"
+WHERE v."CreatorId" = @__creatorId_0
+ORDER BY v."UploadDate" DESC, v."Id", a."Id", t0."VideoId", t0."TagId"
+2025-07-23 01:47:05.455 +01:00 [INF] Executing NotFoundObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-23 01:47:05.468 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.GetmyVideos (StreamNest.API) in 437.5011ms
+2025-07-23 01:47:05.474 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.GetmyVideos (StreamNest.API)'
+2025-07-23 01:47:05.477 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/VideoPosts/me - 404 null application/json; charset=utf-8 511.5587ms
+2025-07-23 01:47:29.982 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/VideoPosts - null null
+2025-07-23 01:47:29.993 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.GetAllVideos (StreamNest.API)'
+2025-07-23 01:47:29.999 +01:00 [INF] Route matched with {action = "GetAllVideos", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllVideos() on controller StreamNest.API.Controllers.VideoPostController (StreamNest.API).
+2025-07-23 01:47:30.298 +01:00 [INF] Executed DbCommand (265ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AgeRating", t."CreatorId", t."Description", t."Genre", t."Title", t."UploadDate", t."VideoUrl", t."VideoYear", a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM (
+    SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear"
+    FROM "Videos" AS v
+    ORDER BY v."UploadDate" DESC
+    LIMIT @__p_1 OFFSET @__p_0
+) AS t
+INNER JOIN "AspNetUsers" AS a ON t."CreatorId" = a."Id"
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t1."Id", t1."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t1 ON v0."TagId" = t1."Id"
+) AS t0 ON t."Id" = t0."VideoId"
+ORDER BY t."UploadDate" DESC, t."Id", a."Id", t0."VideoId", t0."TagId"
+2025-07-23 01:47:30.314 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[StreamNest.Domain.Entities.Models.Video, StreamNest.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[StreamNest.Application.DTOs.VideoDto, StreamNest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-23 01:47:30.347 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.GetAllVideos (StreamNest.API) in 340.0786ms
+2025-07-23 01:47:30.352 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.GetAllVideos (StreamNest.API)'
+2025-07-23 01:47:30.355 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/VideoPosts - 200 null application/json; charset=utf-8 373.0698ms
+2025-07-23 01:48:17.828 +01:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5213/api/VideoPosts/8b5c8a49-ea10-47f2-9495-230035fe3bb2 - null null
+2025-07-23 01:48:17.844 +01:00 [INF] CORS policy execution failed.
+2025-07-23 01:48:17.846 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-23 01:48:17.849 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API)'
+2025-07-23 01:48:17.870 +01:00 [INF] Route matched with {action = "DeleteVideoPost", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteVideoPost(System.Guid) on controller StreamNest.API.Controllers.VideoPostController (StreamNest.API).
+2025-07-23 01:48:18.177 +01:00 [INF] Executed DbCommand (277ms) [Parameters=[@__videoPostId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AgeRating", t."CreatorId", t."Description", t."Genre", t."Title", t."UploadDate", t."VideoUrl", t."VideoYear", t."Id0", t."AccessFailedCount", t."ConcurrencyStamp", t."Email", t."EmailConfirmed", t."FirstName", t."LastName", t."LockoutEnabled", t."LockoutEnd", t."NormalizedEmail", t."NormalizedUserName", t."PasswordHash", t."PhoneNumber", t."PhoneNumberConfirmed", t."RefreshToken", t."RefreshTokenExpiryTime", t."Role", t."SecurityStamp", t."TwoFactorEnabled", t."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM (
+    SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear", a."Id" AS "Id0", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+    FROM "Videos" AS v
+    INNER JOIN "AspNetUsers" AS a ON v."CreatorId" = a."Id"
+    WHERE v."Id" = @__videoPostId_0
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t1."Id", t1."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t1 ON v0."TagId" = t1."Id"
+) AS t0 ON t."Id" = t0."VideoId"
+ORDER BY t."Id", t."Id0", t0."VideoId", t0."TagId"
+2025-07-23 01:48:18.188 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API) in 307.8184ms
+2025-07-23 01:48:18.194 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API)'
+2025-07-23 01:48:18.199 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ApplicationException: Video with ID 8b5c8a49-ea10-47f2-9495-230035fe3bb2 not found.
+   at StreamNest.Application.Services.VideoPostService.DeleteVideoAsync(Guid videoId, String userId) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\Services\VideoPostService.cs:line 131
+   at StreamNest.API.Controllers.VideoPostController.DeleteVideoPost(Guid videoPostId) in C:\Users\user\Desktop\c##\StreamNest\streamnest.api\Controllers\VideoPostcController.cs:line 191
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-23 01:48:18.325 +01:00 [ERR] Exception: ApplicationException - Video with ID 8b5c8a49-ea10-47f2-9495-230035fe3bb2 not found.
+2025-07-23 01:48:18.348 +01:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5213/api/VideoPosts/8b5c8a49-ea10-47f2-9495-230035fe3bb2 - 500 null application/json; charset=utf-8 520.3239ms
+2025-07-23 01:48:41.322 +01:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5213/api/VideoPosts/e24300c8-940e-47a0-af0a-785c31ae9dd7 - null null
+2025-07-23 01:48:41.333 +01:00 [INF] CORS policy execution failed.
+2025-07-23 01:48:41.336 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-23 01:48:41.358 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API)'
+2025-07-23 01:48:41.378 +01:00 [INF] Route matched with {action = "DeleteVideoPost", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteVideoPost(System.Guid) on controller StreamNest.API.Controllers.VideoPostController (StreamNest.API).
+2025-07-23 01:48:41.748 +01:00 [INF] Executed DbCommand (276ms) [Parameters=[@__videoPostId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AgeRating", t."CreatorId", t."Description", t."Genre", t."Title", t."UploadDate", t."VideoUrl", t."VideoYear", t."Id0", t."AccessFailedCount", t."ConcurrencyStamp", t."Email", t."EmailConfirmed", t."FirstName", t."LastName", t."LockoutEnabled", t."LockoutEnd", t."NormalizedEmail", t."NormalizedUserName", t."PasswordHash", t."PhoneNumber", t."PhoneNumberConfirmed", t."RefreshToken", t."RefreshTokenExpiryTime", t."Role", t."SecurityStamp", t."TwoFactorEnabled", t."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM (
+    SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear", a."Id" AS "Id0", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+    FROM "Videos" AS v
+    INNER JOIN "AspNetUsers" AS a ON v."CreatorId" = a."Id"
+    WHERE v."Id" = @__videoPostId_0
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t1."Id", t1."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t1 ON v0."TagId" = t1."Id"
+) AS t0 ON t."Id" = t0."VideoId"
+ORDER BY t."Id", t."Id0", t0."VideoId", t0."TagId"
+2025-07-23 01:48:41.793 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API) in 323.3015ms
+2025-07-23 01:48:41.803 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API)'
+2025-07-23 01:48:41.805 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.UnauthorizedAccessException: You do not have permission to delete this video.
+   at StreamNest.Application.Services.VideoPostService.DeleteVideoAsync(Guid videoId, String userId) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\Services\VideoPostService.cs:line 134
+   at StreamNest.API.Controllers.VideoPostController.DeleteVideoPost(Guid videoPostId) in C:\Users\user\Desktop\c##\StreamNest\streamnest.api\Controllers\VideoPostcController.cs:line 191
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-23 01:48:41.820 +01:00 [ERR] Exception: UnauthorizedAccessException - You do not have permission to delete this video.
+2025-07-23 01:48:41.823 +01:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5213/api/VideoPosts/e24300c8-940e-47a0-af0a-785c31ae9dd7 - 500 null application/json; charset=utf-8 501.2888ms
+2025-07-23 01:48:52.420 +01:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5213/api/VideoPosts/e24300c8-940e-47a0-af0a-785c31ae9dd7 - null null
+2025-07-23 01:48:52.427 +01:00 [INF] CORS policy execution failed.
+2025-07-23 01:48:52.432 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-23 01:48:52.436 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API)'
+2025-07-23 01:48:52.439 +01:00 [INF] Route matched with {action = "DeleteVideoPost", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteVideoPost(System.Guid) on controller StreamNest.API.Controllers.VideoPostController (StreamNest.API).
+2025-07-23 01:48:52.722 +01:00 [INF] Executed DbCommand (274ms) [Parameters=[@__videoPostId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AgeRating", t."CreatorId", t."Description", t."Genre", t."Title", t."UploadDate", t."VideoUrl", t."VideoYear", t."Id0", t."AccessFailedCount", t."ConcurrencyStamp", t."Email", t."EmailConfirmed", t."FirstName", t."LastName", t."LockoutEnabled", t."LockoutEnd", t."NormalizedEmail", t."NormalizedUserName", t."PasswordHash", t."PhoneNumber", t."PhoneNumberConfirmed", t."RefreshToken", t."RefreshTokenExpiryTime", t."Role", t."SecurityStamp", t."TwoFactorEnabled", t."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM (
+    SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear", a."Id" AS "Id0", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+    FROM "Videos" AS v
+    INNER JOIN "AspNetUsers" AS a ON v."CreatorId" = a."Id"
+    WHERE v."Id" = @__videoPostId_0
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t1."Id", t1."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t1 ON v0."TagId" = t1."Id"
+) AS t0 ON t."Id" = t0."VideoId"
+ORDER BY t."Id", t."Id0", t0."VideoId", t0."TagId"
+2025-07-23 01:48:52.770 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API) in 324.228ms
+2025-07-23 01:48:52.776 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API)'
+2025-07-23 01:48:52.780 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.UnauthorizedAccessException: You do not have permission to delete this video.
+   at StreamNest.Application.Services.VideoPostService.DeleteVideoAsync(Guid videoId, String userId) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\Services\VideoPostService.cs:line 134
+   at StreamNest.API.Controllers.VideoPostController.DeleteVideoPost(Guid videoPostId) in C:\Users\user\Desktop\c##\StreamNest\streamnest.api\Controllers\VideoPostcController.cs:line 191
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-23 01:48:52.800 +01:00 [ERR] Exception: UnauthorizedAccessException - You do not have permission to delete this video.
+2025-07-23 01:48:52.802 +01:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5213/api/VideoPosts/e24300c8-940e-47a0-af0a-785c31ae9dd7 - 500 null application/json; charset=utf-8 381.9197ms
+2025-07-23 01:49:32.895 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/VideoPosts/me - null null
+2025-07-23 01:49:32.927 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.GetmyVideos (StreamNest.API)'
+2025-07-23 01:49:32.933 +01:00 [INF] Route matched with {action = "GetmyVideos", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetmyVideos() on controller StreamNest.API.Controllers.VideoPostController (StreamNest.API).
+2025-07-23 01:49:33.210 +01:00 [INF] Executed DbCommand (270ms) [Parameters=[@__creatorId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear", a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM "Videos" AS v
+INNER JOIN "AspNetUsers" AS a ON v."CreatorId" = a."Id"
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t."Id", t."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t ON v0."TagId" = t."Id"
+) AS t0 ON v."Id" = t0."VideoId"
+WHERE v."CreatorId" = @__creatorId_0
+ORDER BY v."UploadDate" DESC, v."Id", a."Id", t0."VideoId", t0."TagId"
+2025-07-23 01:49:33.218 +01:00 [INF] Executing NotFoundObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-23 01:49:33.224 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.GetmyVideos (StreamNest.API) in 285.2791ms
+2025-07-23 01:49:33.231 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.GetmyVideos (StreamNest.API)'
+2025-07-23 01:49:33.235 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/VideoPosts/me - 404 null application/json; charset=utf-8 339.976ms
+2025-07-23 01:50:11.802 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-23 01:50:11.812 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 10.1343ms
+2025-07-23 01:50:11.942 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-23 01:50:12.032 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 90.3057ms
+2025-07-23 01:50:13.869 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-23 01:50:13.996 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 127.2456ms
+2025-07-23 01:50:42.482 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 57
+2025-07-23 01:50:42.490 +01:00 [INF] CORS policy execution failed.
+2025-07-23 01:50:42.494 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-23 01:50:42.499 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-23 01:50:42.507 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-23 01:50:44.316 +01:00 [INF] Executed DbCommand (282ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-23 01:50:44.686 +01:00 [INF] Executed DbCommand (271ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-23 01:50:44.971 +01:00 [INF] Executed DbCommand (278ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-23 01:50:45.254 +01:00 [INF] Executed DbCommand (276ms) [Parameters=[@p19='?', @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "RefreshToken" = @p13, "RefreshTokenExpiryTime" = @p14, "Role" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-07-23 01:50:45.263 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.TokenDto'.
+2025-07-23 01:50:45.267 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 2753.3721ms
+2025-07-23 01:50:45.272 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-23 01:50:45.278 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 200 null application/json; charset=utf-8 2795.8686ms
+2025-07-23 01:51:37.506 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/VideoPosts - multipart/form-data; boundary=----WebKitFormBoundaryUKHnIT2TBNFA1Kix 1705366
+2025-07-23 01:51:37.524 +01:00 [INF] CORS policy execution failed.
+2025-07-23 01:51:37.533 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-23 01:51:37.545 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.CreateVideoPost (StreamNest.API)'
+2025-07-23 01:51:37.570 +01:00 [INF] Route matched with {action = "CreateVideoPost", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateVideoPost(StreamNest.Application.DTOs.CreateVideoDto) on controller StreamNest.API.Controllers.VideoPostController (StreamNest.API).
+2025-07-23 01:51:45.195 +01:00 [INF] Executed DbCommand (275ms) [Parameters=[@p0='?', @p1='?' (DbType = Guid), @p2='?', @p3='?', @p4='?', @p5='?', @p6='?', @p7='?' (DbType = DateTime), @p8='?', @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Tags" ("Name")
+VALUES (@p0)
+RETURNING "Id";
+INSERT INTO "Videos" ("Id", "AgeRating", "CreatorId", "Description", "Genre", "Title", "UploadDate", "VideoUrl", "VideoYear")
+VALUES (@p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+2025-07-23 01:51:45.476 +01:00 [INF] Executed DbCommand (264ms) [Parameters=[@p10='?' (DbType = Int32), @p11='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "VideoTags" ("TagId", "VideoId")
+VALUES (@p10, @p11);
+2025-07-23 01:51:45.765 +01:00 [INF] Executing CreatedAtActionResult, writing value of type 'StreamNest.Application.DTOs.VideoDto'.
+2025-07-23 01:51:45.785 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.CreateVideoPost (StreamNest.API) in 8193.3885ms
+2025-07-23 01:51:45.790 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.CreateVideoPost (StreamNest.API)'
+2025-07-23 01:51:45.797 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/VideoPosts - 201 null application/json; charset=utf-8 8290.9276ms
+2025-07-23 01:51:58.499 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/VideoPosts/me - null null
+2025-07-23 01:51:58.508 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.GetmyVideos (StreamNest.API)'
+2025-07-23 01:51:58.514 +01:00 [INF] Route matched with {action = "GetmyVideos", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetmyVideos() on controller StreamNest.API.Controllers.VideoPostController (StreamNest.API).
+2025-07-23 01:51:59.000 +01:00 [INF] Executed DbCommand (478ms) [Parameters=[@__creatorId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear", a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM "Videos" AS v
+INNER JOIN "AspNetUsers" AS a ON v."CreatorId" = a."Id"
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t."Id", t."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t ON v0."TagId" = t."Id"
+) AS t0 ON v."Id" = t0."VideoId"
+WHERE v."CreatorId" = @__creatorId_0
+ORDER BY v."UploadDate" DESC, v."Id", a."Id", t0."VideoId", t0."TagId"
+2025-07-23 01:51:59.009 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[StreamNest.Domain.Entities.Models.Video, StreamNest.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[StreamNest.Application.DTOs.VideoDto, StreamNest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-23 01:51:59.015 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.GetmyVideos (StreamNest.API) in 494.4638ms
+2025-07-23 01:51:59.021 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.GetmyVideos (StreamNest.API)'
+2025-07-23 01:51:59.026 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/VideoPosts/me - 200 null application/json; charset=utf-8 526.6526ms
+2025-07-23 01:52:15.226 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/VideoPosts - null null
+2025-07-23 01:52:15.249 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.GetAllVideos (StreamNest.API)'
+2025-07-23 01:52:15.257 +01:00 [INF] Route matched with {action = "GetAllVideos", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllVideos() on controller StreamNest.API.Controllers.VideoPostController (StreamNest.API).
+2025-07-23 01:52:15.556 +01:00 [INF] Executed DbCommand (283ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AgeRating", t."CreatorId", t."Description", t."Genre", t."Title", t."UploadDate", t."VideoUrl", t."VideoYear", a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM (
+    SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear"
+    FROM "Videos" AS v
+    ORDER BY v."UploadDate" DESC
+    LIMIT @__p_1 OFFSET @__p_0
+) AS t
+INNER JOIN "AspNetUsers" AS a ON t."CreatorId" = a."Id"
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t1."Id", t1."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t1 ON v0."TagId" = t1."Id"
+) AS t0 ON t."Id" = t0."VideoId"
+ORDER BY t."UploadDate" DESC, t."Id", a."Id", t0."VideoId", t0."TagId"
+2025-07-23 01:52:15.565 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[StreamNest.Domain.Entities.Models.Video, StreamNest.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[StreamNest.Application.DTOs.VideoDto, StreamNest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-23 01:52:15.569 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.GetAllVideos (StreamNest.API) in 297.0974ms
+2025-07-23 01:52:15.573 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.GetAllVideos (StreamNest.API)'
+2025-07-23 01:52:15.577 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/VideoPosts - 200 null application/json; charset=utf-8 350.206ms
+2025-07-23 01:52:31.141 +01:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5213/api/VideoPosts/8b5c8a49-ea10-47f2-9495-230035fe3bb2 - null null
+2025-07-23 01:52:31.148 +01:00 [INF] CORS policy execution failed.
+2025-07-23 01:52:31.152 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-23 01:52:31.162 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API)'
+2025-07-23 01:52:31.165 +01:00 [INF] Route matched with {action = "DeleteVideoPost", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteVideoPost(System.Guid) on controller StreamNest.API.Controllers.VideoPostController (StreamNest.API).
+2025-07-23 01:52:31.444 +01:00 [INF] Executed DbCommand (268ms) [Parameters=[@__videoPostId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AgeRating", t."CreatorId", t."Description", t."Genre", t."Title", t."UploadDate", t."VideoUrl", t."VideoYear", t."Id0", t."AccessFailedCount", t."ConcurrencyStamp", t."Email", t."EmailConfirmed", t."FirstName", t."LastName", t."LockoutEnabled", t."LockoutEnd", t."NormalizedEmail", t."NormalizedUserName", t."PasswordHash", t."PhoneNumber", t."PhoneNumberConfirmed", t."RefreshToken", t."RefreshTokenExpiryTime", t."Role", t."SecurityStamp", t."TwoFactorEnabled", t."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM (
+    SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear", a."Id" AS "Id0", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+    FROM "Videos" AS v
+    INNER JOIN "AspNetUsers" AS a ON v."CreatorId" = a."Id"
+    WHERE v."Id" = @__videoPostId_0
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t1."Id", t1."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t1 ON v0."TagId" = t1."Id"
+) AS t0 ON t."Id" = t0."VideoId"
+ORDER BY t."Id", t."Id0", t0."VideoId", t0."TagId"
+2025-07-23 01:52:31.456 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API) in 281.7401ms
+2025-07-23 01:52:31.461 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API)'
+2025-07-23 01:52:31.465 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ApplicationException: Video with ID 8b5c8a49-ea10-47f2-9495-230035fe3bb2 not found.
+   at StreamNest.Application.Services.VideoPostService.DeleteVideoAsync(Guid videoId, String userId) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\Services\VideoPostService.cs:line 131
+   at StreamNest.API.Controllers.VideoPostController.DeleteVideoPost(Guid videoPostId) in C:\Users\user\Desktop\c##\StreamNest\streamnest.api\Controllers\VideoPostcController.cs:line 191
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-23 01:52:31.482 +01:00 [ERR] Exception: ApplicationException - Video with ID 8b5c8a49-ea10-47f2-9495-230035fe3bb2 not found.
+2025-07-23 01:52:31.485 +01:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5213/api/VideoPosts/8b5c8a49-ea10-47f2-9495-230035fe3bb2 - 500 null application/json; charset=utf-8 343.3325ms
+2025-07-23 01:52:59.897 +01:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5213/api/VideoPosts/e24300c8-940e-47a0-af0a-785c31ae9dd7 - null null
+2025-07-23 01:52:59.906 +01:00 [INF] CORS policy execution failed.
+2025-07-23 01:52:59.909 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-23 01:52:59.915 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API)'
+2025-07-23 01:52:59.920 +01:00 [INF] Route matched with {action = "DeleteVideoPost", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteVideoPost(System.Guid) on controller StreamNest.API.Controllers.VideoPostController (StreamNest.API).
+2025-07-23 01:53:00.216 +01:00 [INF] Executed DbCommand (285ms) [Parameters=[@__videoPostId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AgeRating", t."CreatorId", t."Description", t."Genre", t."Title", t."UploadDate", t."VideoUrl", t."VideoYear", t."Id0", t."AccessFailedCount", t."ConcurrencyStamp", t."Email", t."EmailConfirmed", t."FirstName", t."LastName", t."LockoutEnabled", t."LockoutEnd", t."NormalizedEmail", t."NormalizedUserName", t."PasswordHash", t."PhoneNumber", t."PhoneNumberConfirmed", t."RefreshToken", t."RefreshTokenExpiryTime", t."Role", t."SecurityStamp", t."TwoFactorEnabled", t."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM (
+    SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear", a."Id" AS "Id0", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+    FROM "Videos" AS v
+    INNER JOIN "AspNetUsers" AS a ON v."CreatorId" = a."Id"
+    WHERE v."Id" = @__videoPostId_0
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t1."Id", t1."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t1 ON v0."TagId" = t1."Id"
+) AS t0 ON t."Id" = t0."VideoId"
+ORDER BY t."Id", t."Id0", t0."VideoId", t0."TagId"
+2025-07-23 01:53:00.230 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API) in 302.0788ms
+2025-07-23 01:53:00.237 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API)'
+2025-07-23 01:53:00.242 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.UnauthorizedAccessException: You do not have permission to delete this video.
+   at StreamNest.Application.Services.VideoPostService.DeleteVideoAsync(Guid videoId, String userId) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\Services\VideoPostService.cs:line 134
+   at StreamNest.API.Controllers.VideoPostController.DeleteVideoPost(Guid videoPostId) in C:\Users\user\Desktop\c##\StreamNest\streamnest.api\Controllers\VideoPostcController.cs:line 191
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-23 01:53:00.272 +01:00 [ERR] Exception: UnauthorizedAccessException - You do not have permission to delete this video.
+2025-07-23 01:53:00.276 +01:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5213/api/VideoPosts/e24300c8-940e-47a0-af0a-785c31ae9dd7 - 500 null application/json; charset=utf-8 378.8082ms
+2025-07-23 01:54:11.766 +01:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5213/api/VideoPosts/e24300c8-940e-47a0-af0a-785c31ae9dd7 - null null
+2025-07-23 01:54:11.775 +01:00 [INF] CORS policy execution failed.
+2025-07-23 01:54:11.779 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-23 01:54:11.787 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API)'
+2025-07-23 01:54:11.792 +01:00 [INF] Route matched with {action = "DeleteVideoPost", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteVideoPost(System.Guid) on controller StreamNest.API.Controllers.VideoPostController (StreamNest.API).
+2025-07-23 01:54:12.151 +01:00 [INF] Executed DbCommand (348ms) [Parameters=[@__videoPostId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AgeRating", t."CreatorId", t."Description", t."Genre", t."Title", t."UploadDate", t."VideoUrl", t."VideoYear", t."Id0", t."AccessFailedCount", t."ConcurrencyStamp", t."Email", t."EmailConfirmed", t."FirstName", t."LastName", t."LockoutEnabled", t."LockoutEnd", t."NormalizedEmail", t."NormalizedUserName", t."PasswordHash", t."PhoneNumber", t."PhoneNumberConfirmed", t."RefreshToken", t."RefreshTokenExpiryTime", t."Role", t."SecurityStamp", t."TwoFactorEnabled", t."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM (
+    SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear", a."Id" AS "Id0", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+    FROM "Videos" AS v
+    INNER JOIN "AspNetUsers" AS a ON v."CreatorId" = a."Id"
+    WHERE v."Id" = @__videoPostId_0
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t1."Id", t1."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t1 ON v0."TagId" = t1."Id"
+) AS t0 ON t."Id" = t0."VideoId"
+ORDER BY t."Id", t."Id0", t0."VideoId", t0."TagId"
+2025-07-23 01:54:12.161 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API) in 359.8675ms
+2025-07-23 01:54:12.164 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API)'
+2025-07-23 01:54:12.168 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.UnauthorizedAccessException: You do not have permission to delete this video.
+   at StreamNest.Application.Services.VideoPostService.DeleteVideoAsync(Guid videoId, String userId) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\Services\VideoPostService.cs:line 134
+   at StreamNest.API.Controllers.VideoPostController.DeleteVideoPost(Guid videoPostId) in C:\Users\user\Desktop\c##\StreamNest\streamnest.api\Controllers\VideoPostcController.cs:line 191
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-23 01:54:12.297 +01:00 [ERR] Exception: UnauthorizedAccessException - You do not have permission to delete this video.
+2025-07-23 01:54:12.302 +01:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5213/api/VideoPosts/e24300c8-940e-47a0-af0a-785c31ae9dd7 - 500 null application/json; charset=utf-8 535.822ms
+2025-07-23 01:54:26.599 +01:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5213/api/VideoPosts/e24300c8-940e-47a0-af0a-785c31ae9dd7 - null null
+2025-07-23 01:54:26.633 +01:00 [INF] CORS policy execution failed.
+2025-07-23 01:54:26.636 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-23 01:54:26.640 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API)'
+2025-07-23 01:54:26.642 +01:00 [INF] Route matched with {action = "DeleteVideoPost", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteVideoPost(System.Guid) on controller StreamNest.API.Controllers.VideoPostController (StreamNest.API).
+2025-07-23 01:54:26.914 +01:00 [INF] Executed DbCommand (263ms) [Parameters=[@__videoPostId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AgeRating", t."CreatorId", t."Description", t."Genre", t."Title", t."UploadDate", t."VideoUrl", t."VideoYear", t."Id0", t."AccessFailedCount", t."ConcurrencyStamp", t."Email", t."EmailConfirmed", t."FirstName", t."LastName", t."LockoutEnabled", t."LockoutEnd", t."NormalizedEmail", t."NormalizedUserName", t."PasswordHash", t."PhoneNumber", t."PhoneNumberConfirmed", t."RefreshToken", t."RefreshTokenExpiryTime", t."Role", t."SecurityStamp", t."TwoFactorEnabled", t."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM (
+    SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear", a."Id" AS "Id0", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+    FROM "Videos" AS v
+    INNER JOIN "AspNetUsers" AS a ON v."CreatorId" = a."Id"
+    WHERE v."Id" = @__videoPostId_0
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t1."Id", t1."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t1 ON v0."TagId" = t1."Id"
+) AS t0 ON t."Id" = t0."VideoId"
+ORDER BY t."Id", t."Id0", t0."VideoId", t0."TagId"
+2025-07-23 01:54:26.923 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API) in 274.1959ms
+2025-07-23 01:54:26.928 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API)'
+2025-07-23 01:54:26.933 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.UnauthorizedAccessException: You do not have permission to delete this video.
+   at StreamNest.Application.Services.VideoPostService.DeleteVideoAsync(Guid videoId, String userId) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\Services\VideoPostService.cs:line 134
+   at StreamNest.API.Controllers.VideoPostController.DeleteVideoPost(Guid videoPostId) in C:\Users\user\Desktop\c##\StreamNest\streamnest.api\Controllers\VideoPostcController.cs:line 191
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-23 01:54:26.951 +01:00 [ERR] Exception: UnauthorizedAccessException - You do not have permission to delete this video.
+2025-07-23 01:54:26.954 +01:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5213/api/VideoPosts/e24300c8-940e-47a0-af0a-785c31ae9dd7 - 500 null application/json; charset=utf-8 355.3024ms
+2025-07-23 01:54:53.844 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 58
+2025-07-23 01:54:53.852 +01:00 [INF] CORS policy execution failed.
+2025-07-23 01:54:53.855 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-23 01:54:53.859 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-23 01:54:53.865 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-23 01:54:54.284 +01:00 [INF] Executed DbCommand (404ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-23 01:54:54.296 +01:00 [WRN] Authentication failed. No user found with email: tomiwagmail.con
+2025-07-23 01:54:54.302 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-07-23 01:54:54.326 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 447.7804ms
+2025-07-23 01:54:54.332 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-23 01:54:54.341 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 400 null application/problem+json; charset=utf-8 496.6793ms
+2025-07-23 01:55:01.052 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 58
+2025-07-23 01:55:01.059 +01:00 [INF] CORS policy execution failed.
+2025-07-23 01:55:01.062 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-23 01:55:01.066 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-23 01:55:01.072 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-23 01:55:01.346 +01:00 [INF] Executed DbCommand (266ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-23 01:55:01.354 +01:00 [WRN] Authentication failed. No user found with email: tomiwagmail.com
+2025-07-23 01:55:01.358 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-07-23 01:55:01.363 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 285.5821ms
+2025-07-23 01:55:01.369 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-23 01:55:01.376 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 400 null application/problem+json; charset=utf-8 324.094ms
+2025-07-23 01:55:06.861 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 58
+2025-07-23 01:55:06.868 +01:00 [INF] CORS policy execution failed.
+2025-07-23 01:55:06.872 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-23 01:55:06.876 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-23 01:55:06.881 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-23 01:55:07.160 +01:00 [INF] Executed DbCommand (265ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-23 01:55:07.171 +01:00 [WRN] Authentication failed. No user found with email: tomiwagmail.com
+2025-07-23 01:55:07.173 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-07-23 01:55:07.177 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 283.2907ms
+2025-07-23 01:55:07.182 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-23 01:55:07.187 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 400 null application/problem+json; charset=utf-8 326.7224ms
+2025-07-23 01:55:24.215 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 59
+2025-07-23 01:55:24.223 +01:00 [INF] CORS policy execution failed.
+2025-07-23 01:55:24.225 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-23 01:55:24.229 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-23 01:55:24.233 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-23 01:55:24.502 +01:00 [INF] Executed DbCommand (261ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-23 01:55:24.864 +01:00 [INF] Executed DbCommand (258ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-23 01:55:25.136 +01:00 [INF] Executed DbCommand (261ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-23 01:55:25.408 +01:00 [INF] Executed DbCommand (260ms) [Parameters=[@p19='?', @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "RefreshToken" = @p13, "RefreshTokenExpiryTime" = @p14, "Role" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-07-23 01:55:25.416 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.TokenDto'.
+2025-07-23 01:55:25.420 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 1181.4252ms
+2025-07-23 01:55:25.426 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-23 01:55:25.430 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 200 null application/json; charset=utf-8 1214.3669ms
+2025-07-23 01:55:51.711 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/VideoPosts/me - null null
+2025-07-23 01:55:51.720 +01:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Creator)
+2025-07-23 01:55:51.724 +01:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-07-23 01:55:51.728 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/VideoPosts/me - 403 0 null 16.1883ms
+2025-07-23 01:55:59.468 +01:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5213/api/VideoPosts/e24300c8-940e-47a0-af0a-785c31ae9dd7 - null null
+2025-07-23 01:55:59.476 +01:00 [INF] CORS policy execution failed.
+2025-07-23 01:55:59.478 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-23 01:55:59.482 +01:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Creator)
+2025-07-23 01:55:59.484 +01:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-07-23 01:55:59.488 +01:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5213/api/VideoPosts/e24300c8-940e-47a0-af0a-785c31ae9dd7 - 403 0 null 19.7241ms
+2025-07-23 01:56:13.017 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/VideoPosts - null null
+2025-07-23 01:56:13.052 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.GetAllVideos (StreamNest.API)'
+2025-07-23 01:56:13.057 +01:00 [INF] Route matched with {action = "GetAllVideos", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllVideos() on controller StreamNest.API.Controllers.VideoPostController (StreamNest.API).
+2025-07-23 01:56:14.834 +01:00 [INF] Executed DbCommand (270ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AgeRating", t."CreatorId", t."Description", t."Genre", t."Title", t."UploadDate", t."VideoUrl", t."VideoYear", a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM (
+    SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear"
+    FROM "Videos" AS v
+    ORDER BY v."UploadDate" DESC
+    LIMIT @__p_1 OFFSET @__p_0
+) AS t
+INNER JOIN "AspNetUsers" AS a ON t."CreatorId" = a."Id"
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t1."Id", t1."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t1 ON v0."TagId" = t1."Id"
+) AS t0 ON t."Id" = t0."VideoId"
+ORDER BY t."UploadDate" DESC, t."Id", a."Id", t0."VideoId", t0."TagId"
+2025-07-23 01:56:14.843 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[StreamNest.Domain.Entities.Models.Video, StreamNest.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[StreamNest.Application.DTOs.VideoDto, StreamNest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-23 01:56:14.850 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.GetAllVideos (StreamNest.API) in 1787.395ms
+2025-07-23 01:56:14.854 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.GetAllVideos (StreamNest.API)'
+2025-07-23 01:56:14.860 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/VideoPosts - 200 null application/json; charset=utf-8 1843.489ms
+2025-07-23 01:56:32.922 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/VideoPosts - multipart/form-data; boundary=----WebKitFormBoundary0e5OwWfnLbbbFb01 756
+2025-07-23 01:56:32.937 +01:00 [INF] CORS policy execution failed.
+2025-07-23 01:56:32.940 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-23 01:56:32.948 +01:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Creator)
+2025-07-23 01:56:32.955 +01:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-07-23 01:56:32.957 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/VideoPosts - 403 0 null 34.9833ms
+2025-07-23 02:01:18.734 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 57
+2025-07-23 02:01:18.742 +01:00 [INF] CORS policy execution failed.
+2025-07-23 02:01:18.744 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-23 02:01:18.750 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-23 02:01:18.755 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-23 02:01:20.544 +01:00 [INF] Executed DbCommand (288ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-23 02:01:20.913 +01:00 [INF] Executed DbCommand (274ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-23 02:01:21.200 +01:00 [INF] Executed DbCommand (279ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-23 02:01:21.695 +01:00 [INF] Executed DbCommand (484ms) [Parameters=[@p19='?', @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "RefreshToken" = @p13, "RefreshTokenExpiryTime" = @p14, "Role" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-07-23 02:01:21.704 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.TokenDto'.
+2025-07-23 02:01:21.708 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 2943.6117ms
+2025-07-23 02:01:21.713 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-23 02:01:21.716 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 200 null application/json; charset=utf-8 2981.7939ms
+2025-07-23 02:01:39.671 +01:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5213/api/VideoPosts/e24300c8-940e-47a0-af0a-785c31ae9dd7 - null null
+2025-07-23 02:01:39.680 +01:00 [INF] CORS policy execution failed.
+2025-07-23 02:01:39.684 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-23 02:01:39.691 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API)'
+2025-07-23 02:01:39.695 +01:00 [INF] Route matched with {action = "DeleteVideoPost", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteVideoPost(System.Guid) on controller StreamNest.API.Controllers.VideoPostController (StreamNest.API).
+2025-07-23 02:01:40.002 +01:00 [INF] Executed DbCommand (293ms) [Parameters=[@__videoPostId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AgeRating", t."CreatorId", t."Description", t."Genre", t."Title", t."UploadDate", t."VideoUrl", t."VideoYear", t."Id0", t."AccessFailedCount", t."ConcurrencyStamp", t."Email", t."EmailConfirmed", t."FirstName", t."LastName", t."LockoutEnabled", t."LockoutEnd", t."NormalizedEmail", t."NormalizedUserName", t."PasswordHash", t."PhoneNumber", t."PhoneNumberConfirmed", t."RefreshToken", t."RefreshTokenExpiryTime", t."Role", t."SecurityStamp", t."TwoFactorEnabled", t."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM (
+    SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear", a."Id" AS "Id0", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+    FROM "Videos" AS v
+    INNER JOIN "AspNetUsers" AS a ON v."CreatorId" = a."Id"
+    WHERE v."Id" = @__videoPostId_0
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t1."Id", t1."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t1 ON v0."TagId" = t1."Id"
+) AS t0 ON t."Id" = t0."VideoId"
+ORDER BY t."Id", t."Id0", t0."VideoId", t0."TagId"
+2025-07-23 02:01:40.041 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API) in 334.09ms
+2025-07-23 02:01:40.051 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API)'
+2025-07-23 02:01:40.058 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.UnauthorizedAccessException: You do not have permission to delete this video.
+   at StreamNest.Application.Services.VideoPostService.DeleteVideoAsync(Guid videoId, String userId) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\Services\VideoPostService.cs:line 134
+   at StreamNest.API.Controllers.VideoPostController.DeleteVideoPost(Guid videoPostId) in C:\Users\user\Desktop\c##\StreamNest\streamnest.api\Controllers\VideoPostcController.cs:line 191
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-23 02:01:40.079 +01:00 [ERR] Exception: UnauthorizedAccessException - You do not have permission to delete this video.
+2025-07-23 02:01:40.084 +01:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5213/api/VideoPosts/e24300c8-940e-47a0-af0a-785c31ae9dd7 - 500 null application/json; charset=utf-8 412.2948ms
+2025-07-23 02:05:08.325 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/VideoPosts - null null
+2025-07-23 02:05:08.335 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.GetAllVideos (StreamNest.API)'
+2025-07-23 02:05:08.338 +01:00 [INF] Route matched with {action = "GetAllVideos", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllVideos() on controller StreamNest.API.Controllers.VideoPostController (StreamNest.API).
+2025-07-23 02:05:08.642 +01:00 [INF] Executed DbCommand (293ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AgeRating", t."CreatorId", t."Description", t."Genre", t."Title", t."UploadDate", t."VideoUrl", t."VideoYear", a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM (
+    SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear"
+    FROM "Videos" AS v
+    ORDER BY v."UploadDate" DESC
+    LIMIT @__p_1 OFFSET @__p_0
+) AS t
+INNER JOIN "AspNetUsers" AS a ON t."CreatorId" = a."Id"
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t1."Id", t1."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t1 ON v0."TagId" = t1."Id"
+) AS t0 ON t."Id" = t0."VideoId"
+ORDER BY t."UploadDate" DESC, t."Id", a."Id", t0."VideoId", t0."TagId"
+2025-07-23 02:05:08.684 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[StreamNest.Domain.Entities.Models.Video, StreamNest.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[StreamNest.Application.DTOs.VideoDto, StreamNest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-23 02:05:08.692 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.GetAllVideos (StreamNest.API) in 346.3446ms
+2025-07-23 02:05:08.697 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.GetAllVideos (StreamNest.API)'
+2025-07-23 02:05:08.702 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/VideoPosts - 200 null application/json; charset=utf-8 376.5645ms
+2025-07-23 02:05:26.747 +01:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5213/api/VideoPosts/884f8b68-4883-4d1f-8ed6-40e51560b0c9 - null null
+2025-07-23 02:05:26.770 +01:00 [INF] CORS policy execution failed.
+2025-07-23 02:05:26.774 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-23 02:05:26.788 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API)'
+2025-07-23 02:05:26.793 +01:00 [INF] Route matched with {action = "DeleteVideoPost", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteVideoPost(System.Guid) on controller StreamNest.API.Controllers.VideoPostController (StreamNest.API).
+2025-07-23 02:05:27.076 +01:00 [INF] Executed DbCommand (273ms) [Parameters=[@__videoPostId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AgeRating", t."CreatorId", t."Description", t."Genre", t."Title", t."UploadDate", t."VideoUrl", t."VideoYear", t."Id0", t."AccessFailedCount", t."ConcurrencyStamp", t."Email", t."EmailConfirmed", t."FirstName", t."LastName", t."LockoutEnabled", t."LockoutEnd", t."NormalizedEmail", t."NormalizedUserName", t."PasswordHash", t."PhoneNumber", t."PhoneNumberConfirmed", t."RefreshToken", t."RefreshTokenExpiryTime", t."Role", t."SecurityStamp", t."TwoFactorEnabled", t."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM (
+    SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear", a."Id" AS "Id0", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+    FROM "Videos" AS v
+    INNER JOIN "AspNetUsers" AS a ON v."CreatorId" = a."Id"
+    WHERE v."Id" = @__videoPostId_0
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t1."Id", t1."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t1 ON v0."TagId" = t1."Id"
+) AS t0 ON t."Id" = t0."VideoId"
+ORDER BY t."Id", t."Id0", t0."VideoId", t0."TagId"
+2025-07-23 02:05:27.379 +01:00 [INF] Executed DbCommand (272ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Guid), @p2='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "VideoTags"
+WHERE "TagId" = @p0 AND "VideoId" = @p1;
+DELETE FROM "Videos"
+WHERE "Id" = @p2;
+2025-07-23 02:05:27.675 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-07-23 02:05:27.679 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API) in 880.0023ms
+2025-07-23 02:05:27.682 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API)'
+2025-07-23 02:05:27.684 +01:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5213/api/VideoPosts/884f8b68-4883-4d1f-8ed6-40e51560b0c9 - 204 null null 936.6903ms
+2025-07-23 02:05:53.706 +01:00 [INF] Application is shutting down...
+2025-07-23 02:06:12.634 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-23 02:06:12.817 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-23 02:06:12.824 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-23 02:06:12.828 +01:00 [INF] Hosting environment: Development
+2025-07-23 02:06:12.832 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-23 02:06:18.233 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 59
+2025-07-23 02:06:18.352 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-23 02:06:18.385 +01:00 [INF] CORS policy execution failed.
+2025-07-23 02:06:18.387 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-23 02:06:18.502 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-23 02:06:18.535 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-23 02:06:22.937 +01:00 [INF] Executed DbCommand (365ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-23 02:06:23.727 +01:00 [INF] Executed DbCommand (278ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-23 02:06:24.027 +01:00 [INF] Executed DbCommand (278ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-23 02:06:24.446 +01:00 [INF] Executed DbCommand (278ms) [Parameters=[@p19='?', @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "RefreshToken" = @p13, "RefreshTokenExpiryTime" = @p14, "Role" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-07-23 02:06:24.494 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.TokenDto'.
+2025-07-23 02:06:24.535 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 5988.0013ms
+2025-07-23 02:06:24.544 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-23 02:06:24.567 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 200 null application/json; charset=utf-8 6336.5318ms
+2025-07-23 02:06:55.443 +01:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5213/api/VideoPosts/e24300c8-940e-47a0-af0a-785c31ae9dd7 - null null
+2025-07-23 02:06:55.458 +01:00 [INF] CORS policy execution failed.
+2025-07-23 02:06:55.461 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-23 02:06:55.476 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API)'
+2025-07-23 02:06:55.488 +01:00 [INF] Route matched with {action = "DeleteVideoPost", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteVideoPost(System.Guid) on controller StreamNest.API.Controllers.VideoPostController (StreamNest.API).
+2025-07-23 02:06:55.932 +01:00 [INF] Executed DbCommand (277ms) [Parameters=[@__videoPostId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AgeRating", t."CreatorId", t."Description", t."Genre", t."Title", t."UploadDate", t."VideoUrl", t."VideoYear", t."Id0", t."AccessFailedCount", t."ConcurrencyStamp", t."Email", t."EmailConfirmed", t."FirstName", t."LastName", t."LockoutEnabled", t."LockoutEnd", t."NormalizedEmail", t."NormalizedUserName", t."PasswordHash", t."PhoneNumber", t."PhoneNumberConfirmed", t."RefreshToken", t."RefreshTokenExpiryTime", t."Role", t."SecurityStamp", t."TwoFactorEnabled", t."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM (
+    SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear", a."Id" AS "Id0", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+    FROM "Videos" AS v
+    INNER JOIN "AspNetUsers" AS a ON v."CreatorId" = a."Id"
+    WHERE v."Id" = @__videoPostId_0
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t1."Id", t1."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t1 ON v0."TagId" = t1."Id"
+) AS t0 ON t."Id" = t0."VideoId"
+ORDER BY t."Id", t."Id0", t0."VideoId", t0."TagId"
+2025-07-23 02:06:56.361 +01:00 [INF] Executed DbCommand (293ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Guid), @p2='?' (DbType = Int32), @p3='?' (DbType = Guid), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "VideoTags"
+WHERE "TagId" = @p0 AND "VideoId" = @p1;
+DELETE FROM "VideoTags"
+WHERE "TagId" = @p2 AND "VideoId" = @p3;
+DELETE FROM "Videos"
+WHERE "Id" = @p4;
+2025-07-23 02:06:56.659 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-07-23 02:06:56.663 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API) in 1170.2138ms
+2025-07-23 02:06:56.669 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.DeleteVideoPost (StreamNest.API)'
+2025-07-23 02:06:56.675 +01:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5213/api/VideoPosts/e24300c8-940e-47a0-af0a-785c31ae9dd7 - 204 null null 1231.6945ms
+2025-07-23 02:07:02.659 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/VideoPosts - null null
+2025-07-23 02:07:02.695 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.GetAllVideos (StreamNest.API)'
+2025-07-23 02:07:02.715 +01:00 [INF] Route matched with {action = "GetAllVideos", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllVideos() on controller StreamNest.API.Controllers.VideoPostController (StreamNest.API).
+2025-07-23 02:07:03.129 +01:00 [INF] Executed DbCommand (270ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AgeRating", t."CreatorId", t."Description", t."Genre", t."Title", t."UploadDate", t."VideoUrl", t."VideoYear", a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM (
+    SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear"
+    FROM "Videos" AS v
+    ORDER BY v."UploadDate" DESC
+    LIMIT @__p_1 OFFSET @__p_0
+) AS t
+INNER JOIN "AspNetUsers" AS a ON t."CreatorId" = a."Id"
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t1."Id", t1."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t1 ON v0."TagId" = t1."Id"
+) AS t0 ON t."Id" = t0."VideoId"
+ORDER BY t."UploadDate" DESC, t."Id", a."Id", t0."VideoId", t0."TagId"
+2025-07-23 02:07:03.145 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[StreamNest.Domain.Entities.Models.Video, StreamNest.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[StreamNest.Application.DTOs.VideoDto, StreamNest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-23 02:07:03.194 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.GetAllVideos (StreamNest.API) in 467.3692ms
+2025-07-23 02:07:03.202 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.GetAllVideos (StreamNest.API)'
+2025-07-23 02:07:03.213 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/VideoPosts - 200 null application/json; charset=utf-8 554.5365ms
+2025-07-23 02:07:20.979 +01:00 [INF] Application is shutting down...

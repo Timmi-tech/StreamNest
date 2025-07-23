@@ -5,5 +5,7 @@ namespace StreamNest.Application.Services.Contracts
     {
         IAuthenticationService AuthenticationService { get; }
         IUserProfileService UserProfileService { get; }
+        IVideoService VideoService { get; }
+        IVideoPostService VideoPostService { get; }
     }
 }
