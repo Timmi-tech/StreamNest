@@ -7,8 +7,8 @@ namespace StreamNest.Application.Services
 {
     internal class CommentService : ICommentService
     {
-        private readonly IRepositoryManager? _repository;
-        private readonly ILoggerManager? _logger;
+        private readonly IRepositoryManager _repository;
+        private readonly ILoggerManager _logger;
 
         public CommentService(IRepositoryManager repository, ILoggerManager logger)
         {
@@ -32,12 +32,13 @@ namespace StreamNest.Application.Services
             _repository.Comment.AddComment(comment);
             await _repository.SaveAsync();
 
+
+
             var commentResponseDto = new CommentResponseDto
             {
                 Id = comment.Id,
                 Content = comment.Content,
                 VideoId = comment.VideoId,
-                UserName = comment.User.UserName ?? string.Empty,
                 UserProfileId = comment.UserId,
                 CreatedAt = comment.CreatedAt
 

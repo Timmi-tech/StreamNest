@@ -55,14 +55,15 @@ namespace StreamNest.API.Controllers
         /// <response code="404">No comments found for the given video.</response>
         [HttpGet("{videoId:guid}")]
         [SwaggerOperation(Summary = "Get comments by video ID", Description = "Retrieves all comments for a given video.")]
-        [SwaggerResponse(200, "Comments retrieved successfully")]
-        [SwaggerResponse(404, "No comments found for this video")]
+        [SwaggerResponse(200, "Comments retrieved successfully", Type = typeof(List<CommentResponseDto>))]
+        [SwaggerResponse(404, "Video not found")]
         public async Task<IActionResult> GetCommentsByVideoId(Guid videoId)
         {
-            var comments = await _service.CommentService.GetCommentsByVideoIdAsync(videoId, trackChanges: false);
+            var videoExists = await _service.VideoPostService.GetVideoByIdAsync(videoId, trackChanges: false);
+            if (videoExists == null)
+                return NotFound(new { Message = "Video not found." });
 
-            if (comments == null || !comments.Any())
-                return NotFound(new { Message = "No comments found for this video." });
+            var comments = await _service.CommentService.GetCommentsByVideoIdAsync(videoId, trackChanges: false);
 
             return Ok(comments);
         }

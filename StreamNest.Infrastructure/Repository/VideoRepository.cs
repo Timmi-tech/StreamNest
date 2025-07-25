@@ -36,7 +36,6 @@ namespace StreamNest.Infrastructure.Repository
                 .ThenInclude(vt => vt.Tag)
             .OrderByDescending(v => v.UploadDate)
             .ToListAsync();
-
         public void DeletePost(Video video) => Delete(video);
     }
 }

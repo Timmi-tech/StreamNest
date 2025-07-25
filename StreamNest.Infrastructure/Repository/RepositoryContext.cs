@@ -44,10 +44,10 @@ public class RepositoryContext : IdentityDbContext<User>
         .HasForeignKey(vt => vt.TagId)
         .OnDelete(DeleteBehavior.Cascade);
 
-        // Optional: make Tag name unique
-        modelBuilder.Entity<Tag>()
-        .HasIndex(t => t.Name)
-        .IsUnique();
+        // // Optional: make Tag name unique
+        // modelBuilder.Entity<Tag>()
+        // .HasIndex(t => t.Name)
+        // .IsUnique();
 
         // Configure Comment entity
         modelBuilder.Entity<Comment>()

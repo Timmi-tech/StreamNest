@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "brVxf5TdxYgnwV0Z3/QP+5HaZZ7H5GcYOeYEpIZYRzU=",
-  "Source": "StreamNest.API",
-  "BasePath": "_content/StreamNest.API",
+  "Hash": "WPosZeHWOFu18mPtV1QXEOFBOwCDEHUgujJM5kAp5Q0=",
+  "Source": "StreamNest.Api",
+  "BasePath": "_content/StreamNest.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

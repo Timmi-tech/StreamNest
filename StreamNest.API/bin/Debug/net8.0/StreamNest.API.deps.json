@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "StreamNest.API/1.0.0": {
+      "StreamNest.Api/1.0.0": {
         "dependencies": {
           "DotNetEnv": "3.1.1",
           "Microsoft.AspNetCore.OpenApi": "8.0.10",
@@ -19,7 +19,7 @@
           "Swashbuckle.AspNetCore.Annotations": "8.1.0"
         },
         "runtime": {
-          "StreamNest.API.dll": {}
+          "StreamNest.Api.dll": {}
         }
       },
       "CloudinaryDotNet/1.27.5": {
@@ -2150,7 +2150,7 @@
     }
   },
   "libraries": {
-    "StreamNest.API/1.0.0": {
+    "StreamNest.Api/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
