@@ -33,5 +33,10 @@ namespace StreamNest.Domain.Entities.Models
         [ForeignKey(nameof(CreatorId))]
         public User Creator { get; set; } = null!;
 
+        // 🔥 Link to Comments
+        public List<Comment> Comments { get; set; } = new();
+        // 🔥 Link to Likes
+        public List<Like> Likes { get; set; } = new();
+
     }
 }

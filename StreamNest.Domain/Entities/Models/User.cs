@@ -14,5 +14,9 @@ namespace StreamNest.Domain.Entities.Models
 
         public ICollection<Video> Videos { get; set; } = new List<Video>();
 
+        public ICollection<Comment> Comments { get; set; } = new List<Comment>();
+        public ICollection<Like> Likes { get; set; } = new List<Like>();
+
+
     }
 }

@@ -1,0 +1,309 @@
+2025-07-25 02:21:35.999 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-25 02:21:36.253 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-25 02:21:36.264 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-25 02:21:36.268 +01:00 [INF] Hosting environment: Development
+2025-07-25 02:21:36.270 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-25 02:22:26.065 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-25 02:22:26.235 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 172.8367ms
+2025-07-25 02:22:26.318 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - null null
+2025-07-25 02:22:26.332 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.css - null null
+2025-07-25 02:22:26.343 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - null null
+2025-07-25 02:22:26.350 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-25 02:22:26.349 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - null null
+2025-07-25 02:22:26.378 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-07-25 02:22:26.396 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 44.8582ms
+2025-07-25 02:22:26.411 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-07-25 02:22:26.428 +01:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-07-25 02:22:26.442 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui.css - 200 154948 text/css 126.1382ms
+2025-07-25 02:22:26.443 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-07-25 02:22:26.460 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-bundle.js - 200 1466324 text/javascript 116.8002ms
+2025-07-25 02:22:26.495 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 145.8888ms
+2025-07-25 02:22:26.476 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.css - 200 202 text/css 144.3192ms
+2025-07-25 02:22:26.974 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - null null
+2025-07-25 02:22:26.981 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-07-25 02:22:26.986 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/favicon-32x32.png - 200 628 image/png 11.6241ms
+2025-07-25 02:22:27.409 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-25 02:22:27.796 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 386.4874ms
+2025-07-25 02:22:32.992 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-25 02:22:33.001 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 9.9037ms
+2025-07-25 02:22:33.076 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-25 02:22:33.099 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 22.8367ms
+2025-07-25 02:22:33.612 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-25 02:22:33.713 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 100.8322ms
+2025-07-25 02:23:07.229 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 57
+2025-07-25 02:23:07.244 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-25 02:23:07.305 +01:00 [INF] CORS policy execution failed.
+2025-07-25 02:23:07.308 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 02:23:07.468 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-25 02:23:07.511 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-25 02:23:12.403 +01:00 [INF] Executed DbCommand (312ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-25 02:23:12.944 +01:00 [INF] Executed DbCommand (299ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-25 02:23:13.232 +01:00 [INF] Executed DbCommand (276ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-25 02:23:13.603 +01:00 [INF] Executed DbCommand (265ms) [Parameters=[@p19='?', @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "RefreshToken" = @p13, "RefreshTokenExpiryTime" = @p14, "Role" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-07-25 02:23:13.657 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.TokenDto'.
+2025-07-25 02:23:13.680 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 6151.5658ms
+2025-07-25 02:23:13.688 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-25 02:23:13.697 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 200 null application/json; charset=utf-8 6467.8196ms
+2025-07-25 02:23:41.275 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/VideoPosts - null null
+2025-07-25 02:23:41.353 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.GetAllVideos (StreamNest.API)'
+2025-07-25 02:23:41.366 +01:00 [INF] Route matched with {action = "GetAllVideos", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllVideos() on controller StreamNest.API.Controllers.VideoPostController (StreamNest.API).
+2025-07-25 02:23:41.912 +01:00 [INF] Executed DbCommand (268ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AgeRating", t."CreatorId", t."Description", t."Genre", t."Title", t."UploadDate", t."VideoUrl", t."VideoYear", a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM (
+    SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear"
+    FROM "Videos" AS v
+    ORDER BY v."UploadDate" DESC
+    LIMIT @__p_1 OFFSET @__p_0
+) AS t
+INNER JOIN "AspNetUsers" AS a ON t."CreatorId" = a."Id"
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t1."Id", t1."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t1 ON v0."TagId" = t1."Id"
+) AS t0 ON t."Id" = t0."VideoId"
+ORDER BY t."UploadDate" DESC, t."Id", a."Id", t0."VideoId", t0."TagId"
+2025-07-25 02:23:41.941 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[StreamNest.Domain.Entities.Models.Video, StreamNest.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[StreamNest.Application.DTOs.VideoDto, StreamNest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-25 02:23:41.979 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.GetAllVideos (StreamNest.API) in 603.4066ms
+2025-07-25 02:23:41.985 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.GetAllVideos (StreamNest.API)'
+2025-07-25 02:23:41.988 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/VideoPosts - 200 null application/json; charset=utf-8 712.1098ms
+2025-07-25 02:24:22.576 +01:00 [INF] Application is shutting down...
+2025-07-25 02:35:28.260 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-25 02:35:28.752 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-25 02:35:28.767 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-25 02:35:28.775 +01:00 [INF] Hosting environment: Development
+2025-07-25 02:35:28.779 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-25 02:35:47.543 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-25 02:35:47.785 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 243.0064ms
+2025-07-25 02:35:47.924 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-25 02:35:47.935 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 12.0955ms
+2025-07-25 02:35:48.787 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-25 02:35:49.146 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 358.9616ms
+2025-07-25 02:36:19.714 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 57
+2025-07-25 02:36:19.725 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-25 02:36:19.759 +01:00 [INF] CORS policy execution failed.
+2025-07-25 02:36:19.763 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 02:36:19.818 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-25 02:36:19.861 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-25 02:36:24.169 +01:00 [INF] Executed DbCommand (357ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-25 02:36:24.728 +01:00 [INF] Executed DbCommand (284ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-25 02:36:25.002 +01:00 [INF] Executed DbCommand (262ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-25 02:36:25.372 +01:00 [INF] Executed DbCommand (265ms) [Parameters=[@p19='?', @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "RefreshToken" = @p13, "RefreshTokenExpiryTime" = @p14, "Role" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-07-25 02:36:25.426 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.TokenDto'.
+2025-07-25 02:36:25.458 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 5586.2462ms
+2025-07-25 02:36:25.465 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-25 02:36:25.482 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 200 null application/json; charset=utf-8 5767.635ms
+2025-07-25 02:36:50.726 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/VideoPosts - null null
+2025-07-25 02:36:50.797 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.GetAllVideos (StreamNest.API)'
+2025-07-25 02:36:50.808 +01:00 [INF] Route matched with {action = "GetAllVideos", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllVideos() on controller StreamNest.API.Controllers.VideoPostController (StreamNest.API).
+2025-07-25 02:36:51.300 +01:00 [INF] Executed DbCommand (287ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AgeRating", t."CreatorId", t."Description", t."Genre", t."Title", t."UploadDate", t."VideoUrl", t."VideoYear", a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM (
+    SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear"
+    FROM "Videos" AS v
+    ORDER BY v."UploadDate" DESC
+    LIMIT @__p_1 OFFSET @__p_0
+) AS t
+INNER JOIN "AspNetUsers" AS a ON t."CreatorId" = a."Id"
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t1."Id", t1."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t1 ON v0."TagId" = t1."Id"
+) AS t0 ON t."Id" = t0."VideoId"
+ORDER BY t."UploadDate" DESC, t."Id", a."Id", t0."VideoId", t0."TagId"
+2025-07-25 02:36:51.338 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[StreamNest.Domain.Entities.Models.Video, StreamNest.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[StreamNest.Application.DTOs.VideoDto, StreamNest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-25 02:36:51.380 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.GetAllVideos (StreamNest.API) in 566.9306ms
+2025-07-25 02:36:51.384 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.GetAllVideos (StreamNest.API)'
+2025-07-25 02:36:51.390 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/VideoPosts - 200 null application/json; charset=utf-8 664.1542ms
+2025-07-25 02:37:45.417 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/Comments - application/json 118
+2025-07-25 02:37:45.428 +01:00 [INF] CORS policy execution failed.
+2025-07-25 02:37:45.431 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 02:37:45.446 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.CommentsController.CreateComment (StreamNest.API)'
+2025-07-25 02:37:45.459 +01:00 [INF] Route matched with {action = "CreateComment", controller = "Comments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateComment(StreamNest.Application.DTOs.CreateCommentDto) on controller StreamNest.API.Controllers.CommentsController (StreamNest.API).
+2025-07-25 02:37:45.842 +01:00 [INF] Executed DbCommand (264ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = DateTime), @p3='?', @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Comments" ("Id", "Content", "CreatedAt", "UserId", "VideoId")
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-07-25 02:37:45.853 +01:00 [INF] Executing CreatedAtActionResult, writing value of type 'StreamNest.Application.DTOs.CommentResponseDto'.
+2025-07-25 02:37:45.876 +01:00 [INF] Executed action StreamNest.API.Controllers.CommentsController.CreateComment (StreamNest.API) in 406.0852ms
+2025-07-25 02:37:45.883 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.CommentsController.CreateComment (StreamNest.API)'
+2025-07-25 02:37:45.887 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/Comments - 201 null application/json; charset=utf-8 470.282ms
+2025-07-25 02:38:18.869 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/Comments/f33a62a5-9994-46b3-b8ee-8ccbe13ba754 - null null
+2025-07-25 02:38:18.878 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.CommentsController.GetCommentsByVideoId (StreamNest.API)'
+2025-07-25 02:38:18.915 +01:00 [INF] Route matched with {action = "GetCommentsByVideoId", controller = "Comments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCommentsByVideoId(System.Guid) on controller StreamNest.API.Controllers.CommentsController (StreamNest.API).
+2025-07-25 02:38:19.215 +01:00 [INF] Executed DbCommand (280ms) [Parameters=[@__videoId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."Content", c."CreatedAt", c."UserId", c."VideoId", a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "Comments" AS c
+INNER JOIN "AspNetUsers" AS a ON c."UserId" = a."Id"
+WHERE c."VideoId" = @__videoId_0
+ORDER BY c."CreatedAt" DESC
+2025-07-25 02:38:19.227 +01:00 [INF] Executing NotFoundObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-25 02:38:19.263 +01:00 [INF] Executed action StreamNest.API.Controllers.CommentsController.GetCommentsByVideoId (StreamNest.API) in 341.7161ms
+2025-07-25 02:38:19.279 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.CommentsController.GetCommentsByVideoId (StreamNest.API)'
+2025-07-25 02:38:19.287 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/Comments/f33a62a5-9994-46b3-b8ee-8ccbe13ba754 - 404 null application/json; charset=utf-8 418.4337ms
+2025-07-25 02:38:52.559 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/Comments/68bc8dd4-5cb4-46f6-bb4c-54eaf535fdeb - null null
+2025-07-25 02:38:52.586 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.CommentsController.GetCommentsByVideoId (StreamNest.API)'
+2025-07-25 02:38:52.610 +01:00 [INF] Route matched with {action = "GetCommentsByVideoId", controller = "Comments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCommentsByVideoId(System.Guid) on controller StreamNest.API.Controllers.CommentsController (StreamNest.API).
+2025-07-25 02:38:52.912 +01:00 [INF] Executed DbCommand (289ms) [Parameters=[@__videoId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."Content", c."CreatedAt", c."UserId", c."VideoId", a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "Comments" AS c
+INNER JOIN "AspNetUsers" AS a ON c."UserId" = a."Id"
+WHERE c."VideoId" = @__videoId_0
+ORDER BY c."CreatedAt" DESC
+2025-07-25 02:38:52.921 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StreamNest.Application.DTOs.CommentResponseDto, StreamNest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-25 02:38:52.924 +01:00 [INF] Executed action StreamNest.API.Controllers.CommentsController.GetCommentsByVideoId (StreamNest.API) in 306.0647ms
+2025-07-25 02:38:52.929 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.CommentsController.GetCommentsByVideoId (StreamNest.API)'
+2025-07-25 02:38:52.932 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/Comments/68bc8dd4-5cb4-46f6-bb4c-54eaf535fdeb - 200 null application/json; charset=utf-8 373.3644ms
+2025-07-25 02:39:03.472 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/Comments - application/json 122
+2025-07-25 02:39:03.482 +01:00 [INF] CORS policy execution failed.
+2025-07-25 02:39:03.485 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 02:39:03.491 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.CommentsController.CreateComment (StreamNest.API)'
+2025-07-25 02:39:03.499 +01:00 [INF] Route matched with {action = "CreateComment", controller = "Comments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateComment(StreamNest.Application.DTOs.CreateCommentDto) on controller StreamNest.API.Controllers.CommentsController (StreamNest.API).
+2025-07-25 02:39:03.795 +01:00 [INF] Executed DbCommand (280ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = DateTime), @p3='?', @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Comments" ("Id", "Content", "CreatedAt", "UserId", "VideoId")
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-07-25 02:39:03.802 +01:00 [INF] Executing CreatedAtActionResult, writing value of type 'StreamNest.Application.DTOs.CommentResponseDto'.
+2025-07-25 02:39:03.812 +01:00 [INF] Executed action StreamNest.API.Controllers.CommentsController.CreateComment (StreamNest.API) in 304.826ms
+2025-07-25 02:39:03.817 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.CommentsController.CreateComment (StreamNest.API)'
+2025-07-25 02:39:03.821 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/Comments - 201 null application/json; charset=utf-8 348.2399ms
+2025-07-25 02:39:07.083 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/Comments/68bc8dd4-5cb4-46f6-bb4c-54eaf535fdeb - null null
+2025-07-25 02:39:07.092 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.CommentsController.GetCommentsByVideoId (StreamNest.API)'
+2025-07-25 02:39:07.107 +01:00 [INF] Route matched with {action = "GetCommentsByVideoId", controller = "Comments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCommentsByVideoId(System.Guid) on controller StreamNest.API.Controllers.CommentsController (StreamNest.API).
+2025-07-25 02:39:07.407 +01:00 [INF] Executed DbCommand (289ms) [Parameters=[@__videoId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."Content", c."CreatedAt", c."UserId", c."VideoId", a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "Comments" AS c
+INNER JOIN "AspNetUsers" AS a ON c."UserId" = a."Id"
+WHERE c."VideoId" = @__videoId_0
+ORDER BY c."CreatedAt" DESC
+2025-07-25 02:39:07.415 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StreamNest.Application.DTOs.CommentResponseDto, StreamNest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-25 02:39:07.419 +01:00 [INF] Executed action StreamNest.API.Controllers.CommentsController.GetCommentsByVideoId (StreamNest.API) in 303.1296ms
+2025-07-25 02:39:07.423 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.CommentsController.GetCommentsByVideoId (StreamNest.API)'
+2025-07-25 02:39:07.426 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/Comments/68bc8dd4-5cb4-46f6-bb4c-54eaf535fdeb - 200 null application/json; charset=utf-8 342.6575ms
+2025-07-25 02:45:48.402 +01:00 [INF] Application is shutting down...
+2025-07-25 02:46:04.458 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-25 02:46:04.789 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-25 02:46:04.814 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-25 02:46:04.842 +01:00 [INF] Hosting environment: Development
+2025-07-25 02:46:04.904 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-25 02:46:19.778 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-25 02:46:19.920 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 143.2645ms
+2025-07-25 02:46:19.961 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-25 02:46:20.001 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 40.7074ms
+2025-07-25 02:46:20.606 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-25 02:46:20.999 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 393.182ms
+2025-07-25 02:46:42.011 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 59
+2025-07-25 02:46:42.024 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-25 02:46:42.055 +01:00 [INF] CORS policy execution failed.
+2025-07-25 02:46:42.059 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 02:46:42.101 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-25 02:46:42.123 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-25 02:46:45.689 +01:00 [INF] Executed DbCommand (319ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-25 02:46:46.235 +01:00 [INF] Executed DbCommand (277ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-25 02:46:46.517 +01:00 [INF] Executed DbCommand (264ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-25 02:46:46.923 +01:00 [INF] Executed DbCommand (270ms) [Parameters=[@p19='?', @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "RefreshToken" = @p13, "RefreshTokenExpiryTime" = @p14, "Role" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-07-25 02:46:46.962 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.TokenDto'.
+2025-07-25 02:46:46.983 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 4853.1897ms
+2025-07-25 02:46:46.991 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-25 02:46:47.003 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 200 null application/json; charset=utf-8 4991.033ms
+2025-07-25 02:47:33.142 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/Comments - application/json 83
+2025-07-25 02:47:33.154 +01:00 [INF] CORS policy execution failed.
+2025-07-25 02:47:33.158 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 02:47:33.221 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.CommentsController.CreateComment (StreamNest.API)'
+2025-07-25 02:47:33.228 +01:00 [INF] Route matched with {action = "CreateComment", controller = "Comments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateComment(StreamNest.Application.DTOs.CreateCommentDto) on controller StreamNest.API.Controllers.CommentsController (StreamNest.API).
+2025-07-25 02:47:33.256 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-07-25 02:47:33.288 +01:00 [INF] Executed action StreamNest.API.Controllers.CommentsController.CreateComment (StreamNest.API) in 51.9927ms
+2025-07-25 02:47:33.293 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.CommentsController.CreateComment (StreamNest.API)'
+2025-07-25 02:47:33.296 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/Comments - 400 null application/problem+json; charset=utf-8 153.5262ms
+2025-07-25 02:47:46.757 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/Comments - application/json 83
+2025-07-25 02:47:46.765 +01:00 [INF] CORS policy execution failed.
+2025-07-25 02:47:46.767 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 02:47:46.782 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.CommentsController.CreateComment (StreamNest.API)'
+2025-07-25 02:47:46.787 +01:00 [INF] Route matched with {action = "CreateComment", controller = "Comments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateComment(StreamNest.Application.DTOs.CreateCommentDto) on controller StreamNest.API.Controllers.CommentsController (StreamNest.API).
+2025-07-25 02:47:46.804 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-07-25 02:47:46.807 +01:00 [INF] Executed action StreamNest.API.Controllers.CommentsController.CreateComment (StreamNest.API) in 13.5519ms
+2025-07-25 02:47:46.810 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.CommentsController.CreateComment (StreamNest.API)'
+2025-07-25 02:47:46.814 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/Comments - 400 null application/problem+json; charset=utf-8 56.9351ms
+2025-07-25 02:52:05.456 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/Comments - application/json 83
+2025-07-25 02:52:05.462 +01:00 [INF] CORS policy execution failed.
+2025-07-25 02:52:05.464 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 02:52:05.468 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.CommentsController.CreateComment (StreamNest.API)'
+2025-07-25 02:52:05.475 +01:00 [INF] Route matched with {action = "CreateComment", controller = "Comments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateComment(StreamNest.Application.DTOs.CreateCommentDto) on controller StreamNest.API.Controllers.CommentsController (StreamNest.API).
+2025-07-25 02:52:05.484 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-07-25 02:52:05.488 +01:00 [INF] Executed action StreamNest.API.Controllers.CommentsController.CreateComment (StreamNest.API) in 6.5499ms
+2025-07-25 02:52:05.491 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.CommentsController.CreateComment (StreamNest.API)'
+2025-07-25 02:52:05.496 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/Comments - 400 null application/problem+json; charset=utf-8 39.692ms
+2025-07-25 02:53:03.997 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/Comments - application/json 82
+2025-07-25 02:53:04.005 +01:00 [INF] CORS policy execution failed.
+2025-07-25 02:53:04.009 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 02:53:04.017 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.CommentsController.CreateComment (StreamNest.API)'
+2025-07-25 02:53:04.024 +01:00 [INF] Route matched with {action = "CreateComment", controller = "Comments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateComment(StreamNest.Application.DTOs.CreateCommentDto) on controller StreamNest.API.Controllers.CommentsController (StreamNest.API).
+2025-07-25 02:53:04.040 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-07-25 02:53:04.044 +01:00 [INF] Executed action StreamNest.API.Controllers.CommentsController.CreateComment (StreamNest.API) in 6.7529ms
+2025-07-25 02:53:04.055 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.CommentsController.CreateComment (StreamNest.API)'
+2025-07-25 02:53:04.061 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/Comments - 400 null application/problem+json; charset=utf-8 64.2823ms
+2025-07-25 02:54:28.640 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/Comments - application/json 81
+2025-07-25 02:54:28.656 +01:00 [INF] CORS policy execution failed.
+2025-07-25 02:54:28.660 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 02:54:28.668 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.CommentsController.CreateComment (StreamNest.API)'
+2025-07-25 02:54:28.679 +01:00 [INF] Route matched with {action = "CreateComment", controller = "Comments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateComment(StreamNest.Application.DTOs.CreateCommentDto) on controller StreamNest.API.Controllers.CommentsController (StreamNest.API).
+2025-07-25 02:54:30.809 +01:00 [INF] Executed DbCommand (256ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = DateTime), @p3='?', @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Comments" ("Id", "Content", "CreatedAt", "UserId", "VideoId")
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-07-25 02:54:30.818 +01:00 [INF] Executing CreatedAtActionResult, writing value of type 'StreamNest.Application.DTOs.CommentResponseDto'.
+2025-07-25 02:54:30.847 +01:00 [INF] Executed action StreamNest.API.Controllers.CommentsController.CreateComment (StreamNest.API) in 2156.2398ms
+2025-07-25 02:54:30.851 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.CommentsController.CreateComment (StreamNest.API)'
+2025-07-25 02:54:30.854 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/Comments - 201 null application/json; charset=utf-8 2214.0994ms
+2025-07-25 02:54:43.102 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/Comments/68bc8dd4-5cb4-46f6-bb4c-54eaf535fdeb - null null
+2025-07-25 02:54:43.134 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.CommentsController.GetCommentsByVideoId (StreamNest.API)'
+2025-07-25 02:54:43.152 +01:00 [INF] Route matched with {action = "GetCommentsByVideoId", controller = "Comments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCommentsByVideoId(System.Guid) on controller StreamNest.API.Controllers.CommentsController (StreamNest.API).
+2025-07-25 02:54:43.521 +01:00 [INF] Executed DbCommand (264ms) [Parameters=[@__videoId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."Content", c."CreatedAt", c."UserId", c."VideoId", a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "Comments" AS c
+INNER JOIN "AspNetUsers" AS a ON c."UserId" = a."Id"
+WHERE c."VideoId" = @__videoId_0
+ORDER BY c."CreatedAt" DESC
+2025-07-25 02:54:43.531 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StreamNest.Application.DTOs.CommentResponseDto, StreamNest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-25 02:54:43.538 +01:00 [INF] Executed action StreamNest.API.Controllers.CommentsController.GetCommentsByVideoId (StreamNest.API) in 380.9609ms
+2025-07-25 02:54:43.542 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.CommentsController.GetCommentsByVideoId (StreamNest.API)'
+2025-07-25 02:54:43.544 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/Comments/68bc8dd4-5cb4-46f6-bb4c-54eaf535fdeb - 200 null application/json; charset=utf-8 442.8958ms
+2025-07-25 03:00:06.121 +01:00 [INF] Application is shutting down...

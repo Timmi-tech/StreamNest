@@ -6,6 +6,7 @@ namespace StreamNest.Domain.Contracts
     {
         IUserProfileRepository User {get;}
         IVideoRepository Video {get;}
+        ICommentRepository Comment {get;}
         Task SaveAsync();
     }
 }

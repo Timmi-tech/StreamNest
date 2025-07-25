@@ -7,5 +7,6 @@ namespace StreamNest.Application.Services.Contracts
         IUserProfileService UserProfileService { get; }
         IVideoService VideoService { get; }
         IVideoPostService VideoPostService { get; }
+        ICommentService CommentService { get; }
     }
 }

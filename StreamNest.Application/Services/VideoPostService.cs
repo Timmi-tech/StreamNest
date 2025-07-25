@@ -128,7 +128,7 @@ namespace StreamNest.Application.Services
         {
             var video = await _repository.Video.GetVideoByIdAsync(videoId, trackChanges: false);
             if (video == null)
-                throw new ApplicationException($"Video with ID {videoId} not found.");
+                throw new KeyNotFoundException($"Video with ID {videoId} not found.");
 
             if (video.CreatorId != userId)
                 throw new UnauthorizedAccessException("You do not have permission to delete this video.");
