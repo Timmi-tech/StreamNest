@@ -307,3 +307,968 @@ ORDER BY c."CreatedAt" DESC
 2025-07-25 02:54:43.542 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.CommentsController.GetCommentsByVideoId (StreamNest.API)'
 2025-07-25 02:54:43.544 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/Comments/68bc8dd4-5cb4-46f6-bb4c-54eaf535fdeb - 200 null application/json; charset=utf-8 442.8958ms
 2025-07-25 03:00:06.121 +01:00 [INF] Application is shutting down...
+2025-07-25 04:04:36.492 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-25 04:04:37.018 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-25 04:04:37.043 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-25 04:04:37.058 +01:00 [INF] Hosting environment: Development
+2025-07-25 04:04:37.065 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-25 04:05:34.134 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-25 04:05:34.365 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 232.8502ms
+2025-07-25 04:05:34.661 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-25 04:05:34.675 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 14.4381ms
+2025-07-25 04:05:35.186 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-25 04:05:35.599 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 413.4923ms
+2025-07-25 04:07:01.783 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 59
+2025-07-25 04:07:01.797 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-25 04:07:01.858 +01:00 [INF] CORS policy execution failed.
+2025-07-25 04:07:01.861 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 04:07:01.923 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-25 04:07:02.003 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-25 04:07:04.126 +01:00 [ERR] An error occurred using the connection to database 'streamnest' on server 'tcp://dpg-d1ujsi3uibrs738issbg-a.oregon-postgres.render.com:5432'.
+2025-07-25 04:07:04.171 +01:00 [ERR] An exception occurred while iterating over the results of a query for context type 'RepositoryContext'.
+System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.NameResolutionPal.ProcessResult(SocketError errorCode, GetAddrInfoExContext* context)
+   at System.Net.NameResolutionPal.GetAddressInfoExCallback(Int32 error, Int32 bytes, NativeOverlapped* overlapped)
+--- End of stack trace from previous location ---
+   at Npgsql.TaskTimeoutAndCancellation.ExecuteAsync(Func`2 getTaskFunc, NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.TaskTimeoutAndCancellation.ExecuteAsync[TResult](Func`2 getTaskFunc, NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.ConnectAsync(NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|213_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|34_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.NameResolutionPal.ProcessResult(SocketError errorCode, GetAddrInfoExContext* context)
+   at System.Net.NameResolutionPal.GetAddressInfoExCallback(Int32 error, Int32 bytes, NativeOverlapped* overlapped)
+--- End of stack trace from previous location ---
+   at Npgsql.TaskTimeoutAndCancellation.ExecuteAsync(Func`2 getTaskFunc, NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.TaskTimeoutAndCancellation.ExecuteAsync[TResult](Func`2 getTaskFunc, NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.ConnectAsync(NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|213_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|34_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-07-25 04:07:04.246 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 2154.5921ms
+2025-07-25 04:07:04.252 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-25 04:07:04.258 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.NameResolutionPal.ProcessResult(SocketError errorCode, GetAddrInfoExContext* context)
+   at System.Net.NameResolutionPal.GetAddressInfoExCallback(Int32 error, Int32 bytes, NativeOverlapped* overlapped)
+--- End of stack trace from previous location ---
+   at Npgsql.TaskTimeoutAndCancellation.ExecuteAsync(Func`2 getTaskFunc, NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.TaskTimeoutAndCancellation.ExecuteAsync[TResult](Func`2 getTaskFunc, NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.ConnectAsync(NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|213_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|34_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByEmailAsync(String email)
+   at StreamNest.Application.Services.AuthenticationService.ValidateUser(UserForAuthenticationDto userForAuth) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\Services\AuthenticationService.cs:line 49
+   at StreamNest.API.Controllers.AuthenticationController.Authenticate(UserForAuthenticationDto user) in C:\Users\user\Desktop\c##\StreamNest\streamnest.api\Controllers\AuthenticationControllers.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-25 04:07:04.348 +01:00 [ERR] Exception: SocketException - No such host is known.
+2025-07-25 04:07:04.389 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 500 null application/json; charset=utf-8 2606.7258ms
+2025-07-25 04:07:26.114 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 59
+2025-07-25 04:07:26.185 +01:00 [INF] CORS policy execution failed.
+2025-07-25 04:07:26.274 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 04:07:26.294 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-25 04:07:26.305 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-25 04:07:28.770 +01:00 [INF] Executed DbCommand (340ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-25 04:07:29.343 +01:00 [INF] Executed DbCommand (259ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-25 04:07:29.618 +01:00 [INF] Executed DbCommand (261ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-25 04:07:30.007 +01:00 [INF] Executed DbCommand (260ms) [Parameters=[@p19='?', @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "RefreshToken" = @p13, "RefreshTokenExpiryTime" = @p14, "Role" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-07-25 04:07:30.067 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.TokenDto'.
+2025-07-25 04:07:30.084 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 3772.8383ms
+2025-07-25 04:07:30.097 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-25 04:07:30.103 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 200 null application/json; charset=utf-8 3988.7274ms
+2025-07-25 04:08:06.304 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/Likes - application/json 55
+2025-07-25 04:08:06.328 +01:00 [INF] CORS policy execution failed.
+2025-07-25 04:08:06.334 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 04:08:06.457 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:08:06.509 +01:00 [INF] Route matched with {action = "ToggleLike", controller = "LikeControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ToggleLike(StreamNest.Application.DTOs.CreateLikeDto) on controller StreamNest.API.Controllers.LikeControllers (StreamNest.API).
+2025-07-25 04:08:06.892 +01:00 [INF] Executed DbCommand (276ms) [Parameters=[@__videoId_0='?' (DbType = Guid), @__userId_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."LikedAt", l."UserId", l."VideoId"
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0 AND l."UserId" = @__userId_1
+LIMIT 1
+2025-07-25 04:08:06.900 +01:00 [INF] Executed action StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API) in 364.4706ms
+2025-07-25 04:08:06.905 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:08:06.909 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Collections.Generic.KeyNotFoundException: Like not found.
+   at StreamNest.Infrastructure.Repository.LikeRepository.GetLikeAsync(Guid videoId, String userId, Boolean trackChanges) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Infrastructure\Repository\LikeRepository.cs:line 24
+   at StreamNest.Application.Services.LikeService.ToggleLikeAsync(CreateLikeDto createLikeDto, String userId) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\Services\LikeService.cs:line 23
+   at StreamNest.API.Controllers.LikeControllers.ToggleLike(CreateLikeDto createLikeDto) in C:\Users\user\Desktop\c##\StreamNest\streamnest.api\Controllers\LikeControllers.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-25 04:08:06.953 +01:00 [ERR] Exception: KeyNotFoundException - Like not found.
+2025-07-25 04:08:06.956 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/Likes - 500 null application/json; charset=utf-8 652.0244ms
+2025-07-25 04:08:20.340 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/Likes - application/json 55
+2025-07-25 04:08:20.355 +01:00 [INF] CORS policy execution failed.
+2025-07-25 04:08:20.359 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 04:08:20.372 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:08:20.380 +01:00 [INF] Route matched with {action = "ToggleLike", controller = "LikeControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ToggleLike(StreamNest.Application.DTOs.CreateLikeDto) on controller StreamNest.API.Controllers.LikeControllers (StreamNest.API).
+2025-07-25 04:08:20.653 +01:00 [INF] Executed DbCommand (258ms) [Parameters=[@__videoId_0='?' (DbType = Guid), @__userId_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."LikedAt", l."UserId", l."VideoId"
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0 AND l."UserId" = @__userId_1
+LIMIT 1
+2025-07-25 04:08:20.665 +01:00 [INF] Executed action StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API) in 272.8856ms
+2025-07-25 04:08:20.673 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:08:20.680 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Collections.Generic.KeyNotFoundException: Like not found.
+   at StreamNest.Infrastructure.Repository.LikeRepository.GetLikeAsync(Guid videoId, String userId, Boolean trackChanges) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Infrastructure\Repository\LikeRepository.cs:line 24
+   at StreamNest.Application.Services.LikeService.ToggleLikeAsync(CreateLikeDto createLikeDto, String userId) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\Services\LikeService.cs:line 23
+   at StreamNest.API.Controllers.LikeControllers.ToggleLike(CreateLikeDto createLikeDto) in C:\Users\user\Desktop\c##\StreamNest\streamnest.api\Controllers\LikeControllers.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-25 04:08:20.705 +01:00 [ERR] Exception: KeyNotFoundException - Like not found.
+2025-07-25 04:08:20.711 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/Likes - 500 null application/json; charset=utf-8 371.3686ms
+2025-07-25 04:08:34.072 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/Likes/68bc8dd4-5cb4-46f6-bb4c-54eaf535fdeb - null null
+2025-07-25 04:08:34.090 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.LikeControllers.GetLikeStatus (StreamNest.API)'
+2025-07-25 04:08:34.103 +01:00 [INF] Route matched with {action = "GetLikeStatus", controller = "LikeControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLikeStatus(System.Guid) on controller StreamNest.API.Controllers.LikeControllers (StreamNest.API).
+2025-07-25 04:08:34.420 +01:00 [INF] Executed DbCommand (307ms) [Parameters=[@__videoId_0='?' (DbType = Guid), @__userId_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."LikedAt", l."UserId", l."VideoId"
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0 AND l."UserId" = @__userId_1
+LIMIT 1
+2025-07-25 04:08:34.433 +01:00 [INF] Executed action StreamNest.API.Controllers.LikeControllers.GetLikeStatus (StreamNest.API) in 324.0488ms
+2025-07-25 04:08:34.438 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.LikeControllers.GetLikeStatus (StreamNest.API)'
+2025-07-25 04:08:34.446 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Collections.Generic.KeyNotFoundException: Like not found.
+   at StreamNest.Infrastructure.Repository.LikeRepository.GetLikeAsync(Guid videoId, String userId, Boolean trackChanges) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Infrastructure\Repository\LikeRepository.cs:line 24
+   at StreamNest.Application.Services.LikeService.GetLikeStatusAsync(Guid videoId, String userId) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\Services\LikeService.cs:line 53
+   at StreamNest.API.Controllers.LikeControllers.GetLikeStatus(Guid videoId) in C:\Users\user\Desktop\c##\StreamNest\streamnest.api\Controllers\LikeControllers.cs:line 43
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-25 04:08:34.475 +01:00 [ERR] Exception: KeyNotFoundException - Like not found.
+2025-07-25 04:08:34.480 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/Likes/68bc8dd4-5cb4-46f6-bb4c-54eaf535fdeb - 500 null application/json; charset=utf-8 407.9765ms
+2025-07-25 04:09:47.720 +01:00 [INF] Application is shutting down...
+2025-07-25 04:09:55.153 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-25 04:09:55.379 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-25 04:09:55.387 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-25 04:09:55.391 +01:00 [INF] Hosting environment: Development
+2025-07-25 04:09:55.394 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-25 04:10:02.115 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/Likes/68bc8dd4-5cb4-46f6-bb4c-54eaf535fdeb - null null
+2025-07-25 04:10:02.182 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-25 04:10:02.390 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.LikeControllers.GetLikeStatus (StreamNest.API)'
+2025-07-25 04:10:02.437 +01:00 [INF] Route matched with {action = "GetLikeStatus", controller = "LikeControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLikeStatus(System.Guid) on controller StreamNest.API.Controllers.LikeControllers (StreamNest.API).
+2025-07-25 04:10:06.018 +01:00 [INF] Executed DbCommand (345ms) [Parameters=[@__videoId_0='?' (DbType = Guid), @__userId_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."LikedAt", l."UserId", l."VideoId"
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0 AND l."UserId" = @__userId_1
+LIMIT 1
+2025-07-25 04:10:06.382 +01:00 [INF] Executed DbCommand (265ms) [Parameters=[@__videoId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0
+2025-07-25 04:10:06.420 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.LikeResponseDto'.
+2025-07-25 04:10:06.580 +01:00 [INF] Executed action StreamNest.API.Controllers.LikeControllers.GetLikeStatus (StreamNest.API) in 4126.4806ms
+2025-07-25 04:10:06.587 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.LikeControllers.GetLikeStatus (StreamNest.API)'
+2025-07-25 04:10:06.614 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/Likes/68bc8dd4-5cb4-46f6-bb4c-54eaf535fdeb - 200 null application/json; charset=utf-8 4501.005ms
+2025-07-25 04:10:12.570 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/Likes - application/json 55
+2025-07-25 04:10:12.592 +01:00 [INF] CORS policy execution failed.
+2025-07-25 04:10:12.597 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 04:10:12.610 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:10:12.622 +01:00 [INF] Route matched with {action = "ToggleLike", controller = "LikeControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ToggleLike(StreamNest.Application.DTOs.CreateLikeDto) on controller StreamNest.API.Controllers.LikeControllers (StreamNest.API).
+2025-07-25 04:10:13.047 +01:00 [INF] Executed DbCommand (282ms) [Parameters=[@__videoId_0='?' (DbType = Guid), @__userId_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."LikedAt", l."UserId", l."VideoId"
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0 AND l."UserId" = @__userId_1
+LIMIT 1
+2025-07-25 04:10:13.611 +01:00 [INF] Executed DbCommand (312ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Likes" ("Id", "LikedAt", "UserId", "VideoId")
+VALUES (@p0, @p1, @p2, @p3);
+2025-07-25 04:10:13.921 +01:00 [INF] Executed DbCommand (286ms) [Parameters=[@__videoId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0
+2025-07-25 04:10:13.935 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.LikeResponseDto'.
+2025-07-25 04:10:13.942 +01:00 [INF] Executed action StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API) in 1310.5692ms
+2025-07-25 04:10:13.948 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:10:13.956 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/Likes - 200 null application/json; charset=utf-8 1385.9812ms
+2025-07-25 04:10:19.318 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/Likes/68bc8dd4-5cb4-46f6-bb4c-54eaf535fdeb - null null
+2025-07-25 04:10:19.335 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.LikeControllers.GetLikeStatus (StreamNest.API)'
+2025-07-25 04:10:19.343 +01:00 [INF] Route matched with {action = "GetLikeStatus", controller = "LikeControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLikeStatus(System.Guid) on controller StreamNest.API.Controllers.LikeControllers (StreamNest.API).
+2025-07-25 04:10:19.673 +01:00 [INF] Executed DbCommand (293ms) [Parameters=[@__videoId_0='?' (DbType = Guid), @__userId_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."LikedAt", l."UserId", l."VideoId"
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0 AND l."UserId" = @__userId_1
+LIMIT 1
+2025-07-25 04:10:19.992 +01:00 [INF] Executed DbCommand (304ms) [Parameters=[@__videoId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0
+2025-07-25 04:10:20.000 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.LikeResponseDto'.
+2025-07-25 04:10:20.016 +01:00 [INF] Executed action StreamNest.API.Controllers.LikeControllers.GetLikeStatus (StreamNest.API) in 660.4779ms
+2025-07-25 04:10:20.020 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.LikeControllers.GetLikeStatus (StreamNest.API)'
+2025-07-25 04:10:20.025 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/Likes/68bc8dd4-5cb4-46f6-bb4c-54eaf535fdeb - 200 null application/json; charset=utf-8 706.7985ms
+2025-07-25 04:10:46.312 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 57
+2025-07-25 04:10:46.322 +01:00 [INF] CORS policy execution failed.
+2025-07-25 04:10:46.326 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 04:10:46.331 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-25 04:10:46.346 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-25 04:10:46.741 +01:00 [INF] Executed DbCommand (341ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-25 04:10:47.320 +01:00 [INF] Executed DbCommand (293ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-25 04:10:47.624 +01:00 [INF] Executed DbCommand (288ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-25 04:10:47.989 +01:00 [INF] Executed DbCommand (306ms) [Parameters=[@p19='?', @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "RefreshToken" = @p13, "RefreshTokenExpiryTime" = @p14, "Role" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-07-25 04:10:48.021 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.TokenDto'.
+2025-07-25 04:10:48.038 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 1685.31ms
+2025-07-25 04:10:48.046 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-25 04:10:48.053 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 200 null application/json; charset=utf-8 1740.917ms
+2025-07-25 04:11:03.934 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/Likes - application/json 55
+2025-07-25 04:11:03.951 +01:00 [INF] CORS policy execution failed.
+2025-07-25 04:11:03.954 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 04:11:03.961 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:11:03.968 +01:00 [INF] Route matched with {action = "ToggleLike", controller = "LikeControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ToggleLike(StreamNest.Application.DTOs.CreateLikeDto) on controller StreamNest.API.Controllers.LikeControllers (StreamNest.API).
+2025-07-25 04:11:04.280 +01:00 [INF] Executed DbCommand (295ms) [Parameters=[@__videoId_0='?' (DbType = Guid), @__userId_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."LikedAt", l."UserId", l."VideoId"
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0 AND l."UserId" = @__userId_1
+LIMIT 1
+2025-07-25 04:11:04.591 +01:00 [INF] Executed DbCommand (288ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Likes" ("Id", "LikedAt", "UserId", "VideoId")
+VALUES (@p0, @p1, @p2, @p3);
+2025-07-25 04:11:04.958 +01:00 [INF] Executed DbCommand (353ms) [Parameters=[@__videoId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0
+2025-07-25 04:11:04.995 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.LikeResponseDto'.
+2025-07-25 04:11:05.012 +01:00 [INF] Executed action StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API) in 1032.4685ms
+2025-07-25 04:11:05.020 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:11:05.028 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/Likes - 200 null application/json; charset=utf-8 1093.5116ms
+2025-07-25 04:11:08.428 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/Likes/68bc8dd4-5cb4-46f6-bb4c-54eaf535fdeb - null null
+2025-07-25 04:11:08.440 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.LikeControllers.GetLikeStatus (StreamNest.API)'
+2025-07-25 04:11:08.444 +01:00 [INF] Route matched with {action = "GetLikeStatus", controller = "LikeControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLikeStatus(System.Guid) on controller StreamNest.API.Controllers.LikeControllers (StreamNest.API).
+2025-07-25 04:11:08.750 +01:00 [INF] Executed DbCommand (292ms) [Parameters=[@__videoId_0='?' (DbType = Guid), @__userId_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."LikedAt", l."UserId", l."VideoId"
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0 AND l."UserId" = @__userId_1
+LIMIT 1
+2025-07-25 04:11:09.048 +01:00 [INF] Executed DbCommand (290ms) [Parameters=[@__videoId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0
+2025-07-25 04:11:09.058 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.LikeResponseDto'.
+2025-07-25 04:11:09.062 +01:00 [INF] Executed action StreamNest.API.Controllers.LikeControllers.GetLikeStatus (StreamNest.API) in 606.575ms
+2025-07-25 04:11:09.072 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.LikeControllers.GetLikeStatus (StreamNest.API)'
+2025-07-25 04:11:09.077 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/Likes/68bc8dd4-5cb4-46f6-bb4c-54eaf535fdeb - 200 null application/json; charset=utf-8 648.5352ms
+2025-07-25 04:28:24.205 +01:00 [INF] Application is shutting down...
+2025-07-25 04:28:48.157 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-25 04:28:48.517 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-25 04:28:48.527 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-25 04:28:48.534 +01:00 [INF] Hosting environment: Development
+2025-07-25 04:28:48.539 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-25 04:28:55.441 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/Likes - application/json 55
+2025-07-25 04:28:55.566 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-25 04:28:55.610 +01:00 [INF] CORS policy execution failed.
+2025-07-25 04:28:55.614 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 04:28:55.778 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:28:55.837 +01:00 [INF] Route matched with {action = "ToggleLike", controller = "LikeControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ToggleLike(StreamNest.Application.DTOs.CreateLikeDto) on controller StreamNest.API.Controllers.LikeControllers (StreamNest.API).
+2025-07-25 04:29:00.281 +01:00 [INF] Executed DbCommand (457ms) [Parameters=[@__videoId_0='?' (DbType = Guid), @__userId_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."LikedAt", l."UserId", l."VideoId"
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0 AND l."UserId" = @__userId_1
+LIMIT 1
+2025-07-25 04:29:00.740 +01:00 [INF] Executed DbCommand (261ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Likes"
+WHERE "Id" = @p0;
+2025-07-25 04:29:01.072 +01:00 [INF] Executed DbCommand (276ms) [Parameters=[@__videoId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0
+2025-07-25 04:29:01.097 +01:00 [INF] Executed action StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API) in 5241.8936ms
+2025-07-25 04:29:01.105 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:29:01.110 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at StreamNest.Application.Services.LikeService.ToggleLikeAsync(CreateLikeDto createLikeDto, String userId) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\Services\LikeService.cs:line 43
+   at StreamNest.API.Controllers.LikeControllers.ToggleLike(CreateLikeDto createLikeDto) in C:\Users\user\Desktop\c##\StreamNest\streamnest.api\Controllers\LikeControllers.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-25 04:29:01.172 +01:00 [ERR] Exception: NullReferenceException - Object reference not set to an instance of an object.
+2025-07-25 04:29:01.258 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/Likes - 500 null application/json; charset=utf-8 5820.2504ms
+2025-07-25 04:29:07.432 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/Likes - application/json 55
+2025-07-25 04:29:07.451 +01:00 [INF] CORS policy execution failed.
+2025-07-25 04:29:07.459 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 04:29:07.472 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:29:07.476 +01:00 [INF] Route matched with {action = "ToggleLike", controller = "LikeControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ToggleLike(StreamNest.Application.DTOs.CreateLikeDto) on controller StreamNest.API.Controllers.LikeControllers (StreamNest.API).
+2025-07-25 04:29:07.893 +01:00 [INF] Executed DbCommand (271ms) [Parameters=[@__videoId_0='?' (DbType = Guid), @__userId_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."LikedAt", l."UserId", l."VideoId"
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0 AND l."UserId" = @__userId_1
+LIMIT 1
+2025-07-25 04:29:08.209 +01:00 [INF] Executed DbCommand (264ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Likes" ("Id", "LikedAt", "UserId", "VideoId")
+VALUES (@p0, @p1, @p2, @p3);
+2025-07-25 04:29:08.491 +01:00 [INF] Executed DbCommand (269ms) [Parameters=[@__videoId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0
+2025-07-25 04:29:08.506 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.LikeResponseDto'.
+2025-07-25 04:29:08.528 +01:00 [INF] Executed action StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API) in 1038.5036ms
+2025-07-25 04:29:08.534 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:29:08.538 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/Likes - 200 null application/json; charset=utf-8 1106.4875ms
+2025-07-25 04:29:12.754 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/Likes - application/json 55
+2025-07-25 04:29:12.765 +01:00 [INF] CORS policy execution failed.
+2025-07-25 04:29:12.768 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 04:29:12.780 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:29:12.783 +01:00 [INF] Route matched with {action = "ToggleLike", controller = "LikeControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ToggleLike(StreamNest.Application.DTOs.CreateLikeDto) on controller StreamNest.API.Controllers.LikeControllers (StreamNest.API).
+2025-07-25 04:29:13.133 +01:00 [INF] Executed DbCommand (308ms) [Parameters=[@__videoId_0='?' (DbType = Guid), @__userId_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."LikedAt", l."UserId", l."VideoId"
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0 AND l."UserId" = @__userId_1
+LIMIT 1
+2025-07-25 04:29:13.563 +01:00 [INF] Executed DbCommand (417ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Likes"
+WHERE "Id" = @p0;
+2025-07-25 04:29:13.865 +01:00 [INF] Executed DbCommand (291ms) [Parameters=[@__videoId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0
+2025-07-25 04:29:13.872 +01:00 [INF] Executed action StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API) in 1082.9251ms
+2025-07-25 04:29:13.877 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:29:13.884 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at StreamNest.Application.Services.LikeService.ToggleLikeAsync(CreateLikeDto createLikeDto, String userId) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\Services\LikeService.cs:line 43
+   at StreamNest.API.Controllers.LikeControllers.ToggleLike(CreateLikeDto createLikeDto) in C:\Users\user\Desktop\c##\StreamNest\streamnest.api\Controllers\LikeControllers.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-25 04:29:13.913 +01:00 [ERR] Exception: NullReferenceException - Object reference not set to an instance of an object.
+2025-07-25 04:29:13.917 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/Likes - 500 null application/json; charset=utf-8 1163.6504ms
+2025-07-25 04:30:57.640 +01:00 [INF] Application is shutting down...
+2025-07-25 04:31:11.313 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-25 04:31:11.569 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-25 04:31:11.589 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-25 04:31:11.603 +01:00 [INF] Hosting environment: Development
+2025-07-25 04:31:11.612 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-25 04:31:14.719 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/Likes - application/json 55
+2025-07-25 04:31:14.796 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-25 04:31:14.843 +01:00 [INF] CORS policy execution failed.
+2025-07-25 04:31:14.847 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 04:31:15.029 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/25/2025 3:25:47 AM', Current time (UTC): '7/25/2025 3:31:15 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-25 04:31:15.054 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/25/2025 3:25:47 AM', Current time (UTC): '7/25/2025 3:31:15 AM'.
+2025-07-25 04:31:15.068 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-25 04:31:15.085 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-25 04:31:15.104 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/Likes - 401 0 null 386.8864ms
+2025-07-25 04:31:20.174 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-25 04:31:20.324 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 150.2825ms
+2025-07-25 04:31:20.413 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-25 04:31:20.463 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 49.5156ms
+2025-07-25 04:31:21.260 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-25 04:31:22.843 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1582.5185ms
+2025-07-25 04:31:42.729 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/authentication/login - application/json 59
+2025-07-25 04:31:42.740 +01:00 [INF] CORS policy execution failed.
+2025-07-25 04:31:42.744 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 04:31:42.752 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-25 04:31:42.790 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (StreamNest.API).
+2025-07-25 04:31:46.437 +01:00 [INF] Executed DbCommand (320ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-25 04:31:47.036 +01:00 [INF] Executed DbCommand (268ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-07-25 04:31:47.344 +01:00 [INF] Executed DbCommand (285ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-07-25 04:31:47.773 +01:00 [INF] Executed DbCommand (273ms) [Parameters=[@p19='?', @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "RefreshToken" = @p13, "RefreshTokenExpiryTime" = @p14, "Role" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-07-25 04:31:47.812 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.TokenDto'.
+2025-07-25 04:31:47.847 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API) in 5042.7667ms
+2025-07-25 04:31:47.855 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (StreamNest.API)'
+2025-07-25 04:31:47.874 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/authentication/login - 200 null application/json; charset=utf-8 5144.4807ms
+2025-07-25 04:32:32.110 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/VideoPosts - null null
+2025-07-25 04:32:32.149 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.GetAllVideos (StreamNest.API)'
+2025-07-25 04:32:32.160 +01:00 [INF] Route matched with {action = "GetAllVideos", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllVideos() on controller StreamNest.API.Controllers.VideoPostController (StreamNest.API).
+2025-07-25 04:32:32.675 +01:00 [INF] Executed DbCommand (294ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AgeRating", t."CreatorId", t."Description", t."Genre", t."Title", t."UploadDate", t."VideoUrl", t."VideoYear", a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM (
+    SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear"
+    FROM "Videos" AS v
+    ORDER BY v."UploadDate" DESC
+    LIMIT @__p_1 OFFSET @__p_0
+) AS t
+INNER JOIN "AspNetUsers" AS a ON t."CreatorId" = a."Id"
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t1."Id", t1."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t1 ON v0."TagId" = t1."Id"
+) AS t0 ON t."Id" = t0."VideoId"
+ORDER BY t."UploadDate" DESC, t."Id", a."Id", t0."VideoId", t0."TagId"
+2025-07-25 04:32:32.704 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[StreamNest.Domain.Entities.Models.Video, StreamNest.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[StreamNest.Application.DTOs.VideoDto, StreamNest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-25 04:32:32.742 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.GetAllVideos (StreamNest.API) in 575.2458ms
+2025-07-25 04:32:32.749 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.GetAllVideos (StreamNest.API)'
+2025-07-25 04:32:32.752 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/VideoPosts - 200 null application/json; charset=utf-8 642.068ms
+2025-07-25 04:33:18.753 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/Likes - application/json 55
+2025-07-25 04:33:18.766 +01:00 [INF] CORS policy execution failed.
+2025-07-25 04:33:18.838 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 04:33:18.849 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:33:18.861 +01:00 [INF] Route matched with {action = "ToggleLike", controller = "LikeControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ToggleLike(StreamNest.Application.DTOs.CreateLikeDto) on controller StreamNest.API.Controllers.LikeControllers (StreamNest.API).
+2025-07-25 04:33:19.217 +01:00 [INF] Executed DbCommand (262ms) [Parameters=[@__videoId_0='?' (DbType = Guid), @__userId_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."LikedAt", l."UserId", l."VideoId"
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0 AND l."UserId" = @__userId_1
+LIMIT 1
+2025-07-25 04:33:19.597 +01:00 [INF] Executed DbCommand (288ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Likes"
+WHERE "Id" = @p0;
+2025-07-25 04:33:19.949 +01:00 [INF] Executed DbCommand (262ms) [Parameters=[@__videoId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0
+2025-07-25 04:33:19.972 +01:00 [INF] Executed action StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API) in 1102.7904ms
+2025-07-25 04:33:19.978 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:33:19.984 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at StreamNest.Application.Services.LikeService.ToggleLikeAsync(CreateLikeDto createLikeDto, String userId) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\Services\LikeService.cs:line 43
+   at StreamNest.API.Controllers.LikeControllers.ToggleLike(CreateLikeDto createLikeDto) in C:\Users\user\Desktop\c##\StreamNest\streamnest.api\Controllers\LikeControllers.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-25 04:33:20.037 +01:00 [ERR] Exception: NullReferenceException - Object reference not set to an instance of an object.
+2025-07-25 04:33:20.058 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/Likes - 500 null application/json; charset=utf-8 1304.7594ms
+2025-07-25 04:37:00.820 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/Comments/68bc8dd4-5cb4-46f6-bb4c-54eaf535fdeb - null null
+2025-07-25 04:37:00.832 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.CommentsController.GetCommentsByVideoId (StreamNest.API)'
+2025-07-25 04:37:00.844 +01:00 [INF] Route matched with {action = "GetCommentsByVideoId", controller = "Comments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCommentsByVideoId(System.Guid) on controller StreamNest.API.Controllers.CommentsController (StreamNest.API).
+2025-07-25 04:37:03.081 +01:00 [INF] Executed DbCommand (261ms) [Parameters=[@__videoId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."Content", c."CreatedAt", c."UserId", c."VideoId", a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "Comments" AS c
+INNER JOIN "AspNetUsers" AS a ON c."UserId" = a."Id"
+WHERE c."VideoId" = @__videoId_0
+ORDER BY c."CreatedAt" DESC
+2025-07-25 04:37:03.097 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StreamNest.Application.DTOs.CommentResponseDto, StreamNest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-25 04:37:03.111 +01:00 [INF] Executed action StreamNest.API.Controllers.CommentsController.GetCommentsByVideoId (StreamNest.API) in 2259.6207ms
+2025-07-25 04:37:03.118 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.CommentsController.GetCommentsByVideoId (StreamNest.API)'
+2025-07-25 04:37:03.127 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/Comments/68bc8dd4-5cb4-46f6-bb4c-54eaf535fdeb - 200 null application/json; charset=utf-8 2306.4193ms
+2025-07-25 04:38:32.700 +01:00 [INF] Application is shutting down...
+2025-07-25 04:38:40.126 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-25 04:38:40.301 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-25 04:38:40.309 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-25 04:38:40.314 +01:00 [INF] Hosting environment: Development
+2025-07-25 04:38:40.319 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-25 04:38:49.290 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/Likes - application/json 55
+2025-07-25 04:38:49.360 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-25 04:38:49.391 +01:00 [INF] CORS policy execution failed.
+2025-07-25 04:38:49.395 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 04:38:49.535 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:38:49.571 +01:00 [INF] Route matched with {action = "ToggleLike", controller = "LikeControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ToggleLike(StreamNest.Application.DTOs.CreateLikeDto) on controller StreamNest.API.Controllers.LikeControllers (StreamNest.API).
+2025-07-25 04:38:53.451 +01:00 [INF] Executed DbCommand (319ms) [Parameters=[@__videoId_0='?' (DbType = Guid), @__userId_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."LikedAt", l."UserId", l."VideoId"
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0 AND l."UserId" = @__userId_1
+LIMIT 1
+2025-07-25 04:38:53.923 +01:00 [INF] Executed DbCommand (272ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Likes" ("Id", "LikedAt", "UserId", "VideoId")
+VALUES (@p0, @p1, @p2, @p3);
+2025-07-25 04:38:54.254 +01:00 [INF] Executed DbCommand (267ms) [Parameters=[@__videoId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0
+2025-07-25 04:38:54.287 +01:00 [INF] Executed action StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API) in 4696.8174ms
+2025-07-25 04:38:54.294 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:38:54.302 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at StreamNest.Application.Services.LikeService.ToggleLikeAsync(CreateLikeDto createLikeDto, String userId) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\Services\LikeService.cs:line 43
+   at StreamNest.API.Controllers.LikeControllers.ToggleLike(CreateLikeDto createLikeDto) in C:\Users\user\Desktop\c##\StreamNest\streamnest.api\Controllers\LikeControllers.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-25 04:38:54.356 +01:00 [ERR] Exception: NullReferenceException - Object reference not set to an instance of an object.
+2025-07-25 04:38:54.424 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/Likes - 500 null application/json; charset=utf-8 5135.2565ms
+2025-07-25 04:38:57.333 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/Likes - application/json 55
+2025-07-25 04:38:57.349 +01:00 [INF] CORS policy execution failed.
+2025-07-25 04:38:57.355 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 04:38:57.371 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:38:57.375 +01:00 [INF] Route matched with {action = "ToggleLike", controller = "LikeControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ToggleLike(StreamNest.Application.DTOs.CreateLikeDto) on controller StreamNest.API.Controllers.LikeControllers (StreamNest.API).
+2025-07-25 04:39:19.526 +01:00 [ERR] Failed executing DbCommand (22,065ms) [Parameters=[@__videoId_0='?' (DbType = Guid), @__userId_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."LikedAt", l."UserId", l."VideoId"
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0 AND l."UserId" = @__userId_1
+LIMIT 1
+2025-07-25 04:39:19.554 +01:00 [ERR] An exception occurred while iterating over the results of a query for context type 'RepositoryContext'.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure.
+ ---> Npgsql.NpgsqlException (0x80004005): Exception while reading from stream
+ ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlReadBuffer.<Ensure>g__EnsureLong|55_0(NpgsqlReadBuffer buffer, Int32 count, Boolean async, Boolean readingNotifications)
+   at Npgsql.Internal.NpgsqlReadBuffer.<Ensure>g__EnsureLong|55_0(NpgsqlReadBuffer buffer, Int32 count, Boolean async, Boolean readingNotifications)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure.
+ ---> Npgsql.NpgsqlException (0x80004005): Exception while reading from stream
+ ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlReadBuffer.<Ensure>g__EnsureLong|55_0(NpgsqlReadBuffer buffer, Int32 count, Boolean async, Boolean readingNotifications)
+   at Npgsql.Internal.NpgsqlReadBuffer.<Ensure>g__EnsureLong|55_0(NpgsqlReadBuffer buffer, Int32 count, Boolean async, Boolean readingNotifications)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-07-25 04:39:19.613 +01:00 [INF] Executed action StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API) in 22225.9946ms
+2025-07-25 04:39:19.620 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:39:19.630 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure.
+ ---> Npgsql.NpgsqlException (0x80004005): Exception while reading from stream
+ ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlReadBuffer.<Ensure>g__EnsureLong|55_0(NpgsqlReadBuffer buffer, Int32 count, Boolean async, Boolean readingNotifications)
+   at Npgsql.Internal.NpgsqlReadBuffer.<Ensure>g__EnsureLong|55_0(NpgsqlReadBuffer buffer, Int32 count, Boolean async, Boolean readingNotifications)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at StreamNest.Infrastructure.Repository.LikeRepository.GetLikeAsync(Guid videoId, String userId, Boolean trackChanges) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Infrastructure\Repository\LikeRepository.cs:line 24
+   at StreamNest.Application.Services.LikeService.ToggleLikeAsync(CreateLikeDto createLikeDto, String userId) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\Services\LikeService.cs:line 23
+   at StreamNest.API.Controllers.LikeControllers.ToggleLike(CreateLikeDto createLikeDto) in C:\Users\user\Desktop\c##\StreamNest\streamnest.api\Controllers\LikeControllers.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-25 04:39:19.849 +01:00 [ERR] Exception: InvalidOperationException - An exception has been raised that is likely due to a transient failure.
+2025-07-25 04:39:19.853 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/Likes - 500 null application/json; charset=utf-8 22520.5258ms
+2025-07-25 04:39:36.759 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/Likes - application/json 55
+2025-07-25 04:39:36.772 +01:00 [INF] CORS policy execution failed.
+2025-07-25 04:39:36.776 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 04:39:36.799 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:39:36.805 +01:00 [INF] Route matched with {action = "ToggleLike", controller = "LikeControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ToggleLike(StreamNest.Application.DTOs.CreateLikeDto) on controller StreamNest.API.Controllers.LikeControllers (StreamNest.API).
+2025-07-25 04:39:38.678 +01:00 [INF] Executed DbCommand (273ms) [Parameters=[@__videoId_0='?' (DbType = Guid), @__userId_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."LikedAt", l."UserId", l."VideoId"
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0 AND l."UserId" = @__userId_1
+LIMIT 1
+2025-07-25 04:39:38.975 +01:00 [INF] Executed DbCommand (262ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Likes"
+WHERE "Id" = @p0;
+2025-07-25 04:39:39.255 +01:00 [INF] Executed DbCommand (263ms) [Parameters=[@__videoId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0
+2025-07-25 04:39:39.273 +01:00 [INF] Executed action StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API) in 2457.8634ms
+2025-07-25 04:39:39.281 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:39:39.286 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at StreamNest.Application.Services.LikeService.ToggleLikeAsync(CreateLikeDto createLikeDto, String userId) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\Services\LikeService.cs:line 43
+   at StreamNest.API.Controllers.LikeControllers.ToggleLike(CreateLikeDto createLikeDto) in C:\Users\user\Desktop\c##\StreamNest\streamnest.api\Controllers\LikeControllers.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-25 04:39:39.324 +01:00 [ERR] Exception: NullReferenceException - Object reference not set to an instance of an object.
+2025-07-25 04:39:39.330 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/Likes - 500 null application/json; charset=utf-8 2571.1764ms
+2025-07-25 04:39:40.749 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/Likes - application/json 55
+2025-07-25 04:39:40.758 +01:00 [INF] CORS policy execution failed.
+2025-07-25 04:39:40.761 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 04:39:40.768 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:39:40.778 +01:00 [INF] Route matched with {action = "ToggleLike", controller = "LikeControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ToggleLike(StreamNest.Application.DTOs.CreateLikeDto) on controller StreamNest.API.Controllers.LikeControllers (StreamNest.API).
+2025-07-25 04:39:41.237 +01:00 [INF] Executed DbCommand (448ms) [Parameters=[@__videoId_0='?' (DbType = Guid), @__userId_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."LikedAt", l."UserId", l."VideoId"
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0 AND l."UserId" = @__userId_1
+LIMIT 1
+2025-07-25 04:39:41.769 +01:00 [INF] Executed DbCommand (522ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Likes" ("Id", "LikedAt", "UserId", "VideoId")
+VALUES (@p0, @p1, @p2, @p3);
+2025-07-25 04:39:42.067 +01:00 [INF] Executed DbCommand (265ms) [Parameters=[@__videoId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0
+2025-07-25 04:39:42.098 +01:00 [INF] Executed action StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API) in 1310.5123ms
+2025-07-25 04:39:42.109 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:39:42.116 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at StreamNest.Application.Services.LikeService.ToggleLikeAsync(CreateLikeDto createLikeDto, String userId) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\Services\LikeService.cs:line 43
+   at StreamNest.API.Controllers.LikeControllers.ToggleLike(CreateLikeDto createLikeDto) in C:\Users\user\Desktop\c##\StreamNest\streamnest.api\Controllers\LikeControllers.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-25 04:39:42.138 +01:00 [ERR] Exception: NullReferenceException - Object reference not set to an instance of an object.
+2025-07-25 04:39:42.142 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/Likes - 500 null application/json; charset=utf-8 1392.8437ms
+2025-07-25 04:40:11.092 +01:00 [INF] Application is shutting down...
+2025-07-25 04:41:17.419 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-25 04:41:17.658 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-25 04:41:17.669 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-25 04:41:17.675 +01:00 [INF] Hosting environment: Development
+2025-07-25 04:41:17.680 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-25 04:41:30.779 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/Likes/68bc8dd4-5cb4-46f6-bb4c-54eaf535fdeb - null null
+2025-07-25 04:41:30.830 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-25 04:41:31.014 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.LikeControllers.GetLikeStatus (StreamNest.API)'
+2025-07-25 04:41:31.064 +01:00 [INF] Route matched with {action = "GetLikeStatus", controller = "LikeControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLikeStatus(System.Guid) on controller StreamNest.API.Controllers.LikeControllers (StreamNest.API).
+2025-07-25 04:41:34.758 +01:00 [INF] Executed DbCommand (302ms) [Parameters=[@__videoId_0='?' (DbType = Guid), @__userId_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."LikedAt", l."UserId", l."VideoId"
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0 AND l."UserId" = @__userId_1
+LIMIT 1
+2025-07-25 04:41:35.108 +01:00 [INF] Executed DbCommand (255ms) [Parameters=[@__videoId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0
+2025-07-25 04:41:35.128 +01:00 [INF] Executed action StreamNest.API.Controllers.LikeControllers.GetLikeStatus (StreamNest.API) in 4050.0458ms
+2025-07-25 04:41:35.139 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.LikeControllers.GetLikeStatus (StreamNest.API)'
+2025-07-25 04:41:35.144 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at StreamNest.Application.Services.LikeService.GetLikeStatusAsync(Guid videoId, String userId) in C:\Users\user\Desktop\c##\StreamNest\StreamNest.Application\Services\LikeService.cs:line 57
+   at StreamNest.API.Controllers.LikeControllers.GetLikeStatus(Guid videoId) in C:\Users\user\Desktop\c##\StreamNest\streamnest.api\Controllers\LikeControllers.cs:line 43
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-07-25 04:41:35.200 +01:00 [ERR] Exception: NullReferenceException - Object reference not set to an instance of an object.
+2025-07-25 04:41:35.305 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/Likes/68bc8dd4-5cb4-46f6-bb4c-54eaf535fdeb - 500 null application/json; charset=utf-8 4527.8837ms
+2025-07-25 04:41:53.896 +01:00 [INF] Application is shutting down...
+2025-07-25 04:42:01.092 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-25 04:42:01.337 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-25 04:42:01.350 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-25 04:42:01.355 +01:00 [INF] Hosting environment: Development
+2025-07-25 04:42:01.359 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-25 04:42:04.898 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/api/Likes/68bc8dd4-5cb4-46f6-bb4c-54eaf535fdeb - null null
+2025-07-25 04:42:04.985 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-07-25 04:42:05.184 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.LikeControllers.GetLikeStatus (StreamNest.API)'
+2025-07-25 04:42:05.215 +01:00 [INF] Route matched with {action = "GetLikeStatus", controller = "LikeControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLikeStatus(System.Guid) on controller StreamNest.API.Controllers.LikeControllers (StreamNest.API).
+2025-07-25 04:42:08.856 +01:00 [INF] Executed DbCommand (328ms) [Parameters=[@__videoId_0='?' (DbType = Guid), @__userId_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."LikedAt", l."UserId", l."VideoId"
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0 AND l."UserId" = @__userId_1
+LIMIT 1
+2025-07-25 04:42:09.218 +01:00 [INF] Executed DbCommand (269ms) [Parameters=[@__videoId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0
+2025-07-25 04:42:09.239 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.LikeResponseDto'.
+2025-07-25 04:42:09.337 +01:00 [INF] Executed action StreamNest.API.Controllers.LikeControllers.GetLikeStatus (StreamNest.API) in 4105.0231ms
+2025-07-25 04:42:09.346 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.LikeControllers.GetLikeStatus (StreamNest.API)'
+2025-07-25 04:42:09.364 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/api/Likes/68bc8dd4-5cb4-46f6-bb4c-54eaf535fdeb - 200 null application/json; charset=utf-8 4468.0062ms
+2025-07-25 04:42:14.205 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/Likes - application/json 55
+2025-07-25 04:42:14.226 +01:00 [INF] CORS policy execution failed.
+2025-07-25 04:42:14.231 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 04:42:14.245 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:42:14.266 +01:00 [INF] Route matched with {action = "ToggleLike", controller = "LikeControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ToggleLike(StreamNest.Application.DTOs.CreateLikeDto) on controller StreamNest.API.Controllers.LikeControllers (StreamNest.API).
+2025-07-25 04:42:14.722 +01:00 [INF] Executed DbCommand (298ms) [Parameters=[@__videoId_0='?' (DbType = Guid), @__userId_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."LikedAt", l."UserId", l."VideoId"
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0 AND l."UserId" = @__userId_1
+LIMIT 1
+2025-07-25 04:42:15.365 +01:00 [INF] Executed DbCommand (271ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Likes"
+WHERE "Id" = @p0;
+2025-07-25 04:42:15.670 +01:00 [INF] Executed DbCommand (275ms) [Parameters=[@__videoId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0
+2025-07-25 04:42:15.678 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.LikeResponseDto'.
+2025-07-25 04:42:15.687 +01:00 [INF] Executed action StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API) in 1407.5872ms
+2025-07-25 04:42:15.692 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:42:15.699 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/Likes - 200 null application/json; charset=utf-8 1494.0822ms
+2025-07-25 04:42:18.233 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5213/api/Likes - application/json 55
+2025-07-25 04:42:18.249 +01:00 [INF] CORS policy execution failed.
+2025-07-25 04:42:18.255 +01:00 [INF] Request origin http://localhost:5213 does not have permission to access the resource.
+2025-07-25 04:42:18.268 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:42:18.278 +01:00 [INF] Route matched with {action = "ToggleLike", controller = "LikeControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ToggleLike(StreamNest.Application.DTOs.CreateLikeDto) on controller StreamNest.API.Controllers.LikeControllers (StreamNest.API).
+2025-07-25 04:42:18.623 +01:00 [INF] Executed DbCommand (290ms) [Parameters=[@__videoId_0='?' (DbType = Guid), @__userId_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."LikedAt", l."UserId", l."VideoId"
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0 AND l."UserId" = @__userId_1
+LIMIT 1
+2025-07-25 04:42:18.956 +01:00 [INF] Executed DbCommand (294ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Likes" ("Id", "LikedAt", "UserId", "VideoId")
+VALUES (@p0, @p1, @p2, @p3);
+2025-07-25 04:42:19.237 +01:00 [INF] Executed DbCommand (266ms) [Parameters=[@__videoId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Likes" AS l
+WHERE l."VideoId" = @__videoId_0
+2025-07-25 04:42:19.246 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.LikeResponseDto'.
+2025-07-25 04:42:19.252 +01:00 [INF] Executed action StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API) in 962.7662ms
+2025-07-25 04:42:19.260 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.LikeControllers.ToggleLike (StreamNest.API)'
+2025-07-25 04:42:19.267 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5213/api/Likes - 200 null application/json; charset=utf-8 1034.5616ms
+2025-07-25 04:45:48.371 +01:00 [INF] Application is shutting down...
+2025-07-25 04:45:56.751 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-25 04:45:56.904 +01:00 [INF] Now listening on: http://localhost:5213
+2025-07-25 04:45:56.912 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-25 04:45:56.917 +01:00 [INF] Hosting environment: Development
+2025-07-25 04:45:56.919 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\StreamNest\streamnest.api
+2025-07-25 04:46:01.206 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.html - null null
+2025-07-25 04:46:01.454 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.html - 200 null text/html;charset=utf-8 251.8605ms
+2025-07-25 04:46:01.524 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/index.js - null null
+2025-07-25 04:46:01.555 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/index.js - 200 null application/javascript;charset=utf-8 32.1082ms
+2025-07-25 04:46:02.461 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - null null
+2025-07-25 04:46:02.883 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 422.4742ms
+2025-07-25 04:46:32.015 +01:00 [INF] Application is shutting down...

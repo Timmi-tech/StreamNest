@@ -11,6 +11,7 @@ namespace StreamNest.Application.DTOs
         public string Content { get; init; } = string.Empty;
         public Guid VideoId { get; init; }
         public string UserProfileId { get; init; } = string.Empty;
+        public string UserName { get; init; } = string.Empty;
         public DateTime CreatedAt { get; init; } = DateTime.UtcNow;
     }
 }

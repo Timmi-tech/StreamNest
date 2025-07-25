@@ -83,6 +83,7 @@ namespace StreamNest.Application.Services
                 UploadedAt = video.UploadDate,
                 VideoUrl = video.VideoUrl,
                 UserId = video.CreatorId,
+                UserName = video.Creator.UserName ?? string.Empty,
                 Tags = video.VideoTags.Select(vt => vt.Tag.Name).ToList()
             });
         }
@@ -103,6 +104,7 @@ namespace StreamNest.Application.Services
                 UploadedAt = video.UploadDate,
                 VideoUrl = video.VideoUrl,
                 UserId = video.CreatorId,
+                UserName = video.Creator.UserName ?? string.Empty,
                 Tags = video.VideoTags.Select(vt => vt.Tag.Name).ToList()
             };
         }
@@ -121,6 +123,7 @@ namespace StreamNest.Application.Services
                 UploadedAt = video.UploadDate,
                 VideoUrl = video.VideoUrl,
                 UserId = video.CreatorId,
+                UserName = video.Creator.UserName ?? string.Empty,
                 Tags = video.VideoTags.Select(vt => vt.Tag.Name).ToList()
             });
         }

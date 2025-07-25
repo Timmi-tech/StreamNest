@@ -37,8 +37,10 @@ namespace StreamNest.Application.Services
                 Id = comment.Id,
                 Content = comment.Content,
                 VideoId = comment.VideoId,
+                UserName = comment.User.UserName ?? string.Empty,
                 UserProfileId = comment.UserId,
                 CreatedAt = comment.CreatedAt
+
             };
             return commentResponseDto;
         }
@@ -51,6 +53,7 @@ namespace StreamNest.Application.Services
                 Content = c.Content,
                 VideoId = c.VideoId,
                 UserProfileId = c.UserId,
+                UserName = c.User.UserName ?? string.Empty,
                 CreatedAt = c.CreatedAt
             }).ToList();
         }

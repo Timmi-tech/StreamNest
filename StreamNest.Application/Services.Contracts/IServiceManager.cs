@@ -8,5 +8,6 @@ namespace StreamNest.Application.Services.Contracts
         IVideoService VideoService { get; }
         IVideoPostService VideoPostService { get; }
         ICommentService CommentService { get; }
+        ILikeService LikeService { get; }
     }
 }

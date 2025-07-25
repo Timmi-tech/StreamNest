@@ -27,6 +27,7 @@ namespace StreamNest.Application.DTOs
         public DateTime UploadedAt { get; init; } = DateTime.UtcNow;
         // public DateTime UploadedAt { get; init; }
         public string UserId { get; init; } = string.Empty;
+        public string UserName { get; init; } = string.Empty;
         public List<string> Tags { get; init; } = new List<string>();
 
     }

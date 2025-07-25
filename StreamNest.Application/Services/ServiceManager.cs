@@ -18,6 +18,7 @@ namespace StreamNest.Application.Services
         private readonly Lazy<IUserProfileService> _userProfileService;
         private readonly Lazy<IVideoPostService> _videoPostService;
         private readonly Lazy<ICommentService> _commentService;
+        private readonly Lazy<ILikeService> _likeService;
 
         public ServiceManager
         (
@@ -33,11 +34,13 @@ namespace StreamNest.Application.Services
             _userProfileService = new Lazy<IUserProfileService>(() => new UserProfileService(repositoryManager, logger));
             _videoPostService = new Lazy<IVideoPostService>(() => new VideoPostService(repositoryManager, logger, VideoService));
             _commentService = new Lazy<ICommentService>(() => new CommentService(repositoryManager, logger));
+            _likeService = new Lazy<ILikeService>(() => new LikeService(repositoryManager, logger));
         }
         public IAuthenticationService AuthenticationService => _authenticationService.Value;
         public IVideoService VideoService => _videoService.Value;
         public IUserProfileService UserProfileService => _userProfileService.Value;
         public IVideoPostService VideoPostService => _videoPostService.Value;
         public ICommentService CommentService => _commentService.Value;
+        public ILikeService LikeService => _likeService.Value;
     }
 }
