@@ -145,6 +145,10 @@ namespace StreamNest.Application.Services
             _repository.Video.DeletePost(video);
             await _repository.SaveAsync();
         }
+        public async Task<IEnumerable<Video>> SearchVideosAsync(string? query, Genre? genre, int? year)
+        {
+            return await _repository.Video.SearchVideosAsync(query, genre, year);
+        }
 
     }
 }

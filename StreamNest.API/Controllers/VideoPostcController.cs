@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using StreamNest.Application.DTOs;
 using StreamNest.Application.Services.Contracts;
+using StreamNest.Domain.Entities.Models;
 using Swashbuckle.AspNetCore.Annotations;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -190,6 +191,37 @@ namespace StreamNest.API.Controllers
 
                 await _service.VideoPostService.DeleteVideoAsync(videoPostId, userId);
                 return NoContent();
+        }
+
+        /// <summary>
+        /// Searches for videos based on query parameters.
+        /// </summary>
+        /// <remarks>
+        /// This endpoint allows any authenticated user to search for videos by title, genre, or year
+        /// using optional query parameters.
+        /// </remarks>
+        /// <param name="query">Optional search query for video title.</param>
+        /// <param name="genre">Optional genre to filter videos.</param>
+        /// <param name="year">Optional year to filter videos.</param>
+        /// <returns>Returns a list of videos matching the search criteria.</returns>
+        /// <response code="200">List of videos matching the search criteria.</response>
+        /// <response code="401">User is not authenticated.</response>
+        /// <response code="403">User is not authorized to perform this action.</response>
+        /// <response code="500">Internal server error.</response>
+        [HttpGet("search")]
+        [Authorize]
+        [SwaggerOperation(
+            Summary = "Search videos",
+            Description = "Searches for videos based on title, genre, or year."
+        )]
+        [SwaggerResponse(StatusCodes.Status200OK, "List of videos matching the search criteria", typeof(IEnumerable<Video>))]
+        [SwaggerResponse(StatusCodes.Status401Unauthorized, "User not authenticated.")]
+        [SwaggerResponse(StatusCodes.Status403Forbidden, "User does not have the required role.")]
+        [SwaggerResponse(StatusCodes.Status500InternalServerError, "An error occurred while processing the request.")]
+        public async Task<IActionResult> SearchVideos([FromQuery] string? query, [FromQuery] Genre? genre, [FromQuery] int? year)
+        {
+            var videos = await _service.VideoPostService.SearchVideosAsync(query, genre, year);
+            return Ok(videos);
         }
         private string? GetUserIdFromClaims()
         {

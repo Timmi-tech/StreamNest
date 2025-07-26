@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Api\\StreamNest.API.csproj": {}
+    "C:\\Users\\user\\Desktop\\c##\\streamnest\\streamnest.api\\StreamNest.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Api\\StreamNest.API.csproj": {
+    "C:\\Users\\user\\Desktop\\c##\\streamnest\\streamnest.api\\StreamNest.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Api\\StreamNest.API.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\c##\\streamnest\\streamnest.api\\StreamNest.API.csproj",
         "projectName": "StreamNest.API",
-        "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Api\\StreamNest.API.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\c##\\streamnest\\streamnest.api\\StreamNest.API.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Api\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\c##\\streamnest\\streamnest.api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,17 +26,17 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Application\\StreamNest.Application.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Application\\StreamNest.Application.csproj"
+              "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Application\\StreamNest.Application.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Application\\StreamNest.Application.csproj"
               },
-              "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Domain\\StreamNest.Domain.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Domain\\StreamNest.Domain.csproj"
+              "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Domain\\StreamNest.Domain.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Domain\\StreamNest.Domain.csproj"
               },
-              "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Extensions\\StreamNest.Extensions.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Extensions\\StreamNest.Extensions.csproj"
+              "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Extensions\\StreamNest.Extensions.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Extensions\\StreamNest.Extensions.csproj"
               },
-              "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Infrastructure\\StreamNest.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Infrastructure\\StreamNest.Infrastructure.csproj"
+              "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Infrastructure\\StreamNest.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Infrastructure\\StreamNest.Infrastructure.csproj"
               }
             }
           }
@@ -102,14 +102,14 @@
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Application\\StreamNest.Application.csproj": {
+    "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Application\\StreamNest.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Application\\StreamNest.Application.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Application\\StreamNest.Application.csproj",
         "projectName": "StreamNest.Application",
-        "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Application\\StreamNest.Application.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Application\\StreamNest.Application.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Application\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -124,8 +124,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Domain\\StreamNest.Domain.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Domain\\StreamNest.Domain.csproj"
+              "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Domain\\StreamNest.Domain.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Domain\\StreamNest.Domain.csproj"
               }
             }
           }
@@ -182,14 +182,14 @@
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Domain\\StreamNest.Domain.csproj": {
+    "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Domain\\StreamNest.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Domain\\StreamNest.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Domain\\StreamNest.Domain.csproj",
         "projectName": "StreamNest.Domain",
-        "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Domain\\StreamNest.Domain.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Domain\\StreamNest.Domain.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Domain\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -246,14 +246,14 @@
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Extensions\\StreamNest.Extensions.csproj": {
+    "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Extensions\\StreamNest.Extensions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Extensions\\StreamNest.Extensions.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Extensions\\StreamNest.Extensions.csproj",
         "projectName": "StreamNest.Extensions",
-        "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Extensions\\StreamNest.Extensions.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Extensions\\StreamNest.Extensions.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Extensions\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Extensions\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -268,14 +268,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Application\\StreamNest.Application.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Application\\StreamNest.Application.csproj"
+              "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Application\\StreamNest.Application.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Application\\StreamNest.Application.csproj"
               },
-              "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Domain\\StreamNest.Domain.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Domain\\StreamNest.Domain.csproj"
+              "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Domain\\StreamNest.Domain.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Domain\\StreamNest.Domain.csproj"
               },
-              "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Infrastructure\\StreamNest.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Infrastructure\\StreamNest.Infrastructure.csproj"
+              "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Infrastructure\\StreamNest.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Infrastructure\\StreamNest.Infrastructure.csproj"
               }
             }
           }
@@ -356,14 +356,14 @@
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Infrastructure\\StreamNest.Infrastructure.csproj": {
+    "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Infrastructure\\StreamNest.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Infrastructure\\StreamNest.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Infrastructure\\StreamNest.Infrastructure.csproj",
         "projectName": "StreamNest.Infrastructure",
-        "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Infrastructure\\StreamNest.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Infrastructure\\StreamNest.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -378,8 +378,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Domain\\StreamNest.Domain.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\c##\\StreamNest\\StreamNest.Domain\\StreamNest.Domain.csproj"
+              "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Domain\\StreamNest.Domain.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\c##\\streamnest\\StreamNest.Domain\\StreamNest.Domain.csproj"
               }
             }
           }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StreamNest.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bafd8c51f48d80856a97bca2858b7daf466a5cae")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a62655c3999a6acd16b6266bd47272edb066e57b")]
 [assembly: System.Reflection.AssemblyProductAttribute("StreamNest.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StreamNest.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
