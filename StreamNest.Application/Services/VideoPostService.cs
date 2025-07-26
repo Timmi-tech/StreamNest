@@ -29,6 +29,8 @@ namespace StreamNest.Application.Services
 
             // Upload video to Cloudinary (or your video service)
             var uploadResult = await _videoService.UploadVideoAsync(createVideoDto.VideoFile);
+            var thumbnailUrl = $"https://res.cloudinary.com/{_videoService.CloudName}/video/upload/so_2/{uploadResult.PublicId}.jpg";
+
 
             if (uploadResult.Error != null)
                 throw new ApplicationException($"Video upload failed: {uploadResult.Error.Message}");
@@ -43,6 +45,7 @@ namespace StreamNest.Application.Services
                 VideoYear = createVideoDto.VideoYear,
                 UploadDate = DateTime.UtcNow,
                 VideoUrl = uploadResult.SecureUrl.ToString(),
+                ThumbnailUrl = thumbnailUrl,
                 CreatorId = userId,
                 VideoTags = createVideoDto.Tags.Select(tag => new VideoTag { Tag = new Tag { Name = tag } }).ToList()
             };
@@ -62,6 +65,7 @@ namespace StreamNest.Application.Services
                 VideoYear = video.VideoYear,
                 UploadedAt = video.UploadDate,
                 VideoUrl = video.VideoUrl,
+                ThumbnailUrl = video.ThumbnailUrl,
                 UserId = video.CreatorId,
                 Tags = video.VideoTags.Select(vt => vt.Tag.Name).ToList()
             };
@@ -82,6 +86,7 @@ namespace StreamNest.Application.Services
                 VideoYear = video.VideoYear,
                 UploadedAt = video.UploadDate,
                 VideoUrl = video.VideoUrl,
+                ThumbnailUrl = video.ThumbnailUrl,
                 UserId = video.CreatorId,
                 UserName = video.Creator.UserName ?? string.Empty,
                 Tags = video.VideoTags.Select(vt => vt.Tag.Name).ToList()
@@ -103,6 +108,7 @@ namespace StreamNest.Application.Services
                 VideoYear = video.VideoYear,
                 UploadedAt = video.UploadDate,
                 VideoUrl = video.VideoUrl,
+                ThumbnailUrl = video.ThumbnailUrl,
                 UserId = video.CreatorId,
                 UserName = video.Creator.UserName ?? string.Empty,
                 Tags = video.VideoTags.Select(vt => vt.Tag.Name).ToList()

@@ -25,6 +25,7 @@ namespace StreamNest.Domain.Entities.Models
 
         // Video data
         public string VideoUrl { get; set; } = string.Empty;  // Cloudinary URL
+        public string ThumbnailUrl { get; set; } = string.Empty; // Cloudinary URL for thumbnail
         public DateTime UploadDate { get; set; } = DateTime.UtcNow;
 
         // 🔥 Link to User (Creator only)

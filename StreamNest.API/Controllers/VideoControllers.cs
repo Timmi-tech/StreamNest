@@ -62,10 +62,13 @@ public class VideosController : ControllerBase
             return BadRequest(new { message = "No files uploaded or files are empty." });
 
         var results = await _videoService.UploadVideosAsync(uploadImagesDto.Files);
+
+        var cloudName = _videoService.CloudName;
         var uploadedVideos = results.Select(result => new
         {
             publicId = result.PublicId,
-            url = result.SecureUrl?.ToString()
+            url = result.SecureUrl?.ToString(),
+            thumbnailUrl = $"https://res.cloudinary.com/{cloudName}/video/upload/so_2/{result.PublicId}.jpg"
         }).ToList();
 
         return Ok(new

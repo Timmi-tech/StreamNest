@@ -86,5 +86,6 @@ namespace StreamNest.Application.Services
                 throw new ApplicationException("Error deleting video from Cloudinary.", ex);
             }
         }
+        public string CloudName => _cloudinary.Api.Account.Cloud;
     }
 }
