@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="..\build\StreamNest.Api.props" />
+  <Import Project="..\build\StreamNest.API.props" />
 </Project>
