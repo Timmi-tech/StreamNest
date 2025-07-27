@@ -40,7 +40,11 @@ namespace StreamNest.Infrastructure.Repository
 
         public async Task<IEnumerable<Video>> SearchVideosAsync(string? query, Genre? genre, int? year)
         {
-            IQueryable<Video> videos = RepositoryContext.Videos;
+            IQueryable<Video> videos = RepositoryContext.Videos
+                .Include(v => v.VideoTags).ThenInclude(vt => vt.Tag)
+                .Include(v => v.Comments)
+                .Include(v => v.Likes)
+                .Include(v => v.Creator); // If needed
 
             if (!string.IsNullOrWhiteSpace(query))
             {

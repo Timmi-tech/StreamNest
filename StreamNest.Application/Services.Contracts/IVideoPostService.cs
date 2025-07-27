@@ -9,7 +9,7 @@ namespace StreamNest.Application.Services.Contracts
         Task<IEnumerable<VideoDto>> GetAllVideosAsync(bool trackChanges);
         Task<VideoDto?> GetVideoByIdAsync(Guid videoPostId, bool trackChanges);
         Task<IEnumerable<VideoDto>> GetVideosByUserIdAsync(string creatorId, bool trackChanges);
-        Task<IEnumerable<Video>> SearchVideosAsync(string? query, Genre? genre, int? year);
+        Task<List<VideoDto>> SearchVideosAsync(string? query, Genre? genre, int? year);
         Task DeleteVideoAsync(Guid videoPostId, string userId);
     }
 }

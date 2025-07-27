@@ -145,10 +145,27 @@ namespace StreamNest.Application.Services
             _repository.Video.DeletePost(video);
             await _repository.SaveAsync();
         }
-        public async Task<IEnumerable<Video>> SearchVideosAsync(string? query, Genre? genre, int? year)
+        public async Task<List<VideoDto>> SearchVideosAsync(string? query, Genre? genre, int? year)
         {
-            return await _repository.Video.SearchVideosAsync(query, genre, year);
-        }
+            var videos = await _repository.Video.SearchVideosAsync(query, genre, year);
 
+            var result = videos.Select(v => new VideoDto
+            {
+                Id = v.Id,
+                Title = v.Title,
+                Description = v.Description,
+                Genre = v.Genre.ToString(),
+                AgeRating = v.AgeRating.ToString(),
+                VideoUrl = v.VideoUrl,
+                ThumbnailUrl = v.ThumbnailUrl,
+                VideoYear = v.VideoYear,
+                UploadedAt = v.UploadDate,
+                UserId = v.CreatorId.ToString(),
+                UserName = v.Creator?.UserName ?? "",
+                Tags = v.VideoTags.Select(t => t.Tag.Name).ToList()
+            }).ToList();
+
+            return result;
+        }
     }
 }
