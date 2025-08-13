@@ -67,6 +67,7 @@ namespace StreamNest.Extensions
             services.AddDbContext<RepositoryContext>(opts =>
             opts.UseNpgsql(configuration.GetConnectionString("PostgresConnection")));
 
+
         public static void ConfigureIdentity(this IServiceCollection services)
         {
             var builder = services.AddIdentity<User, IdentityRole>(options =>
@@ -85,35 +86,35 @@ namespace StreamNest.Extensions
         services.AddScoped<IServiceManager, ServiceManager>();
         public static void ConfigureRepositoryManager(this IServiceCollection services) => services.AddScoped<IRepositoryManager, RepositoryManager>();
 
-        public static void ConfigureJwt(this IServiceCollection services, IConfiguration configuration)
-        {
-            Env.Load();
-
-            var jwtConfiguration = new JwtConfiguration();
-            configuration.Bind(jwtConfiguration.Section, jwtConfiguration);
-            var secretKey = Environment.GetEnvironmentVariable("JWT_SECRET");
-
-
-            services.AddAuthentication(opt =>
+            public static void ConfigureJwt(this IServiceCollection services, IConfiguration configuration)
             {
-                opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            })
-            .AddJwtBearer(Options =>
-            {
-                Options.TokenValidationParameters = new TokenValidationParameters
+                Env.Load();
+
+                var jwtConfiguration = new JwtConfiguration();
+                configuration.Bind(jwtConfiguration.Section, jwtConfiguration);
+                var secretKey = Environment.GetEnvironmentVariable("JWT_SECRET");
+
+
+                services.AddAuthentication(opt =>
                 {
-                    ValidateIssuer = true,
-                    ValidateAudience = true,
-                    ValidateLifetime = true,
-                    ValidateIssuerSigningKey = true,
-                    ValidIssuer = jwtConfiguration.ValidIssuer,
-                    ValidAudience = jwtConfiguration.ValidAudience,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
+                    opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                    opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                })
+                .AddJwtBearer(Options =>
+                {
+                    Options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuer = true,
+                        ValidateAudience = true,
+                        ValidateLifetime = true,
+                        ValidateIssuerSigningKey = true,
+                        ValidIssuer = jwtConfiguration.ValidIssuer,
+                        ValidAudience = jwtConfiguration.ValidAudience,
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
 
-                };
-            });
-        }
+                    };
+                });
+            }
         public static IServiceCollection AddCloudinaryConfiguration(this IServiceCollection services, IConfiguration configuration)
         {
             services.Configure<CloudinaryConfigurations>(configuration.GetSection("Cloudinary"));
