@@ -45,15 +45,13 @@ var app = builder.Build();
 var logger = app.Services.GetRequiredService<ILoggerManager>(); 
 app.ConfigureExceptionHandler(logger); 
 
-if (app.Environment.IsDevelopment() || app.Environment.IsProduction()) // Allow in prod
+
+app.UseSwagger();
+app.UseSwaggerUI(c =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "MetaFlix API v1");
-        c.RoutePrefix = "swagger"; // so URL is /swagger
-    });
-}
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "MetaFlix API v1");
+    c.RoutePrefix = "swagger"; // so URL is /swagger
+});
 
 app.UseHttpsRedirection();
 
