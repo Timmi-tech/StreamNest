@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamNest.Extensions", "St
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamNest.Infrastructure", "StreamNest.Infrastructure\StreamNest.Infrastructure.csproj", "{0C202CC6-FA84-4B38-8DB5-5883780BBB6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamNest.API", "StreamNest.API\StreamNest.API.csproj", "{031774E0-0BF3-408E-978C-54E5E6472378}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamNest.API", "StreamNest.API\StreamNest.API.csproj", "{5BCB247B-DD24-4EBF-BFC0-8483DCEE4EF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,18 +71,18 @@ Global
 		{0C202CC6-FA84-4B38-8DB5-5883780BBB6C}.Release|x64.Build.0 = Release|Any CPU
 		{0C202CC6-FA84-4B38-8DB5-5883780BBB6C}.Release|x86.ActiveCfg = Release|Any CPU
 		{0C202CC6-FA84-4B38-8DB5-5883780BBB6C}.Release|x86.Build.0 = Release|Any CPU
-		{031774E0-0BF3-408E-978C-54E5E6472378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{031774E0-0BF3-408E-978C-54E5E6472378}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{031774E0-0BF3-408E-978C-54E5E6472378}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{031774E0-0BF3-408E-978C-54E5E6472378}.Debug|x64.Build.0 = Debug|Any CPU
-		{031774E0-0BF3-408E-978C-54E5E6472378}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{031774E0-0BF3-408E-978C-54E5E6472378}.Debug|x86.Build.0 = Debug|Any CPU
-		{031774E0-0BF3-408E-978C-54E5E6472378}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{031774E0-0BF3-408E-978C-54E5E6472378}.Release|Any CPU.Build.0 = Release|Any CPU
-		{031774E0-0BF3-408E-978C-54E5E6472378}.Release|x64.ActiveCfg = Release|Any CPU
-		{031774E0-0BF3-408E-978C-54E5E6472378}.Release|x64.Build.0 = Release|Any CPU
-		{031774E0-0BF3-408E-978C-54E5E6472378}.Release|x86.ActiveCfg = Release|Any CPU
-		{031774E0-0BF3-408E-978C-54E5E6472378}.Release|x86.Build.0 = Release|Any CPU
+		{5BCB247B-DD24-4EBF-BFC0-8483DCEE4EF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BCB247B-DD24-4EBF-BFC0-8483DCEE4EF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BCB247B-DD24-4EBF-BFC0-8483DCEE4EF2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5BCB247B-DD24-4EBF-BFC0-8483DCEE4EF2}.Debug|x64.Build.0 = Debug|Any CPU
+		{5BCB247B-DD24-4EBF-BFC0-8483DCEE4EF2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5BCB247B-DD24-4EBF-BFC0-8483DCEE4EF2}.Debug|x86.Build.0 = Debug|Any CPU
+		{5BCB247B-DD24-4EBF-BFC0-8483DCEE4EF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BCB247B-DD24-4EBF-BFC0-8483DCEE4EF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BCB247B-DD24-4EBF-BFC0-8483DCEE4EF2}.Release|x64.ActiveCfg = Release|Any CPU
+		{5BCB247B-DD24-4EBF-BFC0-8483DCEE4EF2}.Release|x64.Build.0 = Release|Any CPU
+		{5BCB247B-DD24-4EBF-BFC0-8483DCEE4EF2}.Release|x86.ActiveCfg = Release|Any CPU
+		{5BCB247B-DD24-4EBF-BFC0-8483DCEE4EF2}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
