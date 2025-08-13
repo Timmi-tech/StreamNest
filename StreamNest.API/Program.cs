@@ -52,7 +52,12 @@ if (app.Environment.IsProduction())
 
 // Configure the HTTP request pipeline.
 app.UseSwagger();
-app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "StreamNest.API v1"));
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "StreamNest.API v1");
+    c.RoutePrefix = string.Empty; // Serve at root URL
+});
+
 app.UseHttpsRedirection();
 
 app.UseRouting();
