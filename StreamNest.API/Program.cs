@@ -45,18 +45,15 @@ var app = builder.Build();
 var logger = app.Services.GetRequiredService<ILoggerManager>(); 
 app.ConfigureExceptionHandler(logger); 
 
-if (app.Environment.IsProduction())
+if (app.Environment.IsDevelopment() || app.Environment.IsProduction()) // Allow in prod
 {
-    app.UseHsts();
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "MetaFlix API v1");
+        c.RoutePrefix = "swagger"; // so URL is /swagger
+    });
 }
-
-// Configure the HTTP request pipeline.
-app.UseSwagger();
-app.UseSwaggerUI(c =>
-{
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "StreamNest.API v1");
-    c.RoutePrefix = string.Empty; // Serve at root URL
-});
 
 app.UseHttpsRedirection();
 
